@@ -14,75 +14,98 @@
 13	Beaufort Sea	Marginal sea (Arctic)	476000	4683	1004	28-32	-2 to 8	Canada, USA (Alaska)	Mackenzie	Oil/gas reserves, polar bears
 14	Greenland Sea	Marginal sea (Arctic)	1205000	4846	1444	30-35	-2 to 6	Greenland (Denmark), Iceland, Norway	None major	Deep water convection
 15	Wandel Sea	Marginal sea (Arctic)	16000	300	150	30-32	-2 to 2	Greenland (Denmark)	None	Extreme ice conditions
-16	Norwegian Sea	Marginal sea (North Atlantic)	1383000	3970	1742	35	2 to 13	Norway, Iceland, Faroe Islands (Denmark)	None major	Gulf Stream influence
-17	North Sea	Marginal sea (North Atlantic)	570000	700	95	32-35	4 to 18	UK, Norway, Denmark, Germany, Netherlands, Belgium, France	Rhine, Elbe, Thames	Major shipping, oil/gas industry
-18	Baltic Sea	Marginal sea (North Atlantic)	377000	459	55	6-20	0 to 20	Sweden, Finland, Russia, Estonia, Latvia, Lithuania, Poland, Germany, Denmark	Neva, Vistula, Oder	Brackish water, low salinity
-19	Mediterranean Sea	Marginal sea (North Atlantic)	2500000	5267	1500	37-39	10 to 30	Spain, France, Monaco, Italy, Slovenia, Croatia, Bosnia-Herzegovina, Montenegro, Albania, Greece, Turkey, Syria, Lebanon, Israel, Egypt, Libya, Tunisia, Algeria, Morocco	Nile, Po, Rhône, Ebro	High salinity, ancient civilizations
-20	Black Sea	Marginal sea (North Atlantic)	436000	2212	1253	17-18	6 to 25	Turkey, Bulgaria, Romania, Ukraine, Russia, Georgia	Danube, Dnieper, Don	Anoxic deep waters
-21	Sea of Marmara	Marginal sea (Mediterranean)	11350	1370	494	22-38	8 to 25	Turkey	None major	Connects Black Sea-Aegean
-22	Adriatic Sea	Marginal sea (Mediterranean)	138600	1233	252	38-39	10 to 28	Italy, Slovenia, Croatia, Bosnia-Herzegovina, Montenegro, Albania	Po	Tourism, fishing
-23	Aegean Sea	Marginal sea (Mediterranean)	214000	3543	510	38-39	14 to 26	Greece, Turkey	Maritsa	Greek islands, ancient history
-24	Caribbean Sea	Marginal sea (North Atlantic)	2754000	7686	2647	35-36	24 to 29	Mexico, Belize, Guatemala, Honduras, Nicaragua, Costa Rica, Panama, Colombia, Venezuela, and Caribbean island nations	Magdalena, Coco	Tropical, hurricanes, coral reefs
-25	Gulf of Mexico	Marginal sea (North Atlantic)	1550000	4384	1615	35-36	18 to 31	USA (Texas, Louisiana, Mississippi, Alabama, Florida), Mexico, Cuba	Mississippi, Rio Grande	Oil/gas, hurricanes
-26	Labrador Sea	Marginal sea (North Atlantic)	841000	4316	1898	31-35	-1 to 12	Canada, Greenland (Denmark)	Churchill	Icebergs, deep water formation
-27	Irminger Sea	Marginal sea (North Atlantic)	780000	3000	1600	34-35	3 to 10	Iceland, Greenland (Denmark)	None major	North Atlantic circulation
-28	Baffin Bay	Marginal sea (North Atlantic)	689000	2414	861	30-33	-1 to 8	Canada, Greenland (Denmark)	None major	Icebergs, polar bears
-29	Hudson Bay	Marginal sea (North Atlantic)	1230000	270	128	25-32	-2 to 12	Canada	Churchill, Nelson, Albany	Shallow, frozen in winter
-30	Gulf of St. Lawrence	Marginal sea (North Atlantic)	236000	572	152	28-32	0 to 20	Canada	St. Lawrence	Major estuary, fishing
-31	Irish Sea	Marginal sea (North Atlantic)	100000	175	60	32-35	6 to 16	Ireland, UK	None major	Shallow, ferry routes
-32	English Channel	Strait (North Atlantic)	75000	174	54	34-35	6 to 18	UK, France	Seine, Thames (estuaries)	Busy shipping lane, tunnel
-33	Bay of Biscay	Marginal sea (North Atlantic)	223000	4735	1744	35-36	11 to 20	France, Spain	Loire, Garonne	Deep, rough seas
-34	Skagerrak	Strait (North Atlantic)	32000	700	210	30-35	2 to 17	Norway, Denmark, Sweden	Göta	Connects North-Baltic
-35	Kattegat	Marginal sea (North Atlantic)	30000	109	23	15-30	0 to 20	Denmark, Sweden	None major	Transition zone
-36	Gulf of Guinea	Marginal sea (South Atlantic)	2350000	5469	2996	34-36	24 to 28	Ghana, Togo, Benin, Nigeria, Cameroon, Equatorial Guinea, Gabon, Congo, Angola	Niger, Congo	Oil/gas, equatorial location
-37	Weddell Sea	Marginal sea (Southern/South Atlantic)	2800000	6820	3000	34-35	-2 to 2	Antarctica	None (glacial)	Massive ice shelves
-38	Scotia Sea	Marginal sea (Southern/South Atlantic)	1300000	6022	3096	34	-1 to 6	Antarctica, South Georgia	None (glacial)	Drake Passage
-39	Bering Sea	Marginal sea (North Pacific)	2000000	4097	1640	32-33	-2 to 12	Russia, USA (Alaska)	Yukon, Anadyr	Productive fisheries
-40	Sea of Okhotsk	Marginal sea (North Pacific)	1583000	3372	838	32-33	-2 to 18	Russia, Japan	Amur	Coldest East Asian sea
-41	Sea of Japan	Marginal sea (North Pacific)	978000	3742	1667	33-35	0 to 25	Japan, Russia, North Korea, South Korea	None major	Deep basin, rich fisheries
-42	Yellow Sea	Marginal sea (North Pacific)	380000	152	44	30-32	0 to 28	China, North Korea, South Korea	Yellow (Huang He)	Shallow, yellow sediment
-43	East China Sea	Marginal sea (North Pacific)	1249000	2719	349	31-34	10 to 28	China, Taiwan, Japan, South Korea	Yangtze	Continental shelf
-44	South China Sea	Marginal sea (North Pacific)	3500000	5559	1652	32-34	20 to 30	China, Taiwan, Philippines, Malaysia, Brunei, Indonesia, Singapore, Thailand, Cambodia, Vietnam	Pearl, Mekong, Red	Disputed territories, typhoons
-45	Philippine Sea	Marginal sea (North Pacific)	5177562	10540	4080	34-35	20 to 30	Philippines, Japan, Taiwan	Cagayan	Deepest trenches
-46	Gulf of Alaska	Marginal sea (North Pacific)	1533000	5659	2431	32-33	2 to 16	USA (Alaska), Canada	Copper, Alsek	Stormy, rich fisheries
-47	Gulf of California	Marginal sea (North Pacific)	177000	3292	818	35	16 to 30	Mexico	Colorado	Long narrow gulf
-48	Celebes Sea	Marginal sea (South Pacific)	280000	6200	4700	34	27 to 30	Philippines, Indonesia, Malaysia	None major	Deep, warm
-49	Java Sea	Marginal sea (South Pacific)	320000	46	46	32-34	27 to 30	Indonesia	Solo	Very shallow
-50	Banda Sea	Marginal sea (South Pacific)	470000	7440	3060	34	27 to 30	Indonesia	None major	Deep basins, volcanic
-51	Arafura Sea	Marginal sea (South Pacific)	700000	3680	80	34-35	25 to 29	Indonesia, Papua New Guinea, Australia	Fly, Digul	Shallow, tropical
-52	Coral Sea	Marginal sea (South Pacific)	4791000	9140	2394	35-36	23 to 28	Australia, Papua New Guinea, Solomon Islands, Vanuatu, New Caledonia (France)	None major	Great Barrier Reef
-53	Tasman Sea	Marginal sea (South Pacific)	2300000	5943	3000	35-35.5	8 to 23	Australia, New Zealand	None major	Rough seas
-54	Solomon Sea	Marginal sea (South Pacific)	720000	9140	2500	34-35	26 to 30	Papua New Guinea, Solomon Islands	None major	Deep, volcanic
-55	Bismarck Sea	Marginal sea (South Pacific)	40000	2665	1200	34-35	27 to 30	Papua New Guinea	Sepik, Ramu	Volcanic
-56	Sulu Sea	Marginal sea (South Pacific)	348000	5576	1450	34	27 to 30	Philippines, Malaysia	None major	Deep basins
-57	Red Sea	Marginal sea (Indian)	438000	3040	490	40-41	20 to 30	Egypt, Sudan, Eritrea, Djibouti, Yemen, Saudi Arabia	None major	Highest salinity, coral reefs
-58	Persian Gulf	Marginal sea (Indian)	251000	90	50	37-41	15 to 35	Iran, Iraq, Kuwait, Saudi Arabia, Bahrain, Qatar, UAE, Oman	Tigris-Euphrates (Shatt al-Arab)	Major oil reserves
-59	Arabian Sea	Marginal sea (Indian)	3862000	4652	2734	36-37	22 to 28	India, Pakistan, Iran, Oman, Yemen, Maldives, Somalia	Indus	Monsoon influence
-60	Bay of Bengal	Marginal sea (Indian)	2172000	4694	2600	30-34	25 to 30	India, Bangladesh, Myanmar, Thailand, Sri Lanka	Ganges-Brahmaputra, Godavari, Mahanadi, Irrawaddy	Cyclones, major deltas
-61	Andaman Sea	Marginal sea (Indian)	797700	4180	1096	30-33	26 to 30	Myanmar, Thailand, Malaysia, Indonesia, India	Irrawaddy, Salween	2004 tsunami
-62	Timor Sea	Marginal sea (Indian)	610000	3310	435	34-35	25 to 30	Indonesia, Timor-Leste, Australia	None major	Oil/gas
-63	Mozambique Channel	Marginal sea (Indian)	700000	3292	1600	35	24 to 28	Mozambique, Madagascar	Zambezi	Shipping route
-64	Caspian Sea	Saline lake (1.2%)	389000	1025	211	12	0 to 27	Iran, Kazakhstan, Turkmenistan, Azerbaijan, Russia	Volga, Ural, Kura	World's largest lake, includes Garabogazköl
-65	Lake Superior	Freshwater lake	82100	406	147	0	0 to 13	Canada, USA (Michigan, Wisconsin, Minnesota)	Nipigon, St. Louis, Pigeon	Largest freshwater lake by area
-66	Lake Victoria	Freshwater lake	59940	81	40	0	20 to 27	Tanzania, Uganda, Kenya	Kagera	Largest lake in Africa
-67	Lake Huron	Freshwater lake	59590	229	59	0	0 to 22	Canada, USA (Michigan)	None major	Contains Manitoulin Island
-68	Lake Michigan	Freshwater lake	57800	282	85	0	0 to 24	USA (Michigan, Wisconsin, Illinois, Indiana)	Fox-Wolf, Grand, Kalamazoo	Only Great Lake entirely in USA
-69	Lake Tanganyika	Freshwater lake	32900	1470	570	0	24 to 29	Tanzania, DRC, Burundi, Zambia	Ruzizi, Malagarasi	Longest freshwater lake, 2nd deepest
-70	Lake Baikal	Freshwater lake	31722	1642	744	0	3 to 10	Russia	Selenga, Barguzin, Upper Angara	Deepest and oldest lake
-71	Great Bear Lake	Freshwater lake	31153	446	72	0	0 to 18	Canada	Dease, Whitefish	Largest lake entirely in Canada
-72	Lake Malawi (Nyasa)	Freshwater lake	29600	706	292	0	22 to 28	Malawi, Mozambique, Tanzania	Ruhuhu	Most fish species of any lake
-73	Great Slave Lake	Freshwater lake	27200	614	41	0	0 to 18	Canada	Slave, Hay, Taltson	Deepest lake in North America
-74	Lake Erie	Freshwater lake	25667	64	19	0	0 to 24	Canada, USA (Michigan, Ohio, Pennsylvania, New York)	Detroit, Maumee, Grand	Smallest volume of Great Lakes
-75	Lake Winnipeg	Freshwater lake	24514	36	12	0	0 to 22	Canada	Red, Saskatchewan, Winnipeg	Very large catchment area ratio
-76	Lake Ontario	Freshwater lake	18970	244	86	0	0 to 20	Canada, USA (New York)	Niagara, Genesee	Lowest lying of Great Lakes
-77	Lake Ladoga	Freshwater lake	17700	260	51	0	0 to 20	Russia	Svir, Volkhov, Neva	Largest lake in Europe
-78	Lake Balkhash	Brackish lake (0.3%)	16400	26	5.8	3	0 to 28	Kazakhstan	Ili	Western half fresh, eastern saline
-79	Lake Vostok	Subglacial lake	12500	900	430	0	-3 to -2	Antarctica	None (isolated)	Buried under 4 km of ice
-80	Lake Onega	Freshwater lake	9700	127	30	0	0 to 20	Russia	Suna, Vodla	2nd largest lake in Europe
-81	Lake Titicaca	Freshwater lake	8372	281	107	0	10 to 16	Peru, Bolivia	Ramis, Ilave	Highest navigable lake (3,812 m)
-82	Lake Nicaragua	Freshwater lake	8264	26	13	0	25 to 29	Nicaragua	Tipitapa, San Juan	Largest lake in Central America
-83	Lake Athabasca	Freshwater lake	7850	124	20	0	0 to 20	Canada	Athabasca, Fond du Lac	Remnant of Glacial Lake McConnell
-84	Reindeer Lake	Freshwater lake	6650	219	53	0	0 to 18	Canada	Reindeer	Meteor impact site in deepest areas
-85	Lake Turkana	Saline lake (0.25%)	6405	109	30.2	2.5	28 to 31	Kenya, Ethiopia	Omo, Turkwel	Largest desert and alkaline lake
-86	Issyk-Kul	Saline lake (0.6%)	6236	668	278	6	4 to 18	Kyrgyzstan	Jyrgalang, Tyup	2nd largest mountain lake, never freezes
-87	Lake Vänern	Freshwater lake	5650	106	27	0	2 to 18	Sweden	Klarälven, Gullspång	Largest lake in European Union
+16	Fram Strait	Strait (Arctic)	202500	5550	1500	34-35	-2 to 5	Greenland (Denmark), Norway (Svalbard)	None	Only deep-water connection Arctic-Atlantic, 450 km wide
+17	Norwegian Sea	Marginal sea (North Atlantic)	1383000	3970	1742	35	2 to 13	Norway, Iceland, Faroe Islands (Denmark)	None major	Gulf Stream influence
+18	North Sea	Marginal sea (North Atlantic)	570000	700	95	32-35	4 to 18	UK, Norway, Denmark, Germany, Netherlands, Belgium, France	Rhine, Elbe, Thames	Major shipping, oil/gas industry
+19	Baltic Sea	Marginal sea (North Atlantic)	377000	459	55	6-20	0 to 20	Sweden, Finland, Russia, Estonia, Latvia, Lithuania, Poland, Germany, Denmark	Neva, Vistula, Oder	Brackish water, low salinity
+20	Mediterranean Sea	Marginal sea (North Atlantic)	2500000	5267	1500	37-39	10 to 30	Spain, France, Monaco, Italy, Slovenia, Croatia, Bosnia-Herzegovina, Montenegro, Albania, Greece, Turkey, Syria, Lebanon, Israel, Egypt, Libya, Tunisia, Algeria, Morocco	Nile, Po, Rhône, Ebro	High salinity, ancient civilizations
+21	Black Sea	Marginal sea (North Atlantic)	436000	2212	1253	17-18	6 to 25	Turkey, Bulgaria, Romania, Ukraine, Russia, Georgia	Danube, Dnieper, Don	Anoxic deep waters
+22	Sea of Marmara	Marginal sea (Mediterranean)	11350	1370	494	22-38	8 to 25	Turkey	None major	Connects Black Sea-Aegean
+23	Adriatic Sea	Marginal sea (Mediterranean)	138600	1233	252	38-39	10 to 28	Italy, Slovenia, Croatia, Bosnia-Herzegovina, Montenegro, Albania	Po	Tourism, fishing
+24	Aegean Sea	Marginal sea (Mediterranean)	214000	3543	510	38-39	14 to 26	Greece, Turkey	Maritsa	Greek islands, ancient history
+25	Caribbean Sea	Marginal sea (North Atlantic)	2754000	7686	2647	35-36	24 to 29	Mexico, Belize, Guatemala, Honduras, Nicaragua, Costa Rica, Panama, Colombia, Venezuela, and Caribbean island nations	Magdalena, Coco	Tropical, hurricanes, coral reefs
+26	Gulf of Mexico	Marginal sea (North Atlantic)	1550000	4384	1615	35-36	18 to 31	USA (Texas, Louisiana, Mississippi, Alabama, Florida), Mexico, Cuba	Mississippi, Rio Grande	Oil/gas, hurricanes
+27	Labrador Sea	Marginal sea (North Atlantic)	841000	4316	1898	31-35	-1 to 12	Canada, Greenland (Denmark)	Churchill	Icebergs, deep water formation
+28	Irminger Sea	Marginal sea (North Atlantic)	780000	3000	1600	34-35	3 to 10	Iceland, Greenland (Denmark)	None major	North Atlantic circulation
+29	Baffin Bay	Marginal sea (North Atlantic)	689000	2414	861	30-33	-1 to 8	Canada, Greenland (Denmark)	None major	Icebergs, polar bears
+30	Hudson Bay	Marginal sea (North Atlantic)	1230000	270	128	25-32	-2 to 12	Canada	Churchill, Nelson, Albany	Shallow, frozen in winter
+31	Gulf of St. Lawrence	Marginal sea (North Atlantic)	236000	572	152	28-32	0 to 20	Canada	St. Lawrence	Major estuary, fishing
+32	Irish Sea	Marginal sea (North Atlantic)	100000	175	60	32-35	6 to 16	Ireland, UK	None major	Shallow, ferry routes
+33	English Channel	Strait (North Atlantic)	75000	174	54	34-35	6 to 18	UK, France	Seine, Thames (estuaries)	Busy shipping lane, tunnel
+34	Bay of Biscay	Marginal sea (North Atlantic)	223000	4735	1744	35-36	11 to 20	France, Spain	Loire, Garonne	Deep, rough seas
+35	Skagerrak	Strait (North Atlantic)	32000	700	210	30-35	2 to 17	Norway, Denmark, Sweden	Göta	Connects North-Baltic
+36	Kattegat	Marginal sea (North Atlantic)	30000	109	23	15-30	0 to 20	Denmark, Sweden	None major	Transition zone
+37	Strait of Gibraltar	Strait (North Atlantic/Mediterranean)	1050	900	300	36	13 to 18	Spain, Morocco, UK (Gibraltar)	None	14.3 km at narrowest, critical chokepoint
+38	Bosporus	Strait (Black Sea/Mediterranean)	550	110	50	17-35	6 to 25	Turkey	None	1 km at narrowest, 30 km long, connects Black Sea-Mediterranean
+39	Dardanelles	Strait (Mediterranean)	1800	103	55	25-35	8 to 24	Turkey	None	1.2 km at narrowest, 61 km long, part of Turkish Straits
+40	Gulf of Guinea	Marginal sea (South Atlantic)	2350000	5469	2996	34-36	24 to 28	Ghana, Togo, Benin, Nigeria, Cameroon, Equatorial Guinea, Gabon, Congo, Angola	Niger, Congo	Oil/gas, equatorial location
+41	Weddell Sea	Marginal sea (Southern/South Atlantic)	2800000	6820	3000	34-35	-2 to 2	Antarctica	None (glacial)	Massive ice shelves
+42	Scotia Sea	Marginal sea (Southern/South Atlantic)	1300000	6022	3096	34	-1 to 6	Antarctica, South Georgia	None (glacial)	Drake Passage
+43	Bering Sea	Marginal sea (North Pacific)	2000000	4097	1640	32-33	-2 to 12	Russia, USA (Alaska)	Yukon, Anadyr	Productive fisheries
+44	Bering Strait	Strait (Arctic/North Pacific)	2300	50	45	32-33	-2 to 10	Russia, USA (Alaska)	None	85 km wide, connects Pacific-Arctic
+45	Sea of Okhotsk	Marginal sea (North Pacific)	1583000	3372	838	32-33	-2 to 18	Russia, Japan	Amur	Coldest East Asian sea
+46	Sea of Japan	Marginal sea (North Pacific)	978000	3742	1667	33-35	0 to 25	Japan, Russia, North Korea, South Korea	None major	Deep basin, rich fisheries
+47	Yellow Sea	Marginal sea (North Pacific)	380000	152	44	30-32	0 to 28	China, North Korea, South Korea	Yellow (Huang He)	Shallow, yellow sediment
+48	East China Sea	Marginal sea (North Pacific)	1249000	2719	349	31-34	10 to 28	China, Taiwan, Japan, South Korea	Yangtze	Continental shelf
+49	South China Sea	Marginal sea (North Pacific)	3500000	5559	1652	32-34	20 to 30	China, Taiwan, Philippines, Malaysia, Brunei, Indonesia, Singapore, Thailand, Cambodia, Vietnam	Pearl, Mekong, Red	Disputed territories, typhoons
+50	Philippine Sea	Marginal sea (North Pacific)	5177562	10540	4080	34-35	20 to 30	Philippines, Japan, Taiwan	Cagayan	Deepest trenches
+51	Gulf of Alaska	Marginal sea (North Pacific)	1533000	5659	2431	32-33	2 to 16	USA (Alaska), Canada	Copper, Alsek	Stormy, rich fisheries
+52	Gulf of California	Marginal sea (North Pacific)	177000	3292	818	35	16 to 30	Mexico	Colorado	Long narrow gulf
+53	Celebes Sea	Marginal sea (South Pacific)	280000	6200	4700	34	27 to 30	Philippines, Indonesia, Malaysia	None major	Deep, warm
+54	Java Sea	Marginal sea (South Pacific)	320000	46	46	32-34	27 to 30	Indonesia	Solo	Very shallow
+55	Banda Sea	Marginal sea (South Pacific)	470000	7440	3060	34	27 to 30	Indonesia	None major	Deep basins, volcanic
+56	Arafura Sea	Marginal sea (South Pacific)	700000	3680	80	34-35	25 to 29	Indonesia, Papua New Guinea, Australia	Fly, Digul	Shallow, tropical
+57	Coral Sea	Marginal sea (South Pacific)	4791000	9140	2394	35-36	23 to 28	Australia, Papua New Guinea, Solomon Islands, Vanuatu, New Caledonia (France)	None major	Great Barrier Reef
+58	Tasman Sea	Marginal sea (South Pacific)	2300000	5943	3000	35-35.5	8 to 23	Australia, New Zealand	None major	Rough seas
+59	Solomon Sea	Marginal sea (South Pacific)	720000	9140	2500	34-35	26 to 30	Papua New Guinea, Solomon Islands	None major	Deep, volcanic
+60	Bismarck Sea	Marginal sea (South Pacific)	40000	2665	1200	34-35	27 to 30	Papua New Guinea	Sepik, Ramu	Volcanic
+61	Sulu Sea	Marginal sea (South Pacific)	348000	5576	1450	34	27 to 30	Philippines, Malaysia	None major	Deep basins
+62	Red Sea	Marginal sea (Indian)	438000	3040	490	40-41	20 to 30	Egypt, Sudan, Eritrea, Djibouti, Yemen, Saudi Arabia	None major	Highest salinity, coral reefs
+63	Bab-el-Mandeb	Strait (Red Sea/Indian)	5000	310	150	36	22 to 28	Yemen, Djibouti, Eritrea	None	26 km at narrowest, critical oil chokepoint
+64	Persian Gulf	Marginal sea (Indian)	251000	90	50	37-41	15 to 35	Iran, Iraq, Kuwait, Saudi Arabia, Bahrain, Qatar, UAE, Oman	Tigris-Euphrates (Shatt al-Arab)	Major oil reserves
+65	Strait of Hormuz	Strait (Persian Gulf/Indian)	3900	100	75	37-40	18 to 33	Iran, Oman, UAE	None	35-60 km wide, critical oil chokepoint
+66	Arabian Sea	Marginal sea (Indian)	3862000	4652	2734	36-37	22 to 28	India, Pakistan, Iran, Oman, Yemen, Maldives, Somalia	Indus	Monsoon influence
+67	Bay of Bengal	Marginal sea (Indian)	2172000	4694	2600	30-34	25 to 30	India, Bangladesh, Myanmar, Thailand, Sri Lanka	Ganges-Brahmaputra, Godavari, Mahanadi, Irrawaddy	Cyclones, major deltas
+68	Andaman Sea	Marginal sea (Indian)	797700	4180	1096	30-33	26 to 30	Myanmar, Thailand, Malaysia, Indonesia, India	Irrawaddy, Salween	2004 tsunami
+69	Strait of Malacca	Strait (Andaman Sea/South China Sea)	80000	25	15	30-34	26 to 30	Malaysia, Indonesia, Singapore	None	2.8 km at narrowest point, busiest shipping route
+70	Timor Sea	Marginal sea (Indian)	610000	3310	435	34-35	25 to 30	Indonesia, Timor-Leste, Australia	None major	Oil/gas
+71	Mozambique Channel	Marginal sea (Indian)	700000	3292	1600	35	24 to 28	Mozambique, Madagascar	Zambezi	Shipping route
+72	Suez Canal	Canal	195	24	13	40-42	18 to 30	Egypt	None (canal)	193 km long, connects Mediterranean-Red Sea
+73	Panama Canal	Canal	425	25.9	13	0-35	24 to 32	Panama	Chagres (for locks)	82 km long, connects Atlantic-Pacific
+74	Caspian Sea	Saline Lake	389000	1025	211	12	0 to 27	Iran, Kazakhstan, Turkmenistan, Azerbaijan, Russia	Volga, Ural, Kura	World's largest lake, includes Garabogazköl
+75	Lake Superior	Freshwater Lake	82100	406	147	0	0 to 13	Canada, USA (Michigan, Wisconsin, Minnesota)	Nipigon, St. Louis, Pigeon	Largest freshwater lake by area
+76	Lake Victoria	Freshwater Lake	59940	81	40	0	20 to 27	Tanzania, Uganda, Kenya	Kagera	Largest lake in Africa
+77	Lake Huron	Freshwater Lake	59590	229	59	0	0 to 22	Canada, USA (Michigan)	None major	Contains Manitoulin Island
+78	Lake Michigan	Freshwater Lake	57800	282	85	0	0 to 24	USA (Michigan, Wisconsin, Illinois, Indiana)	Fox-Wolf, Grand, Kalamazoo	Only Great Lake entirely in USA
+79	Lake Tanganyika	Freshwater Lake	32900	1470	570	0	24 to 29	Tanzania, DRC, Burundi, Zambia	Ruzizi, Malagarasi	Longest freshwater lake, 2nd deepest
+80	Lake Baikal	Freshwater Lake	31722	1642	744	0	3 to 10	Russia	Selenga, Barguzin, Upper Angara	Deepest and oldest lake
+81	Great Bear Lake	Freshwater Lake	31153	446	72	0	0 to 18	Canada	Dease, Whitefish	Largest lake entirely in Canada
+82	Lake Malawi (Nyasa)	Freshwater Lake	29600	706	292	0	22 to 28	Malawi, Mozambique, Tanzania	Ruhuhu	Most fish species of any lake
+83	Great Slave Lake	Freshwater Lake	27200	614	41	0	0 to 18	Canada	Slave, Hay, Taltson	Deepest lake in North America
+84	Lake Erie	Freshwater Lake	25667	64	19	0	0 to 24	Canada, USA (Michigan, Ohio, Pennsylvania, New York)	Detroit, Maumee, Grand	Smallest volume of Great Lakes
+85	Lake Winnipeg	Freshwater Lake	24514	36	12	0	0 to 22	Canada	Red, Saskatchewan, Winnipeg	Very large catchment area ratio
+86	Lake Ontario	Freshwater Lake	18970	244	86	0	0 to 20	Canada, USA (New York)	Niagara, Genesee	Lowest lying of Great Lakes
+87	Lake Ladoga	Freshwater Lake	17700	260	51	0	0 to 20	Russia	Svir, Volkhov, Neva	Largest lake in Europe
+88	Lake Balkhash	Brackish Lake	16400	26	5.8	3	0 to 28	Kazakhstan	Ili	Western half fresh, eastern saline
+89	Lake Vostok	Subglacial Lake	12500	900	430	0	-3 to -2	Antarctica	None (isolated)	Buried under 4 km of ice
+90	Lake Onega	Freshwater Lake	9700	127	30	0	0 to 20	Russia	Suna, Vodla	2nd largest lake in Europe
+91	Lake Titicaca	Freshwater Lake	8372	281	107	0	10 to 16	Peru, Bolivia	Ramis, Ilave	Highest navigable lake (3,812 m)
+92	Lake Nicaragua	Freshwater Lake	8264	26	13	0	25 to 29	Nicaragua	Tipitapa, San Juan	Largest lake in Central America
+93	Lake Athabasca	Freshwater Lake	7850	124	20	0	0 to 20	Canada	Athabasca, Fond du Lac	Remnant of Glacial Lake McConnell
+94	Reindeer Lake	Freshwater Lake	6650	219	53	0	0 to 18	Canada	Reindeer	Meteor impact site in deepest areas
+95	Lake Turkana	Saline Lake	6405	109	30.2	2.5	28 to 31	Kenya, Ethiopia	Omo, Turkwel	Largest desert and alkaline lake
+96	Issyk-Kul	Saline Lake	6236	668	278	6	4 to 18	Kyrgyzstan	Jyrgalang, Tyup	2nd largest mountain lake, never freezes
+97	Lake Vänern	Freshwater Lake	5650	106	27	0	2 to 18	Sweden	Klarälven, Gullspång	Largest lake in European Union
+98	Dead Sea	Saline Lake	605	304	120	342	20 to 32	Israel, Jordan, Palestine (West Bank)	Jordan River	Lowest point on Earth (-430m), 9.6x saltier than ocean
+99	Lake Rukwa	Saline Lake	5615	22.5	11	Variable	20 to 28	Tanzania	Songwe	Tanzania's 3rd largest lake, seasonal variations
+100	Lake Albert	Freshwater Lake	5590	51	25	0	26 to 30	Uganda, DRC	Victoria Nile, Semliki	Part of African Great Lakes system
+101	Nettilling Lake	Freshwater Lake	5542	132	53	0	0 to 10	Canada	None major	Largest lake on an island (Baffin Island)
+102	Lake Winnipegosis	Freshwater Lake	5370	12	5	0	0 to 22	Canada	Mossy, Red Deer	Second largest lake in Manitoba
+103	Lake Mweru	Freshwater Lake	5120	27	7.5	0	24 to 28	Zambia, DRC	Luapula	Second largest lake in Congo's drainage basin
+104	Lake Nipigon	Freshwater Lake	4848	165	52	0	0 to 20	Canada	Ombabika, Gull	Largest lake entirely in Ontario, part of Great Lakes basin
+105	Lake Manitoba	Brackish Lake	4706	7	3	3.5	0 to 22	Canada	Whitemud, Waterhen	Remnant of Glacial Lake Agassiz, very shallow
+106	Lake Taymyr	Freshwater Lake	4560	26	2.8	0	-20 to 15	Russia	Upper Taymyr	Largest lake entirely within Arctic Circle
+107	Qinghai Lake	Saline Lake	4489	32.8	21	14	-5 to 20	China	Buha, Shaliu	Largest lake in China, endorheic basin
+108	Lake Saimaa	Freshwater Lake	4380	82	17	0	0 to 20	Finland	Vuoksi	Largest lake in Finland, largest in Nordic countries
+109	Lake of the Woods	Freshwater Lake	4350	64	9	0	0 to 22	Canada, USA (Minnesota)	Rainy River	Over 14,500 islands, 105,000 km shoreline
+110	Lake Khanka	Freshwater Lake	4190	10.6	4.5	0	0 to 25	Russia, China	Songacha, Melgunovka	Drains through Amur River to Sea of Japan
