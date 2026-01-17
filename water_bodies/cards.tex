@@ -13,16 +13,18 @@
 \setlength{\cardW}{59mm}
 \setlength{\cardH}{91mm}
 
-% Command to produce a card frame with 10 parameters
-\newcommand{\SeaCard}[{10}]{%
+% Command to produce a card frame with 9 parameters
+\newcommand{\SeaCard}[9]{%
 \fbox{\begin{minipage}[t][\dimexpr\cardH-2\fboxsep-2\fboxrule\relax][t]{\dimexpr\cardW-2\fboxsep-2\fboxrule\relax}
 \raggedright
 \setlength{\baselineskip}{8pt}
 % Header with decorative lines
 \noindent\hfill{\tiny\rule{8mm}{0.4pt} \textbf{MEERESGEBIETE} \rule{8mm}{0.4pt}}\hfill\mbox{}\\[0.5ex]
 \noindent\rule{\linewidth}{1pt}\\[0.5ex]
-% Title
-{\Large\textbf{#1}}\\[0.3ex]
+% Title (German name)
+{\Large\textbf{#1}}\\[0.2ex]
+% English subtitle
+{\scriptsize\textit{#2}}\\[0.3ex]
 \noindent\rule{30mm}{0.4pt}\\[1ex]
 % Illustration placeholder
 \noindent\fbox{\begin{minipage}[c][18mm]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
@@ -32,32 +34,29 @@
 \vfill
 \end{minipage}}\\[1ex]
 % Intro text
-{\scriptsize #2}\\[1ex]
+{\scriptsize #3}\\[1ex]
 \noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
-% Statistics table
+% Statistics table - removed Volume column
 {\scriptsize
 \begin{tabular}{@{}l@{\hspace{1mm}}|@{\hspace{1mm}}l@{}}
-\textbf{Fläche:} #3 & \textbf{Volumen:} #4 \\
+\textbf{Fläche:} #4 & \textbf{Mitt.\ Tiefe:} #5 \\
 \end{tabular}
 }\\[-0.5ex]
 \noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
 {\scriptsize
 \begin{tabular}{@{}l@{\hspace{1mm}}|@{\hspace{1mm}}l@{}}
-\textbf{Mittlere Tiefe:} #5 & \textbf{Max. Tiefe:} #6 \\
+\textbf{Max. Tiefe:} #6 & \textbf{Temp.:} #7 \\
 \end{tabular}
 }\\[-0.5ex]
 \noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
 {\scriptsize
-\begin{tabular}{@{}l@{\hspace{1mm}}|@{\hspace{1mm}}l@{}}
-\textbf{Temp.:} #7 & \textbf{Salzgehalt:} #8 \\
+\begin{tabular}{@{}l@{}}
+\textbf{Salzgehalt:} #8 \\
 \end{tabular}
 }\\[-0.5ex]
 \noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
-% Anrainer
-{\scriptsize\textbf{Anrainer:} #9}\\[0.3ex]
-\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
-% Zuflüsse
-{\scriptsize\textbf{Zuflüsse:} #{10}}\\[0.3ex]
+% Anrainer and Zuflüsse (combined in parameter #9)
+{\scriptsize #9}
 \end{minipage}}%
 }
 
@@ -65,1980 +64,2090 @@
 \pagestyle{empty}
 
 %----------------------------------
-% CARD 1: 1
+% CARD 1: North Pacific Ocean
 %----------------------------------
 \SeaCard
-{1} % 1: Title
-{Der 1 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Yukon, Columbia, Sacramento, Amur.} % 2: Intro
-{Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen
-{10\,911\,m} % 5: Mittlere Tiefe
-{82\,500\,000\,m} % 6: Max Tiefe
-{32-35\,°C} % 7: Temperatur
-{4280\,‰} % 8: Salzgehalt
-{0 to 30} % 9: Anrainer
-{USA, Canada, Russia, Japan, China, Philippines, Indonesia, Australia, Chile, Peru, Mexico, and many island nations} % 10: Zuflüsse
+{Nordpazifik} % 1: German Title
+{North Pacific Ocean} % 2: English subtitle
+{Der North Pacific Ocean ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Tiefster Punkt (Mariana Trench), Pazifischer Feuerring.} % 3: Intro
+{82\,500\,000\,km²} % 4: Fläche
+{4\,280\,m} % 5: Mitt. Tiefe
+{10\,911\,m} % 6: Max Tiefe
+{0--30\,°C} % 7: Temperatur
+{32--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} USA,  Canada,  Russia,  Japan,  China, u.a.\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Yukon, Columbia, Sacramento, Amur} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 2: 2
+% CARD 2: South Pacific Ocean
 %----------------------------------
 \SeaCard
-{2} % 1: Title
-{Der 2 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Fly, Sepik, Waiapu.} % 2: Intro
-{Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen
-{7\,434\,m} % 5: Mittlere Tiefe
-{82\,500\,000\,m} % 6: Max Tiefe
-{34-36\,°C} % 7: Temperatur
-{4000\,‰} % 8: Salzgehalt
-{10 to 30} % 9: Anrainer
-{Indonesia, Australia, New Zealand, Chile, Peru, Ecuador, and island nations} % 10: Zuflüsse
+{Südpazifik} % 1: German Title
+{South Pacific Ocean} % 2: English subtitle
+{Der South Pacific Ocean ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Inselstaaten, Korallenriffe.} % 3: Intro
+{82\,500\,000\,km²} % 4: Fläche
+{4\,000\,m} % 5: Mitt. Tiefe
+{7\,434\,m} % 6: Max Tiefe
+{10--30\,°C} % 7: Temperatur
+{34--36\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Indonesia, Australia, New Zealand, Chile, Peru, Ecuador, and island nations\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Fly, Sepik, Waiapu} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 3: 3
+% CARD 3: North Atlantic Ocean
 %----------------------------------
 \SeaCard
-{3} % 1: Title
-{Der 3 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: St. Lawrence, Mississippi.} % 2: Intro
-{Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen
-{8\,486\,m} % 5: Mittlere Tiefe
-{41\,490\,000\,m} % 6: Max Tiefe
-{34-37\,°C} % 7: Temperatur
-{3300\,‰} % 8: Salzgehalt
-{-2 to 28} % 9: Anrainer
-{USA, Canada, Mexico, Europe, North Africa, Caribbean nations} % 10: Zuflüsse
+{Nordatlantik} % 1: German Title
+{North Atlantic Ocean} % 2: English subtitle
+{Der North Atlantic Ocean ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Golfstrom, wichtige Schifffahrtsrouten.} % 3: Intro
+{41\,490\,000\,km²} % 4: Fläche
+{3\,300\,m} % 5: Mitt. Tiefe
+{8\,486\,m} % 6: Max Tiefe
+{-2--28\,°C} % 7: Temperatur
+{34--37\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} USA, Canada, Mexico, Europe, North Africa, Caribbean nations\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} St. Lawrence, Mississippi} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 4: 4
+% CARD 4: South Atlantic Ocean
 %----------------------------------
 \SeaCard
-{4} % 1: Title
-{Der 4 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Paraná, Orange, Congo.} % 2: Intro
-{Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen
-{8\,264\,m} % 5: Mittlere Tiefe
-{43\,510\,000\,m} % 6: Max Tiefe
-{34-37\,°C} % 7: Temperatur
-{3900\,‰} % 8: Salzgehalt
-{0 to 28} % 9: Anrainer
-{Brazil, Argentina, Uruguay, South Africa, Namibia, Angola} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 5: 5
-%----------------------------------
-\SeaCard
-{5} % 1: Title
-{Der 5 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Ganges-Brahmaputra, Indus, Zambezi.} % 2: Intro
-{Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen
-{7\,258\,m} % 5: Mittlere Tiefe
-{70\,560\,000\,m} % 6: Max Tiefe
-{34-36\,°C} % 7: Temperatur
-{3741\,‰} % 8: Salzgehalt
-{20 to 30} % 9: Anrainer
-{India, Pakistan, Bangladesh, Myanmar, Thailand, Indonesia, Australia, South Africa, Mozambique, Tanzania, Kenya, Somalia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 6: 6
-%----------------------------------
-\SeaCard
-{6} % 1: Title
-{Der 6 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: None (glacial meltwater).} % 2: Intro
-{Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen
-{7\,235\,m} % 5: Mittlere Tiefe
-{21\,960\,000\,m} % 6: Max Tiefe
-{33.5-34\,°C} % 7: Temperatur
-{3270\,‰} % 8: Salzgehalt
-{-2 to 10} % 9: Anrainer
-{Antarctica} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 7: 7
-%----------------------------------
-\SeaCard
-{7} % 1: Title
-{Der 7 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Ob, Yenisei, Lena, Mackenzie.} % 2: Intro
-{Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen
-{5\,450\,m} % 5: Mittlere Tiefe
-{14\,060\,000\,m} % 6: Max Tiefe
-{30-34\,°C} % 7: Temperatur
-{1205\,‰} % 8: Salzgehalt
-{-2 to 5} % 9: Anrainer
-{Russia, Norway, Iceland, Greenland (Denmark), Canada, USA (Alaska)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 8: 8
-%----------------------------------
-\SeaCard
-{8} % 1: Title
-{Das 8 ist ein bedeutendes Gewässer. Besondere Merkmale: Pechora.} % 2: Intro
-{Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{600\,m} % 5: Mittlere Tiefe
-{1\,400\,000\,m} % 6: Max Tiefe
-{34-35\,°C} % 7: Temperatur
-{230\,‰} % 8: Salzgehalt
-{-1 to 12} % 9: Anrainer
-{Russia, Norway} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 9: 9
-%----------------------------------
-\SeaCard
-{9} % 1: Title
-{Das 9 ist ein bedeutendes Gewässer. Besondere Merkmale: Ob, Yenisei.} % 2: Intro
-{Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{620\,m} % 5: Mittlere Tiefe
-{880\,000\,m} % 6: Max Tiefe
-{10-34\,°C} % 7: Temperatur
-{110\,‰} % 8: Salzgehalt
-{-2 to 6} % 9: Anrainer
-{Russia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 10: 10
-%----------------------------------
-\SeaCard
-{10} % 1: Title
-{Das 10 ist ein bedeutendes Gewässer. Besondere Merkmale: Lena, Yana.} % 2: Intro
-{Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{3\,385\,m} % 5: Mittlere Tiefe
-{662\,000\,m} % 6: Max Tiefe
-{20-34\,°C} % 7: Temperatur
-{578\,‰} % 8: Salzgehalt
-{-1.8 to 8} % 9: Anrainer
-{Russia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 11: 11
-%----------------------------------
-\SeaCard
-{11} % 1: Title
-{Das 11 ist ein bedeutendes Gewässer. Besondere Merkmale: Kolyma, Indigirka.} % 2: Intro
-{Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{155\,m} % 5: Mittlere Tiefe
-{987\,000\,m} % 6: Max Tiefe
-{28-32\,°C} % 7: Temperatur
-{58\,‰} % 8: Salzgehalt
-{-2 to 5} % 9: Anrainer
-{Russia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 12: 12
-%----------------------------------
-\SeaCard
-{12} % 1: Title
-{Das 12 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{160\,m} % 5: Mittlere Tiefe
-{595\,000\,m} % 6: Max Tiefe
-{28-33\,°C} % 7: Temperatur
-{77\,‰} % 8: Salzgehalt
-{-2 to 12} % 9: Anrainer
-{Russia, USA (Alaska)} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 13: 13
-%----------------------------------
-\SeaCard
-{13} % 1: Title
-{Das 13 ist ein bedeutendes Gewässer. Besondere Merkmale: Mackenzie.} % 2: Intro
-{Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{4\,683\,m} % 5: Mittlere Tiefe
-{476\,000\,m} % 6: Max Tiefe
-{28-32\,°C} % 7: Temperatur
-{1004\,‰} % 8: Salzgehalt
-{-2 to 8} % 9: Anrainer
-{Canada, USA (Alaska)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 14: 14
-%----------------------------------
-\SeaCard
-{14} % 1: Title
-{Das 14 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{4\,846\,m} % 5: Mittlere Tiefe
-{1\,205\,000\,m} % 6: Max Tiefe
-{30-35\,°C} % 7: Temperatur
-{1444\,‰} % 8: Salzgehalt
-{-2 to 6} % 9: Anrainer
-{Greenland (Denmark), Iceland, Norway} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 15: 15
-%----------------------------------
-\SeaCard
-{15} % 1: Title
-{Das 15 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
-{Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{300\,m} % 5: Mittlere Tiefe
-{16\,000\,m} % 6: Max Tiefe
-{30-32\,°C} % 7: Temperatur
-{150\,‰} % 8: Salzgehalt
-{-2 to 2} % 9: Anrainer
-{Greenland (Denmark)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 16: 16
-%----------------------------------
-\SeaCard
-{16} % 1: Title
-{Die 16 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
-{Strait (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{5\,550\,m} % 5: Mittlere Tiefe
-{202\,500\,m} % 6: Max Tiefe
-{34-35\,°C} % 7: Temperatur
-{1500\,‰} % 8: Salzgehalt
-{-2 to 5} % 9: Anrainer
-{Greenland (Denmark), Norway (Svalbard)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 17: 17
-%----------------------------------
-\SeaCard
-{17} % 1: Title
-{Das 17 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{3\,970\,m} % 5: Mittlere Tiefe
-{1\,383\,000\,m} % 6: Max Tiefe
-{35\,°C} % 7: Temperatur
-{1742\,‰} % 8: Salzgehalt
-{2 to 13} % 9: Anrainer
-{Norway, Iceland, Faroe Islands (Denmark)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 18: 18
-%----------------------------------
-\SeaCard
-{18} % 1: Title
-{Das 18 ist ein bedeutendes Gewässer. Besondere Merkmale: Rhine, Elbe, Thames.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{700\,m} % 5: Mittlere Tiefe
-{570\,000\,m} % 6: Max Tiefe
-{32-35\,°C} % 7: Temperatur
-{95\,‰} % 8: Salzgehalt
-{4 to 18} % 9: Anrainer
-{UK, Norway, Denmark, Germany, Netherlands, Belgium, France} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 19: 19
-%----------------------------------
-\SeaCard
-{19} % 1: Title
-{Das 19 ist ein bedeutendes Gewässer. Besondere Merkmale: Neva, Vistula, Oder.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{459\,m} % 5: Mittlere Tiefe
-{377\,000\,m} % 6: Max Tiefe
-{6-20\,°C} % 7: Temperatur
-{55\,‰} % 8: Salzgehalt
-{0 to 20} % 9: Anrainer
-{Sweden, Finland, Russia, Estonia, Latvia, Lithuania, Poland, Germany, Denmark} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 20: 20
-%----------------------------------
-\SeaCard
-{20} % 1: Title
-{Das 20 ist ein bedeutendes Gewässer. Besondere Merkmale: Nile, Po, Rhône, Ebro.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{5\,267\,m} % 5: Mittlere Tiefe
-{2\,500\,000\,m} % 6: Max Tiefe
-{37-39\,°C} % 7: Temperatur
-{1500\,‰} % 8: Salzgehalt
-{10 to 30} % 9: Anrainer
-{Spain, France, Monaco, Italy, Slovenia, Croatia, Bosnia-Herzegovina, Montenegro, Albania, Greece, Turkey, Syria, Lebanon, Israel, Egypt, Libya, Tunisia, Algeria, Morocco} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 21: 21
-%----------------------------------
-\SeaCard
-{21} % 1: Title
-{Das 21 ist ein bedeutendes Gewässer. Besondere Merkmale: Danube, Dnieper, Don.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{2\,212\,m} % 5: Mittlere Tiefe
-{436\,000\,m} % 6: Max Tiefe
-{17-18\,°C} % 7: Temperatur
-{1253\,‰} % 8: Salzgehalt
-{6 to 25} % 9: Anrainer
-{Turkey, Bulgaria, Romania, Ukraine, Russia, Georgia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 22: 22
-%----------------------------------
-\SeaCard
-{22} % 1: Title
-{Das 22 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{1\,370\,m} % 5: Mittlere Tiefe
-{11\,350\,m} % 6: Max Tiefe
-{22-38\,°C} % 7: Temperatur
-{494\,‰} % 8: Salzgehalt
-{8 to 25} % 9: Anrainer
-{Turkey} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 23: 23
-%----------------------------------
-\SeaCard
-{23} % 1: Title
-{Das 23 ist ein bedeutendes Gewässer. Besondere Merkmale: Po.} % 2: Intro
-{Marginal sea (Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{1\,233\,m} % 5: Mittlere Tiefe
-{138\,600\,m} % 6: Max Tiefe
-{38-39\,°C} % 7: Temperatur
-{252\,‰} % 8: Salzgehalt
-{10 to 28} % 9: Anrainer
-{Italy, Slovenia, Croatia, Bosnia-Herzegovina, Montenegro, Albania} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 24: 24
-%----------------------------------
-\SeaCard
-{24} % 1: Title
-{Das 24 ist ein bedeutendes Gewässer. Besondere Merkmale: Maritsa.} % 2: Intro
-{Marginal sea (Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{3\,543\,m} % 5: Mittlere Tiefe
-{214\,000\,m} % 6: Max Tiefe
-{38-39\,°C} % 7: Temperatur
-{510\,‰} % 8: Salzgehalt
-{14 to 26} % 9: Anrainer
-{Greece, Turkey} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 25: 25
-%----------------------------------
-\SeaCard
-{25} % 1: Title
-{Das 25 ist ein bedeutendes Gewässer. Besondere Merkmale: Magdalena, Coco.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{7\,686\,m} % 5: Mittlere Tiefe
-{2\,754\,000\,m} % 6: Max Tiefe
-{35-36\,°C} % 7: Temperatur
-{2647\,‰} % 8: Salzgehalt
-{24 to 29} % 9: Anrainer
-{Mexico, Belize, Guatemala, Honduras, Nicaragua, Costa Rica, Panama, Colombia, Venezuela, and Caribbean island nations} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 26: 26
-%----------------------------------
-\SeaCard
-{26} % 1: Title
-{Das 26 ist ein bedeutendes Gewässer. Besondere Merkmale: Mississippi, Rio Grande.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{4\,384\,m} % 5: Mittlere Tiefe
-{1\,550\,000\,m} % 6: Max Tiefe
-{35-36\,°C} % 7: Temperatur
-{1615\,‰} % 8: Salzgehalt
-{18 to 31} % 9: Anrainer
-{USA (Texas, Louisiana, Mississippi, Alabama, Florida), Mexico, Cuba} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 27: 27
-%----------------------------------
-\SeaCard
-{27} % 1: Title
-{Das 27 ist ein bedeutendes Gewässer. Besondere Merkmale: Churchill.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{4\,316\,m} % 5: Mittlere Tiefe
-{841\,000\,m} % 6: Max Tiefe
-{31-35\,°C} % 7: Temperatur
-{1898\,‰} % 8: Salzgehalt
-{-1 to 12} % 9: Anrainer
-{Canada, Greenland (Denmark)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 28: 28
-%----------------------------------
-\SeaCard
-{28} % 1: Title
-{Das 28 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{3\,000\,m} % 5: Mittlere Tiefe
-{780\,000\,m} % 6: Max Tiefe
-{34-35\,°C} % 7: Temperatur
-{1600\,‰} % 8: Salzgehalt
-{3 to 10} % 9: Anrainer
-{Iceland, Greenland (Denmark)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 29: 29
-%----------------------------------
-\SeaCard
-{29} % 1: Title
-{Das 29 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{2\,414\,m} % 5: Mittlere Tiefe
-{689\,000\,m} % 6: Max Tiefe
-{30-33\,°C} % 7: Temperatur
-{861\,‰} % 8: Salzgehalt
-{-1 to 8} % 9: Anrainer
-{Canada, Greenland (Denmark)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 30: 30
-%----------------------------------
-\SeaCard
-{30} % 1: Title
-{Das 30 ist ein bedeutendes Gewässer. Besondere Merkmale: Churchill, Nelson, Albany.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{270\,m} % 5: Mittlere Tiefe
-{1\,230\,000\,m} % 6: Max Tiefe
-{25-32\,°C} % 7: Temperatur
-{128\,‰} % 8: Salzgehalt
-{-2 to 12} % 9: Anrainer
-{Canada} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 31: 31
-%----------------------------------
-\SeaCard
-{31} % 1: Title
-{Das 31 ist ein bedeutendes Gewässer. Besondere Merkmale: St. Lawrence.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{572\,m} % 5: Mittlere Tiefe
-{236\,000\,m} % 6: Max Tiefe
-{28-32\,°C} % 7: Temperatur
-{152\,‰} % 8: Salzgehalt
-{0 to 20} % 9: Anrainer
-{Canada} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 32: 32
-%----------------------------------
-\SeaCard
-{32} % 1: Title
-{Das 32 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{175\,m} % 5: Mittlere Tiefe
-{100\,000\,m} % 6: Max Tiefe
-{32-35\,°C} % 7: Temperatur
-{60\,‰} % 8: Salzgehalt
-{6 to 16} % 9: Anrainer
-{Ireland, UK} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 33: 33
-%----------------------------------
-\SeaCard
-{33} % 1: Title
-{Das 33 ist ein bedeutendes Gewässer. Besondere Merkmale: Seine, Thames (estuaries).} % 2: Intro
-{Strait (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{174\,m} % 5: Mittlere Tiefe
-{75\,000\,m} % 6: Max Tiefe
-{34-35\,°C} % 7: Temperatur
-{54\,‰} % 8: Salzgehalt
-{6 to 18} % 9: Anrainer
-{UK, France} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 34: 34
-%----------------------------------
-\SeaCard
-{34} % 1: Title
-{Das 34 ist ein bedeutendes Gewässer. Besondere Merkmale: Loire, Garonne.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{4\,735\,m} % 5: Mittlere Tiefe
-{223\,000\,m} % 6: Max Tiefe
-{35-36\,°C} % 7: Temperatur
-{1744\,‰} % 8: Salzgehalt
-{11 to 20} % 9: Anrainer
-{France, Spain} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 35: 35
-%----------------------------------
-\SeaCard
-{35} % 1: Title
-{Das 35 ist ein bedeutendes Gewässer. Besondere Merkmale: Göta.} % 2: Intro
-{Strait (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{700\,m} % 5: Mittlere Tiefe
-{32\,000\,m} % 6: Max Tiefe
-{30-35\,°C} % 7: Temperatur
-{210\,‰} % 8: Salzgehalt
-{2 to 17} % 9: Anrainer
-{Norway, Denmark, Sweden} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 36: 36
-%----------------------------------
-\SeaCard
-{36} % 1: Title
-{Das 36 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{109\,m} % 5: Mittlere Tiefe
-{30\,000\,m} % 6: Max Tiefe
-{15-30\,°C} % 7: Temperatur
-{23\,‰} % 8: Salzgehalt
-{0 to 20} % 9: Anrainer
-{Denmark, Sweden} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 37: 37
-%----------------------------------
-\SeaCard
-{37} % 1: Title
-{Die 37 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
-{Strait (North Atlantic/Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{900\,m} % 5: Mittlere Tiefe
-{1\,050\,m} % 6: Max Tiefe
-{36\,°C} % 7: Temperatur
-{300\,‰} % 8: Salzgehalt
-{13 to 18} % 9: Anrainer
-{Spain, Morocco, UK (Gibraltar)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 38: 38
-%----------------------------------
-\SeaCard
-{38} % 1: Title
-{Das 38 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
-{Strait (Black Sea/Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{110\,m} % 5: Mittlere Tiefe
-{550\,m} % 6: Max Tiefe
-{17-35\,°C} % 7: Temperatur
-{50\,‰} % 8: Salzgehalt
-{6 to 25} % 9: Anrainer
-{Turkey} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 39: 39
-%----------------------------------
-\SeaCard
-{39} % 1: Title
-{Das 39 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
-{Strait (Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{103\,m} % 5: Mittlere Tiefe
-{1\,800\,m} % 6: Max Tiefe
-{25-35\,°C} % 7: Temperatur
-{55\,‰} % 8: Salzgehalt
-{8 to 24} % 9: Anrainer
-{Turkey} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 40: 40
-%----------------------------------
-\SeaCard
-{40} % 1: Title
-{Das 40 ist ein bedeutendes Gewässer. Besondere Merkmale: Niger, Congo.} % 2: Intro
-{Marginal sea (South Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{5\,469\,m} % 5: Mittlere Tiefe
-{2\,350\,000\,m} % 6: Max Tiefe
-{34-36\,°C} % 7: Temperatur
-{2996\,‰} % 8: Salzgehalt
-{24 to 28} % 9: Anrainer
-{Ghana, Togo, Benin, Nigeria, Cameroon, Equatorial Guinea, Gabon, Congo, Angola} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 41: 41
-%----------------------------------
-\SeaCard
-{41} % 1: Title
-{Das 41 ist ein bedeutendes Gewässer. Besondere Merkmale: None (glacial).} % 2: Intro
-{Marginal sea (Southern/South Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{6\,820\,m} % 5: Mittlere Tiefe
-{2\,800\,000\,m} % 6: Max Tiefe
-{34-35\,°C} % 7: Temperatur
-{3000\,‰} % 8: Salzgehalt
-{-2 to 2} % 9: Anrainer
-{Antarctica} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 42: 42
-%----------------------------------
-\SeaCard
-{42} % 1: Title
-{Das 42 ist ein bedeutendes Gewässer. Besondere Merkmale: None (glacial).} % 2: Intro
-{Marginal sea (Southern/South Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{6\,022\,m} % 5: Mittlere Tiefe
-{1\,300\,000\,m} % 6: Max Tiefe
-{34\,°C} % 7: Temperatur
-{3096\,‰} % 8: Salzgehalt
-{-1 to 6} % 9: Anrainer
-{Antarctica, South Georgia} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 43: 43
-%----------------------------------
-\SeaCard
-{43} % 1: Title
-{Das 43 ist ein bedeutendes Gewässer. Besondere Merkmale: Yukon, Anadyr.} % 2: Intro
-{Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{4\,097\,m} % 5: Mittlere Tiefe
-{2\,000\,000\,m} % 6: Max Tiefe
-{32-33\,°C} % 7: Temperatur
-{1640\,‰} % 8: Salzgehalt
-{-2 to 12} % 9: Anrainer
-{Russia, USA (Alaska)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 44: 44
-%----------------------------------
-\SeaCard
-{44} % 1: Title
-{Die 44 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
-{Strait (Arctic/North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{50\,m} % 5: Mittlere Tiefe
-{2\,300\,m} % 6: Max Tiefe
-{32-33\,°C} % 7: Temperatur
-{45\,‰} % 8: Salzgehalt
-{-2 to 10} % 9: Anrainer
-{Russia, USA (Alaska)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 45: 45
-%----------------------------------
-\SeaCard
-{45} % 1: Title
-{Das 45 ist ein bedeutendes Gewässer. Besondere Merkmale: Amur.} % 2: Intro
-{Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{3\,372\,m} % 5: Mittlere Tiefe
-{1\,583\,000\,m} % 6: Max Tiefe
-{32-33\,°C} % 7: Temperatur
-{838\,‰} % 8: Salzgehalt
-{-2 to 18} % 9: Anrainer
-{Russia, Japan} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 46: 46
-%----------------------------------
-\SeaCard
-{46} % 1: Title
-{Das 46 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{3\,742\,m} % 5: Mittlere Tiefe
-{978\,000\,m} % 6: Max Tiefe
-{33-35\,°C} % 7: Temperatur
-{1667\,‰} % 8: Salzgehalt
-{0 to 25} % 9: Anrainer
-{Japan, Russia, North Korea, South Korea} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 47: 47
-%----------------------------------
-\SeaCard
-{47} % 1: Title
-{Das 47 ist ein bedeutendes Gewässer. Besondere Merkmale: Yellow (Huang He).} % 2: Intro
-{Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{152\,m} % 5: Mittlere Tiefe
-{380\,000\,m} % 6: Max Tiefe
-{30-32\,°C} % 7: Temperatur
-{44\,‰} % 8: Salzgehalt
-{0 to 28} % 9: Anrainer
-{China, North Korea, South Korea} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 48: 48
-%----------------------------------
-\SeaCard
-{48} % 1: Title
-{Das 48 ist ein bedeutendes Gewässer. Besondere Merkmale: Yangtze.} % 2: Intro
-{Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{2\,719\,m} % 5: Mittlere Tiefe
-{1\,249\,000\,m} % 6: Max Tiefe
-{31-34\,°C} % 7: Temperatur
-{349\,‰} % 8: Salzgehalt
-{10 to 28} % 9: Anrainer
-{China, Taiwan, Japan, South Korea} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 49: 49
-%----------------------------------
-\SeaCard
-{49} % 1: Title
-{Das 49 ist ein bedeutendes Gewässer. Besondere Merkmale: Pearl, Mekong, Red.} % 2: Intro
-{Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{5\,559\,m} % 5: Mittlere Tiefe
-{3\,500\,000\,m} % 6: Max Tiefe
-{32-34\,°C} % 7: Temperatur
-{1652\,‰} % 8: Salzgehalt
-{20 to 30} % 9: Anrainer
-{China, Taiwan, Philippines, Malaysia, Brunei, Indonesia, Singapore, Thailand, Cambodia, Vietnam} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 50: 50
-%----------------------------------
-\SeaCard
-{50} % 1: Title
-{Das 50 ist ein bedeutendes Gewässer. Besondere Merkmale: Cagayan.} % 2: Intro
-{Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{10\,540\,m} % 5: Mittlere Tiefe
-{5\,177\,562\,m} % 6: Max Tiefe
-{34-35\,°C} % 7: Temperatur
-{4080\,‰} % 8: Salzgehalt
-{20 to 30} % 9: Anrainer
-{Philippines, Japan, Taiwan} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 51: 51
-%----------------------------------
-\SeaCard
-{51} % 1: Title
-{Das 51 ist ein bedeutendes Gewässer. Besondere Merkmale: Copper, Alsek.} % 2: Intro
-{Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{5\,659\,m} % 5: Mittlere Tiefe
-{1\,533\,000\,m} % 6: Max Tiefe
-{32-33\,°C} % 7: Temperatur
-{2431\,‰} % 8: Salzgehalt
-{2 to 16} % 9: Anrainer
-{USA (Alaska), Canada} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 52: 52
-%----------------------------------
-\SeaCard
-{52} % 1: Title
-{Das 52 ist ein bedeutendes Gewässer. Besondere Merkmale: Colorado.} % 2: Intro
-{Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{3\,292\,m} % 5: Mittlere Tiefe
-{177\,000\,m} % 6: Max Tiefe
-{35\,°C} % 7: Temperatur
-{818\,‰} % 8: Salzgehalt
-{16 to 30} % 9: Anrainer
-{Mexico} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 53: 53
-%----------------------------------
-\SeaCard
-{53} % 1: Title
-{Das 53 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{6\,200\,m} % 5: Mittlere Tiefe
-{280\,000\,m} % 6: Max Tiefe
-{34\,°C} % 7: Temperatur
-{4700\,‰} % 8: Salzgehalt
-{27 to 30} % 9: Anrainer
-{Philippines, Indonesia, Malaysia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 54: 54
-%----------------------------------
-\SeaCard
-{54} % 1: Title
-{Das 54 ist ein bedeutendes Gewässer. Besondere Merkmale: Solo.} % 2: Intro
-{Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{46\,m} % 5: Mittlere Tiefe
-{320\,000\,m} % 6: Max Tiefe
-{32-34\,°C} % 7: Temperatur
-{46\,‰} % 8: Salzgehalt
-{27 to 30} % 9: Anrainer
-{Indonesia} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 55: 55
-%----------------------------------
-\SeaCard
-{55} % 1: Title
-{Das 55 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{7\,440\,m} % 5: Mittlere Tiefe
-{470\,000\,m} % 6: Max Tiefe
-{34\,°C} % 7: Temperatur
-{3060\,‰} % 8: Salzgehalt
-{27 to 30} % 9: Anrainer
-{Indonesia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 56: 56
-%----------------------------------
-\SeaCard
-{56} % 1: Title
-{Das 56 ist ein bedeutendes Gewässer. Besondere Merkmale: Fly, Digul.} % 2: Intro
-{Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{3\,680\,m} % 5: Mittlere Tiefe
-{700\,000\,m} % 6: Max Tiefe
-{34-35\,°C} % 7: Temperatur
-{80\,‰} % 8: Salzgehalt
-{25 to 29} % 9: Anrainer
-{Indonesia, Papua New Guinea, Australia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 57: 57
-%----------------------------------
-\SeaCard
-{57} % 1: Title
-{Das 57 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{9\,140\,m} % 5: Mittlere Tiefe
-{4\,791\,000\,m} % 6: Max Tiefe
-{35-36\,°C} % 7: Temperatur
-{2394\,‰} % 8: Salzgehalt
-{23 to 28} % 9: Anrainer
-{Australia, Papua New Guinea, Solomon Islands, Vanuatu, New Caledonia (France)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 58: 58
-%----------------------------------
-\SeaCard
-{58} % 1: Title
-{Das 58 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{5\,943\,m} % 5: Mittlere Tiefe
-{2\,300\,000\,m} % 6: Max Tiefe
-{35-35.5\,°C} % 7: Temperatur
-{3000\,‰} % 8: Salzgehalt
-{8 to 23} % 9: Anrainer
-{Australia, New Zealand} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 59: 59
-%----------------------------------
-\SeaCard
-{59} % 1: Title
-{Das 59 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{9\,140\,m} % 5: Mittlere Tiefe
-{720\,000\,m} % 6: Max Tiefe
-{34-35\,°C} % 7: Temperatur
-{2500\,‰} % 8: Salzgehalt
-{26 to 30} % 9: Anrainer
-{Papua New Guinea, Solomon Islands} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 60: 60
-%----------------------------------
-\SeaCard
-{60} % 1: Title
-{Das 60 ist ein bedeutendes Gewässer. Besondere Merkmale: Sepik, Ramu.} % 2: Intro
-{Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{2\,665\,m} % 5: Mittlere Tiefe
-{40\,000\,m} % 6: Max Tiefe
-{34-35\,°C} % 7: Temperatur
-{1200\,‰} % 8: Salzgehalt
-{27 to 30} % 9: Anrainer
-{Papua New Guinea} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 61: 61
-%----------------------------------
-\SeaCard
-{61} % 1: Title
-{Das 61 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{5\,576\,m} % 5: Mittlere Tiefe
-{348\,000\,m} % 6: Max Tiefe
-{34\,°C} % 7: Temperatur
-{1450\,‰} % 8: Salzgehalt
-{27 to 30} % 9: Anrainer
-{Philippines, Malaysia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 62: 62
-%----------------------------------
-\SeaCard
-{62} % 1: Title
-{Das 62 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{3\,040\,m} % 5: Mittlere Tiefe
-{438\,000\,m} % 6: Max Tiefe
-{40-41\,°C} % 7: Temperatur
-{490\,‰} % 8: Salzgehalt
-{20 to 30} % 9: Anrainer
-{Egypt, Sudan, Eritrea, Djibouti, Yemen, Saudi Arabia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 63: 63
-%----------------------------------
-\SeaCard
-{63} % 1: Title
-{Das 63 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
-{Strait (Red Sea/Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{310\,m} % 5: Mittlere Tiefe
-{5\,000\,m} % 6: Max Tiefe
-{36\,°C} % 7: Temperatur
-{150\,‰} % 8: Salzgehalt
-{22 to 28} % 9: Anrainer
-{Yemen, Djibouti, Eritrea} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 64: 64
-%----------------------------------
-\SeaCard
-{64} % 1: Title
-{Das 64 ist ein bedeutendes Gewässer. Besondere Merkmale: Tigris-Euphrates (Shatt al-Arab).} % 2: Intro
-{Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{90\,m} % 5: Mittlere Tiefe
-{251\,000\,m} % 6: Max Tiefe
-{37-41\,°C} % 7: Temperatur
-{50\,‰} % 8: Salzgehalt
-{15 to 35} % 9: Anrainer
-{Iran, Iraq, Kuwait, Saudi Arabia, Bahrain, Qatar, UAE, Oman} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 65: 65
-%----------------------------------
-\SeaCard
-{65} % 1: Title
-{Die 65 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
-{Strait (Persian Gulf/Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{100\,m} % 5: Mittlere Tiefe
-{3\,900\,m} % 6: Max Tiefe
-{37-40\,°C} % 7: Temperatur
-{75\,‰} % 8: Salzgehalt
-{18 to 33} % 9: Anrainer
-{Iran, Oman, UAE} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 66: 66
-%----------------------------------
-\SeaCard
-{66} % 1: Title
-{Das 66 ist ein bedeutendes Gewässer. Besondere Merkmale: Indus.} % 2: Intro
-{Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{4\,652\,m} % 5: Mittlere Tiefe
-{3\,862\,000\,m} % 6: Max Tiefe
-{36-37\,°C} % 7: Temperatur
-{2734\,‰} % 8: Salzgehalt
-{22 to 28} % 9: Anrainer
-{India, Pakistan, Iran, Oman, Yemen, Maldives, Somalia} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 67: 67
-%----------------------------------
-\SeaCard
-{67} % 1: Title
-{Das 67 ist ein bedeutendes Gewässer. Besondere Merkmale: Ganges-Brahmaputra, Godavari, Mahanadi, Irrawaddy.} % 2: Intro
-{Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{4\,694\,m} % 5: Mittlere Tiefe
-{2\,172\,000\,m} % 6: Max Tiefe
-{30-34\,°C} % 7: Temperatur
-{2600\,‰} % 8: Salzgehalt
-{25 to 30} % 9: Anrainer
-{India, Bangladesh, Myanmar, Thailand, Sri Lanka} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 68: 68
-%----------------------------------
-\SeaCard
-{68} % 1: Title
-{Das 68 ist ein bedeutendes Gewässer. Besondere Merkmale: Irrawaddy, Salween.} % 2: Intro
-{Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{4\,180\,m} % 5: Mittlere Tiefe
-{797\,700\,m} % 6: Max Tiefe
-{30-33\,°C} % 7: Temperatur
-{1096\,‰} % 8: Salzgehalt
-{26 to 30} % 9: Anrainer
-{Myanmar, Thailand, Malaysia, Indonesia, India} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 69: 69
-%----------------------------------
-\SeaCard
-{69} % 1: Title
-{Die 69 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
-{Strait (Andaman Sea/South China Sea)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{25\,m} % 5: Mittlere Tiefe
-{80\,000\,m} % 6: Max Tiefe
-{30-34\,°C} % 7: Temperatur
-{15\,‰} % 8: Salzgehalt
-{26 to 30} % 9: Anrainer
-{Malaysia, Indonesia, Singapore} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 70: 70
-%----------------------------------
-\SeaCard
-{70} % 1: Title
-{Das 70 ist ein bedeutendes Gewässer.} % 2: Intro
-{Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{3\,310\,m} % 5: Mittlere Tiefe
-{610\,000\,m} % 6: Max Tiefe
-{34-35\,°C} % 7: Temperatur
-{435\,‰} % 8: Salzgehalt
-{25 to 30} % 9: Anrainer
-{Indonesia, Timor-Leste, Australia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 71: 71
-%----------------------------------
-\SeaCard
-{71} % 1: Title
-{Das 71 ist ein bedeutendes Gewässer. Besondere Merkmale: Zambezi.} % 2: Intro
-{Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen
-{3\,292\,m} % 5: Mittlere Tiefe
-{700\,000\,m} % 6: Max Tiefe
-{35\,°C} % 7: Temperatur
-{1600\,‰} % 8: Salzgehalt
-{24 to 28} % 9: Anrainer
-{Mozambique, Madagascar} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 72: 72
-%----------------------------------
-\SeaCard
-{72} % 1: Title
-{Der 72 ist ein künstlicher Wasserweg von großer strategischer Bedeutung. Besondere Merkmale: None (canal).} % 2: Intro
-{Canal\,km²} % 3: Fläche
-{---} % 4: Volumen
-{24\,m} % 5: Mittlere Tiefe
-{195\,m} % 6: Max Tiefe
-{40-42\,°C} % 7: Temperatur
-{13\,‰} % 8: Salzgehalt
-{18 to 30} % 9: Anrainer
-{Egypt} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 73: 73
-%----------------------------------
-\SeaCard
-{73} % 1: Title
-{Der 73 ist ein künstlicher Wasserweg von großer strategischer Bedeutung. Besondere Merkmale: Chagres (for locks).} % 2: Intro
-{Canal\,km²} % 3: Fläche
-{---} % 4: Volumen
-{25\,m} % 5: Mittlere Tiefe
-{425\,m} % 6: Max Tiefe
-{0-35\,°C} % 7: Temperatur
-{13\,‰} % 8: Salzgehalt
-{24 to 32} % 9: Anrainer
-{Panama} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 74: 74
-%----------------------------------
-\SeaCard
-{74} % 1: Title
-{Das 74 ist ein bedeutendes Gewässer. Besondere Merkmale: Volga, Ural, Kura.} % 2: Intro
-{Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{1\,025\,m} % 5: Mittlere Tiefe
-{389\,000\,m} % 6: Max Tiefe
-{12\,°C} % 7: Temperatur
-{211\,‰} % 8: Salzgehalt
-{0 to 27} % 9: Anrainer
-{Iran, Kazakhstan, Turkmenistan, Azerbaijan, Russia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 75: 75
-%----------------------------------
-\SeaCard
-{75} % 1: Title
-{Das 75 ist ein bedeutendes Gewässer. Besondere Merkmale: Nipigon, St. Louis, Pigeon.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{406\,m} % 5: Mittlere Tiefe
-{82\,100\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{147\,‰} % 8: Salzgehalt
-{0 to 13} % 9: Anrainer
-{Canada, USA (Michigan, Wisconsin, Minnesota)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 76: 76
-%----------------------------------
-\SeaCard
-{76} % 1: Title
-{Das 76 ist ein bedeutendes Gewässer. Besondere Merkmale: Kagera.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{81\,m} % 5: Mittlere Tiefe
-{59\,940\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{40\,‰} % 8: Salzgehalt
-{20 to 27} % 9: Anrainer
-{Tanzania, Uganda, Kenya} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 77: 77
-%----------------------------------
-\SeaCard
-{77} % 1: Title
-{Das 77 ist ein bedeutendes Gewässer.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{229\,m} % 5: Mittlere Tiefe
-{59\,590\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{59\,‰} % 8: Salzgehalt
-{0 to 22} % 9: Anrainer
-{Canada, USA (Michigan)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 78: 78
-%----------------------------------
-\SeaCard
-{78} % 1: Title
-{Das 78 ist ein bedeutendes Gewässer. Besondere Merkmale: Fox-Wolf, Grand, Kalamazoo.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{282\,m} % 5: Mittlere Tiefe
-{57\,800\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{85\,‰} % 8: Salzgehalt
-{0 to 24} % 9: Anrainer
-{USA (Michigan, Wisconsin, Illinois, Indiana)} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 79: 79
-%----------------------------------
-\SeaCard
-{79} % 1: Title
-{Das 79 ist ein bedeutendes Gewässer. Besondere Merkmale: Ruzizi, Malagarasi.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{1\,470\,m} % 5: Mittlere Tiefe
-{32\,900\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{570\,‰} % 8: Salzgehalt
-{24 to 29} % 9: Anrainer
-{Tanzania, DRC, Burundi, Zambia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 80: 80
-%----------------------------------
-\SeaCard
-{80} % 1: Title
-{Das 80 ist ein bedeutendes Gewässer. Besondere Merkmale: Selenga, Barguzin, Upper Angara.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{1\,642\,m} % 5: Mittlere Tiefe
-{31\,722\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{744\,‰} % 8: Salzgehalt
-{3 to 10} % 9: Anrainer
-{Russia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 81: 81
-%----------------------------------
-\SeaCard
-{81} % 1: Title
-{Das 81 ist ein bedeutendes Gewässer. Besondere Merkmale: Dease, Whitefish.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{446\,m} % 5: Mittlere Tiefe
-{31\,153\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{72\,‰} % 8: Salzgehalt
-{0 to 18} % 9: Anrainer
-{Canada} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 82: 82
-%----------------------------------
-\SeaCard
-{82} % 1: Title
-{Das 82 ist ein bedeutendes Gewässer. Besondere Merkmale: Ruhuhu.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{706\,m} % 5: Mittlere Tiefe
-{29\,600\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{292\,‰} % 8: Salzgehalt
-{22 to 28} % 9: Anrainer
-{Malawi, Mozambique, Tanzania} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 83: 83
-%----------------------------------
-\SeaCard
-{83} % 1: Title
-{Das 83 ist ein bedeutendes Gewässer. Besondere Merkmale: Slave, Hay, Taltson.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{614\,m} % 5: Mittlere Tiefe
-{27\,200\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{41\,‰} % 8: Salzgehalt
-{0 to 18} % 9: Anrainer
-{Canada} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 84: 84
-%----------------------------------
-\SeaCard
-{84} % 1: Title
-{Das 84 ist ein bedeutendes Gewässer. Besondere Merkmale: Detroit, Maumee, Grand.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{64\,m} % 5: Mittlere Tiefe
-{25\,667\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{19\,‰} % 8: Salzgehalt
-{0 to 24} % 9: Anrainer
-{Canada, USA (Michigan, Ohio, Pennsylvania, New York)} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 85: 85
-%----------------------------------
-\SeaCard
-{85} % 1: Title
-{Das 85 ist ein bedeutendes Gewässer. Besondere Merkmale: Red, Saskatchewan, Winnipeg.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{36\,m} % 5: Mittlere Tiefe
-{24\,514\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{12\,‰} % 8: Salzgehalt
-{0 to 22} % 9: Anrainer
-{Canada} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 86: 86
-%----------------------------------
-\SeaCard
-{86} % 1: Title
-{Das 86 ist ein bedeutendes Gewässer. Besondere Merkmale: Niagara, Genesee.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{244\,m} % 5: Mittlere Tiefe
-{18\,970\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{86\,‰} % 8: Salzgehalt
-{0 to 20} % 9: Anrainer
-{Canada, USA (New York)} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 87: 87
-%----------------------------------
-\SeaCard
-{87} % 1: Title
-{Das 87 ist ein bedeutendes Gewässer. Besondere Merkmale: Svir, Volkhov, Neva.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{260\,m} % 5: Mittlere Tiefe
-{17\,700\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{51\,‰} % 8: Salzgehalt
-{0 to 20} % 9: Anrainer
-{Russia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 88: 88
-%----------------------------------
-\SeaCard
-{88} % 1: Title
-{Das 88 ist ein bedeutendes Gewässer. Besondere Merkmale: Ili.} % 2: Intro
-{Brackish Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{26\,m} % 5: Mittlere Tiefe
-{16\,400\,m} % 6: Max Tiefe
-{3\,°C} % 7: Temperatur
-{5.8\,‰} % 8: Salzgehalt
-{0 to 28} % 9: Anrainer
-{Kazakhstan} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 89: 89
-%----------------------------------
-\SeaCard
-{89} % 1: Title
-{Das 89 ist ein bedeutendes Gewässer. Besondere Merkmale: None (isolated).} % 2: Intro
-{Subglacial Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{900\,m} % 5: Mittlere Tiefe
-{12\,500\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{430\,‰} % 8: Salzgehalt
-{-3 to -2} % 9: Anrainer
-{Antarctica} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 90: 90
-%----------------------------------
-\SeaCard
-{90} % 1: Title
-{Das 90 ist ein bedeutendes Gewässer. Besondere Merkmale: Suna, Vodla.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{127\,m} % 5: Mittlere Tiefe
-{9\,700\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{30\,‰} % 8: Salzgehalt
-{0 to 20} % 9: Anrainer
-{Russia} % 10: Zuflüsse
-
-\newpage
-
-
-%----------------------------------
-% CARD 91: 91
-%----------------------------------
-\SeaCard
-{91} % 1: Title
-{Das 91 ist ein bedeutendes Gewässer. Besondere Merkmale: Ramis, Ilave.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{281\,m} % 5: Mittlere Tiefe
-{8\,372\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{107\,‰} % 8: Salzgehalt
-{10 to 16} % 9: Anrainer
-{Peru, Bolivia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 92: 92
-%----------------------------------
-\SeaCard
-{92} % 1: Title
-{Das 92 ist ein bedeutendes Gewässer. Besondere Merkmale: Tipitapa, San Juan.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{26\,m} % 5: Mittlere Tiefe
+{Südatlantik} % 1: German Title
+{South Atlantic Ocean} % 2: English subtitle
+{Der South Atlantic Ocean ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Mid-Atlantic Ridge.} % 3: Intro
+{43\,510\,000\,km²} % 4: Fläche
+{3\,900\,m} % 5: Mitt. Tiefe
 {8\,264\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{13\,‰} % 8: Salzgehalt
-{25 to 29} % 9: Anrainer
-{Nicaragua} % 10: Zuflüsse
+{0--28\,°C} % 7: Temperatur
+{34--37\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Brazil, Argentina, Uruguay, South Africa, Namibia, Angola\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Paraná, Orange, Congo} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 93: 93
+% CARD 5: Indian Ocean
 %----------------------------------
 \SeaCard
-{93} % 1: Title
-{Das 93 ist ein bedeutendes Gewässer. Besondere Merkmale: Athabasca, Fond du Lac.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{124\,m} % 5: Mittlere Tiefe
-{7\,850\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{20\,‰} % 8: Salzgehalt
-{0 to 20} % 9: Anrainer
-{Canada} % 10: Zuflüsse
+{Indischer Ozean} % 1: German Title
+{Indian Ocean} % 2: English subtitle
+{Der Indian Ocean ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Wärmster Ozean, Monsuneinfluss.} % 3: Intro
+{70\,560\,000\,km²} % 4: Fläche
+{3\,741\,m} % 5: Mitt. Tiefe
+{7\,258\,m} % 6: Max Tiefe
+{20--30\,°C} % 7: Temperatur
+{34--36\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} India,  Pakistan,  Bangladesh,  Myanmar,  Thailand, u.a.\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Ganges-Brahmaputra, Indus, Zambezi} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 94: 94
+% CARD 6: Southern Ocean
 %----------------------------------
 \SeaCard
-{94} % 1: Title
-{Das 94 ist ein bedeutendes Gewässer. Besondere Merkmale: Reindeer.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{219\,m} % 5: Mittlere Tiefe
-{6\,650\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{53\,‰} % 8: Salzgehalt
-{0 to 18} % 9: Anrainer
-{Canada} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 95: 95
-%----------------------------------
-\SeaCard
-{95} % 1: Title
-{Das 95 ist ein bedeutendes Gewässer. Besondere Merkmale: Omo, Turkwel.} % 2: Intro
-{Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{109\,m} % 5: Mittlere Tiefe
-{6\,405\,m} % 6: Max Tiefe
-{2.5\,°C} % 7: Temperatur
-{30.2\,‰} % 8: Salzgehalt
-{28 to 31} % 9: Anrainer
-{Kenya, Ethiopia} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 96: 96
-%----------------------------------
-\SeaCard
-{96} % 1: Title
-{Das 96 ist ein bedeutendes Gewässer. Besondere Merkmale: Jyrgalang, Tyup.} % 2: Intro
-{Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{668\,m} % 5: Mittlere Tiefe
-{6\,236\,m} % 6: Max Tiefe
-{6\,°C} % 7: Temperatur
-{278\,‰} % 8: Salzgehalt
-{4 to 18} % 9: Anrainer
-{Kyrgyzstan} % 10: Zuflüsse
+{Südlicher Ozean} % 1: German Title
+{Southern Ocean} % 2: English subtitle
+{Der Southern Ocean ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Umgibt die Antarktis, starke Strömungen.} % 3: Intro
+{21\,960\,000\,km²} % 4: Fläche
+{3\,270\,m} % 5: Mitt. Tiefe
+{7\,235\,m} % 6: Max Tiefe
+{-2--10\,°C} % 7: Temperatur
+{33.5--34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Antarctica\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} None (glacial meltwater)} % 9: Anrainer + Zuflüsse
 
 \newpage
 
 
 %----------------------------------
-% CARD 97: 97
+% CARD 7: Arctic Ocean
 %----------------------------------
 \SeaCard
-{97} % 1: Title
-{Das 97 ist ein bedeutendes Gewässer. Besondere Merkmale: Klarälven, Gullspång.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{106\,m} % 5: Mittlere Tiefe
-{5\,650\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{27\,‰} % 8: Salzgehalt
-{2 to 18} % 9: Anrainer
-{Sweden} % 10: Zuflüsse
+{Arktischer Ozean} % 1: German Title
+{Arctic Ocean} % 2: English subtitle
+{Der Arctic Ocean ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Kleinster Ozean, Eisbedeckung.} % 3: Intro
+{14\,060\,000\,km²} % 4: Fläche
+{1\,205\,m} % 5: Mitt. Tiefe
+{5\,450\,m} % 6: Max Tiefe
+{-2--5\,°C} % 7: Temperatur
+{30--34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia, Norway, Iceland, Greenland (Denmark), Canada, USA (Alaska)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Ob, Yenisei, Lena, Mackenzie} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 98: 98
+% CARD 8: Barents Sea
 %----------------------------------
 \SeaCard
-{98} % 1: Title
-{Das 98 ist ein bedeutendes Gewässer. Besondere Merkmale: Jordan River.} % 2: Intro
-{Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{304\,m} % 5: Mittlere Tiefe
-{605\,m} % 6: Max Tiefe
-{342\,°C} % 7: Temperatur
-{120\,‰} % 8: Salzgehalt
-{20 to 32} % 9: Anrainer
-{Israel, Jordan, Palestine (West Bank)} % 10: Zuflüsse
+{Barentssee} % 1: German Title
+{Barents Sea} % 2: English subtitle
+{Das Barents Sea ist ein Randmeer des Arctic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Reiche Fischgründe, Öl- und Gasvorkommen.} % 3: Intro
+{1\,400\,000\,km²} % 4: Fläche
+{230\,m} % 5: Mitt. Tiefe
+{600\,m} % 6: Max Tiefe
+{-1--12\,°C} % 7: Temperatur
+{34--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia, Norway\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Pechora} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 99: 99
+% CARD 9: Kara Sea
 %----------------------------------
 \SeaCard
-{99} % 1: Title
-{Das 99 ist ein bedeutendes Gewässer. Besondere Merkmale: Songwe.} % 2: Intro
-{Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{22\,m} % 5: Mittlere Tiefe
-{5\,615\,m} % 6: Max Tiefe
-{Variable\,°C} % 7: Temperatur
-{11\,‰} % 8: Salzgehalt
-{20 to 28} % 9: Anrainer
-{Tanzania} % 10: Zuflüsse
+{Karasee} % 1: German Title
+{Kara Sea} % 2: English subtitle
+{Das Kara Sea ist ein Randmeer des Arctic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Fast ganzjährig gefroren.} % 3: Intro
+{880\,000\,km²} % 4: Fläche
+{110\,m} % 5: Mitt. Tiefe
+{620\,m} % 6: Max Tiefe
+{-2--6\,°C} % 7: Temperatur
+{10--34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Ob, Yenisei} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 100: 100
+% CARD 10: Laptev Sea
 %----------------------------------
 \SeaCard
-{100} % 1: Title
-{Das 100 ist ein bedeutendes Gewässer. Besondere Merkmale: Victoria Nile, Semliki.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{51\,m} % 5: Mittlere Tiefe
-{5\,590\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{25\,‰} % 8: Salzgehalt
-{26 to 30} % 9: Anrainer
-{Uganda, DRC} % 10: Zuflüsse
+{Laptewsee} % 1: German Title
+{Laptev Sea} % 2: English subtitle
+{Das Laptev Sea ist ein Randmeer des Arctic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Methanemissionen, 9 Monate gefroren.} % 3: Intro
+{662\,000\,km²} % 4: Fläche
+{578\,m} % 5: Mitt. Tiefe
+{3\,385\,m} % 6: Max Tiefe
+{-1.8--8\,°C} % 7: Temperatur
+{20--34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Lena, Yana} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 101: 101
+% CARD 11: East Siberian Sea
 %----------------------------------
 \SeaCard
-{101} % 1: Title
-{Das 101 ist ein bedeutendes Gewässer.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{132\,m} % 5: Mittlere Tiefe
-{5\,542\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{53\,‰} % 8: Salzgehalt
-{0 to 10} % 9: Anrainer
-{Canada} % 10: Zuflüsse
+{Ostsibirische See} % 1: German Title
+{East Siberian Sea} % 2: English subtitle
+{Das East Siberian Sea ist ein Randmeer des Arctic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Flach, fast ganzjährig gefroren.} % 3: Intro
+{987\,000\,km²} % 4: Fläche
+{58\,m} % 5: Mitt. Tiefe
+{155\,m} % 6: Max Tiefe
+{-2--5\,°C} % 7: Temperatur
+{28--32\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Kolyma, Indigirka} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 102: 102
+% CARD 12: Chukchi Sea
 %----------------------------------
 \SeaCard
-{102} % 1: Title
-{Das 102 ist ein bedeutendes Gewässer. Besondere Merkmale: Mossy, Red Deer.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{12\,m} % 5: Mittlere Tiefe
-{5\,370\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{5\,‰} % 8: Salzgehalt
-{0 to 22} % 9: Anrainer
-{Canada} % 10: Zuflüsse
+{Tschuktschensee} % 1: German Title
+{Chukchi Sea} % 2: English subtitle
+{Das Chukchi Sea ist ein Randmeer des Arctic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Verbindet Pazifik und Arktis.} % 3: Intro
+{595\,000\,km²} % 4: Fläche
+{77\,m} % 5: Mitt. Tiefe
+{160\,m} % 6: Max Tiefe
+{-2--12\,°C} % 7: Temperatur
+{28--33\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia, USA (Alaska)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
 
 \newpage
 
 
 %----------------------------------
-% CARD 103: 103
+% CARD 13: Beaufort Sea
 %----------------------------------
 \SeaCard
-{103} % 1: Title
-{Das 103 ist ein bedeutendes Gewässer. Besondere Merkmale: Luapula.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{27\,m} % 5: Mittlere Tiefe
-{5\,120\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{7.5\,‰} % 8: Salzgehalt
-{24 to 28} % 9: Anrainer
-{Zambia, DRC} % 10: Zuflüsse
+{Beaufortsee} % 1: German Title
+{Beaufort Sea} % 2: English subtitle
+{Das Beaufort Sea ist ein Randmeer des Arctic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Oil/gas reserves, Eisbären.} % 3: Intro
+{476\,000\,km²} % 4: Fläche
+{1\,004\,m} % 5: Mitt. Tiefe
+{4\,683\,m} % 6: Max Tiefe
+{-2--8\,°C} % 7: Temperatur
+{28--32\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada, USA (Alaska)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Mackenzie} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 104: 104
+% CARD 14: Greenland Sea
 %----------------------------------
 \SeaCard
-{104} % 1: Title
-{Das 104 ist ein bedeutendes Gewässer. Besondere Merkmale: Ombabika, Gull.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{165\,m} % 5: Mittlere Tiefe
-{4\,848\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{52\,‰} % 8: Salzgehalt
-{0 to 20} % 9: Anrainer
-{Canada} % 10: Zuflüsse
+{Grönlandsee} % 1: German Title
+{Greenland Sea} % 2: English subtitle
+{Das Greenland Sea ist ein Randmeer des Arctic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Tiefenwasserkonvektion.} % 3: Intro
+{1\,205\,000\,km²} % 4: Fläche
+{1\,444\,m} % 5: Mitt. Tiefe
+{4\,846\,m} % 6: Max Tiefe
+{-2--6\,°C} % 7: Temperatur
+{30--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Greenland (Denmark), Iceland, Norway\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 105: 105
+% CARD 15: Wandel Sea
 %----------------------------------
 \SeaCard
-{105} % 1: Title
-{Das 105 ist ein bedeutendes Gewässer. Besondere Merkmale: Whitemud, Waterhen.} % 2: Intro
-{Brackish Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{7\,m} % 5: Mittlere Tiefe
-{4\,706\,m} % 6: Max Tiefe
-{3.5\,°C} % 7: Temperatur
+{Wandelsee} % 1: German Title
+{Wandel Sea} % 2: English subtitle
+{Das Wandel Sea ist ein Randmeer des Arctic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Extreme Eisbedingungen.} % 3: Intro
+{16\,000\,km²} % 4: Fläche
+{150\,m} % 5: Mitt. Tiefe
+{300\,m} % 6: Max Tiefe
+{-2--2\,°C} % 7: Temperatur
+{30--32\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Greenland (Denmark)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 16: Fram Strait
+%----------------------------------
+\SeaCard
+{Framstraße} % 1: German Title
+{Fram Strait} % 2: English subtitle
+{Die Fram Strait ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: Einzige Tiefwasserverbindung Arktis-Atlantik, 450 km breit.} % 3: Intro
+{202\,500\,km²} % 4: Fläche
+{1\,500\,m} % 5: Mitt. Tiefe
+{5\,550\,m} % 6: Max Tiefe
+{-2--5\,°C} % 7: Temperatur
+{34--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Greenland (Denmark), Norway (Svalbard)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 17: Norwegian Sea
+%----------------------------------
+\SeaCard
+{Norwegische See} % 1: German Title
+{Norwegian Sea} % 2: English subtitle
+{Das Norwegian Sea ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Golfstromeinfluss.} % 3: Intro
+{1\,383\,000\,km²} % 4: Fläche
+{1\,742\,m} % 5: Mitt. Tiefe
+{3\,970\,m} % 6: Max Tiefe
+{2--13\,°C} % 7: Temperatur
+{35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Norway, Iceland, Faroe Islands (Denmark)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 18: North Sea
+%----------------------------------
+\SeaCard
+{Nordsee} % 1: German Title
+{North Sea} % 2: English subtitle
+{Das North Sea ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Wichtige Schifffahrt, Öl- und Gasindustrie.} % 3: Intro
+{570\,000\,km²} % 4: Fläche
+{95\,m} % 5: Mitt. Tiefe
+{700\,m} % 6: Max Tiefe
+{4--18\,°C} % 7: Temperatur
+{32--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} UK, Norway, Denmark, Germany, Netherlands, Belgium, France\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Rhine, Elbe, Thames} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 19: Baltic Sea
+%----------------------------------
+\SeaCard
+{Ostsee} % 1: German Title
+{Baltic Sea} % 2: English subtitle
+{Das Baltic Sea ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Brackwasser, niedriger Salzgehalt.} % 3: Intro
+{377\,000\,km²} % 4: Fläche
+{55\,m} % 5: Mitt. Tiefe
+{459\,m} % 6: Max Tiefe
+{0--20\,°C} % 7: Temperatur
+{6--20\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Sweden, Finland, Russia, Estonia, Latvia, Lithuania, Poland, Germany, Denmark\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Neva, Vistula, Oder} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 20: Mediterranean Sea
+%----------------------------------
+\SeaCard
+{Mittelmeer} % 1: German Title
+{Mediterranean Sea} % 2: English subtitle
+{Das Mediterranean Sea ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Hoher Salzgehalt, antike Zivilisationen.} % 3: Intro
+{2\,500\,000\,km²} % 4: Fläche
+{1\,500\,m} % 5: Mitt. Tiefe
+{5\,267\,m} % 6: Max Tiefe
+{10--30\,°C} % 7: Temperatur
+{37--39\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Spain,  France,  Monaco,  Italy,  Slovenia, u.a.\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Nile, Po, Rhône, Ebro} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 21: Black Sea
+%----------------------------------
+\SeaCard
+{Schwarzes Meer} % 1: German Title
+{Black Sea} % 2: English subtitle
+{Das Black Sea ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Anoxische Tiefenwässer.} % 3: Intro
+{436\,000\,km²} % 4: Fläche
+{1\,253\,m} % 5: Mitt. Tiefe
+{2\,212\,m} % 6: Max Tiefe
+{6--25\,°C} % 7: Temperatur
+{17--18\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Turkey, Bulgaria, Romania, Ukraine, Russia, Georgia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Danube, Dnieper, Don} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 22: Sea of Marmara
+%----------------------------------
+\SeaCard
+{Marmarameer} % 1: German Title
+{Sea of Marmara} % 2: English subtitle
+{Das Sea of Marmara ist ein Randmeer des Mediterranean mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Verbindet Schwarzes Meer und Ägäis.} % 3: Intro
+{11\,350\,km²} % 4: Fläche
+{494\,m} % 5: Mitt. Tiefe
+{1\,370\,m} % 6: Max Tiefe
+{8--25\,°C} % 7: Temperatur
+{22--38\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Turkey\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 23: Adriatic Sea
+%----------------------------------
+\SeaCard
+{Adria} % 1: German Title
+{Adriatic Sea} % 2: English subtitle
+{Das Adriatic Sea ist ein Randmeer des Mediterranean mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Tourismus, Fischerei.} % 3: Intro
+{138\,600\,km²} % 4: Fläche
+{252\,m} % 5: Mitt. Tiefe
+{1\,233\,m} % 6: Max Tiefe
+{10--28\,°C} % 7: Temperatur
+{38--39\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Italy, Slovenia, Croatia, Bosnia-Herzegovina, Montenegro, Albania\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Po} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 24: Aegean Sea
+%----------------------------------
+\SeaCard
+{Ägäis} % 1: German Title
+{Aegean Sea} % 2: English subtitle
+{Das Aegean Sea ist ein Randmeer des Mediterranean mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Griechische Inseln, antike Geschichte.} % 3: Intro
+{214\,000\,km²} % 4: Fläche
+{510\,m} % 5: Mitt. Tiefe
+{3\,543\,m} % 6: Max Tiefe
+{14--26\,°C} % 7: Temperatur
+{38--39\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Greece, Turkey\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Maritsa} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 25: Caribbean Sea
+%----------------------------------
+\SeaCard
+{Karibisches Meer} % 1: German Title
+{Caribbean Sea} % 2: English subtitle
+{Das Caribbean Sea ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Tropisch, Hurrikane, Korallenriffe.} % 3: Intro
+{2\,754\,000\,km²} % 4: Fläche
+{2\,647\,m} % 5: Mitt. Tiefe
+{7\,686\,m} % 6: Max Tiefe
+{24--29\,°C} % 7: Temperatur
+{35--36\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Mexico,  Belize,  Guatemala,  Honduras,  Nicaragua, u.a.\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Magdalena, Coco} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 26: Gulf of Mexico
+%----------------------------------
+\SeaCard
+{Golf von Mexiko} % 1: German Title
+{Gulf of Mexico} % 2: English subtitle
+{Das Gulf of Mexico ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Oil/gas, Hurrikane.} % 3: Intro
+{1\,550\,000\,km²} % 4: Fläche
+{1\,615\,m} % 5: Mitt. Tiefe
+{4\,384\,m} % 6: Max Tiefe
+{18--31\,°C} % 7: Temperatur
+{35--36\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} USA (Texas, Louisiana, Mississippi, Alabama, Florida), Mexico, Cuba\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Mississippi, Rio Grande} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 27: Labrador Sea
+%----------------------------------
+\SeaCard
+{Labradorsee} % 1: German Title
+{Labrador Sea} % 2: English subtitle
+{Das Labrador Sea ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Eisberge, Tiefenwasserbildung.} % 3: Intro
+{841\,000\,km²} % 4: Fläche
+{1\,898\,m} % 5: Mitt. Tiefe
+{4\,316\,m} % 6: Max Tiefe
+{-1--12\,°C} % 7: Temperatur
+{31--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada, Greenland (Denmark)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Churchill} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 28: Irminger Sea
+%----------------------------------
+\SeaCard
+{Irmingersee} % 1: German Title
+{Irminger Sea} % 2: English subtitle
+{Das Irminger Sea ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: North Atlantic circulation.} % 3: Intro
+{780\,000\,km²} % 4: Fläche
+{1\,600\,m} % 5: Mitt. Tiefe
+{3\,000\,m} % 6: Max Tiefe
+{3--10\,°C} % 7: Temperatur
+{34--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Iceland, Greenland (Denmark)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 29: Baffin Bay
+%----------------------------------
+\SeaCard
+{Baffinbucht} % 1: German Title
+{Baffin Bay} % 2: English subtitle
+{Das Baffin Bay ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Eisberge, Eisbären.} % 3: Intro
+{689\,000\,km²} % 4: Fläche
+{861\,m} % 5: Mitt. Tiefe
+{2\,414\,m} % 6: Max Tiefe
+{-1--8\,°C} % 7: Temperatur
+{30--33\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada, Greenland (Denmark)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 30: Hudson Bay
+%----------------------------------
+\SeaCard
+{Hudsonbucht} % 1: German Title
+{Hudson Bay} % 2: English subtitle
+{Das Hudson Bay ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Flach, im Winter gefroren.} % 3: Intro
+{1\,230\,000\,km²} % 4: Fläche
+{128\,m} % 5: Mitt. Tiefe
+{270\,m} % 6: Max Tiefe
+{-2--12\,°C} % 7: Temperatur
+{25--32\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Churchill, Nelson, Albany} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 31: Gulf of St. Lawrence
+%----------------------------------
+\SeaCard
+{Sankt-Lorenz-Golf} % 1: German Title
+{Gulf of St. Lawrence} % 2: English subtitle
+{Das Gulf of St. Lawrence ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Major estuary, Fischerei.} % 3: Intro
+{236\,000\,km²} % 4: Fläche
+{152\,m} % 5: Mitt. Tiefe
+{572\,m} % 6: Max Tiefe
+{0--20\,°C} % 7: Temperatur
+{28--32\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} St. Lawrence} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 32: Irish Sea
+%----------------------------------
+\SeaCard
+{Irische See} % 1: German Title
+{Irish Sea} % 2: English subtitle
+{Das Irish Sea ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Flach, ferry routes.} % 3: Intro
+{100\,000\,km²} % 4: Fläche
+{60\,m} % 5: Mitt. Tiefe
+{175\,m} % 6: Max Tiefe
+{6--16\,°C} % 7: Temperatur
+{32--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Ireland, UK\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 33: English Channel
+%----------------------------------
+\SeaCard
+{Ärmelkanal} % 1: German Title
+{English Channel} % 2: English subtitle
+{Die English Channel ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: Vielbefahrene Schifffahrtsroute, Tunnel.} % 3: Intro
+{75\,000\,km²} % 4: Fläche
+{54\,m} % 5: Mitt. Tiefe
+{174\,m} % 6: Max Tiefe
+{6--18\,°C} % 7: Temperatur
+{34--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} UK, France\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Seine, Thames (estuaries)} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 34: Bay of Biscay
+%----------------------------------
+\SeaCard
+{Golf von Biskaya} % 1: German Title
+{Bay of Biscay} % 2: English subtitle
+{Das Bay of Biscay ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Tief, raue See.} % 3: Intro
+{223\,000\,km²} % 4: Fläche
+{1\,744\,m} % 5: Mitt. Tiefe
+{4\,735\,m} % 6: Max Tiefe
+{11--20\,°C} % 7: Temperatur
+{35--36\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} France, Spain\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Loire, Garonne} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 35: Skagerrak
+%----------------------------------
+\SeaCard
+{Skagerrak} % 1: German Title
+{Skagerrak} % 2: English subtitle
+{Die Skagerrak ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: Verbindet Nordsee und Ostsee.} % 3: Intro
+{32\,000\,km²} % 4: Fläche
+{210\,m} % 5: Mitt. Tiefe
+{700\,m} % 6: Max Tiefe
+{2--17\,°C} % 7: Temperatur
+{30--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Norway, Denmark, Sweden\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Göta} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 36: Kattegat
+%----------------------------------
+\SeaCard
+{Kattegat} % 1: German Title
+{Kattegat} % 2: English subtitle
+{Das Kattegat ist ein Randmeer des North Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Übergangszone.} % 3: Intro
+{30\,000\,km²} % 4: Fläche
+{23\,m} % 5: Mitt. Tiefe
+{109\,m} % 6: Max Tiefe
+{0--20\,°C} % 7: Temperatur
+{15--30\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Denmark, Sweden\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 37: Strait of Gibraltar
+%----------------------------------
+\SeaCard
+{Straße von Gibraltar} % 1: German Title
+{Strait of Gibraltar} % 2: English subtitle
+{Die Strait of Gibraltar ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: 14.3 km an der engsten Stelle, kritischer Engpass.} % 3: Intro
+{1\,050\,km²} % 4: Fläche
+{300\,m} % 5: Mitt. Tiefe
+{900\,m} % 6: Max Tiefe
+{13--18\,°C} % 7: Temperatur
+{36\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Spain, Morocco, UK (Gibraltar)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 38: Bosporus
+%----------------------------------
+\SeaCard
+{Bosporus} % 1: German Title
+{Bosporus} % 2: English subtitle
+{Die Bosporus ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: 1 km an der engsten Stelle, 30 km lang, verbindet Schwarzes Meer und Mittelmeer.} % 3: Intro
+{550\,km²} % 4: Fläche
+{50\,m} % 5: Mitt. Tiefe
+{110\,m} % 6: Max Tiefe
+{6--25\,°C} % 7: Temperatur
+{17--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Turkey\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 39: Dardanelles
+%----------------------------------
+\SeaCard
+{Dardanellen} % 1: German Title
+{Dardanelles} % 2: English subtitle
+{Die Dardanelles ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: 1.2 km an der engsten Stelle, 61 km lang, Teil der Türkischen Meerengen.} % 3: Intro
+{1\,800\,km²} % 4: Fläche
+{55\,m} % 5: Mitt. Tiefe
+{103\,m} % 6: Max Tiefe
+{8--24\,°C} % 7: Temperatur
+{25--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Turkey\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 40: Gulf of Guinea
+%----------------------------------
+\SeaCard
+{Golf von Guinea} % 1: German Title
+{Gulf of Guinea} % 2: English subtitle
+{Das Gulf of Guinea ist ein Randmeer des South Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Oil/gas, äquatoriale Lage.} % 3: Intro
+{2\,350\,000\,km²} % 4: Fläche
+{2\,996\,m} % 5: Mitt. Tiefe
+{5\,469\,m} % 6: Max Tiefe
+{24--28\,°C} % 7: Temperatur
+{34--36\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Ghana, Togo, Benin, Nigeria, Cameroon, Equatorial Guinea, Gabon, Congo, Angola\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Niger, Congo} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 41: Weddell Sea
+%----------------------------------
+\SeaCard
+{Weddellmeer} % 1: German Title
+{Weddell Sea} % 2: English subtitle
+{Das Weddell Sea ist ein Randmeer des Southern/South Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Massive Eisschelfe.} % 3: Intro
+{2\,800\,000\,km²} % 4: Fläche
+{3\,000\,m} % 5: Mitt. Tiefe
+{6\,820\,m} % 6: Max Tiefe
+{-2--2\,°C} % 7: Temperatur
+{34--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Antarctica\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 42: Scotia Sea
+%----------------------------------
+\SeaCard
+{Scotiasee} % 1: German Title
+{Scotia Sea} % 2: English subtitle
+{Das Scotia Sea ist ein Randmeer des Southern/South Atlantic mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Drakestraße.} % 3: Intro
+{1\,300\,000\,km²} % 4: Fläche
+{3\,096\,m} % 5: Mitt. Tiefe
+{6\,022\,m} % 6: Max Tiefe
+{-1--6\,°C} % 7: Temperatur
+{34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Antarctica, South Georgia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 43: Bering Sea
+%----------------------------------
+\SeaCard
+{Beringmeer} % 1: German Title
+{Bering Sea} % 2: English subtitle
+{Das Bering Sea ist ein Randmeer des North Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Produktive Fischerei.} % 3: Intro
+{2\,000\,000\,km²} % 4: Fläche
+{1\,640\,m} % 5: Mitt. Tiefe
+{4\,097\,m} % 6: Max Tiefe
+{-2--12\,°C} % 7: Temperatur
+{32--33\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia, USA (Alaska)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Yukon, Anadyr} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 44: Bering Strait
+%----------------------------------
+\SeaCard
+{Beringstraße} % 1: German Title
+{Bering Strait} % 2: English subtitle
+{Die Bering Strait ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: 85 km breit, connects Pacific-Arctic.} % 3: Intro
+{2\,300\,km²} % 4: Fläche
+{45\,m} % 5: Mitt. Tiefe
+{50\,m} % 6: Max Tiefe
+{-2--10\,°C} % 7: Temperatur
+{32--33\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia, USA (Alaska)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 45: Sea of Okhotsk
+%----------------------------------
+\SeaCard
+{Ochotskisches Meer} % 1: German Title
+{Sea of Okhotsk} % 2: English subtitle
+{Das Sea of Okhotsk ist ein Randmeer des North Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Kältestes ostasiatisches Meer.} % 3: Intro
+{1\,583\,000\,km²} % 4: Fläche
+{838\,m} % 5: Mitt. Tiefe
+{3\,372\,m} % 6: Max Tiefe
+{-2--18\,°C} % 7: Temperatur
+{32--33\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia, Japan\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Amur} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 46: Sea of Japan
+%----------------------------------
+\SeaCard
+{Japanisches Meer} % 1: German Title
+{Sea of Japan} % 2: English subtitle
+{Das Sea of Japan ist ein Randmeer des North Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Tief basin, reiche Fischgründe.} % 3: Intro
+{978\,000\,km²} % 4: Fläche
+{1\,667\,m} % 5: Mitt. Tiefe
+{3\,742\,m} % 6: Max Tiefe
+{0--25\,°C} % 7: Temperatur
+{33--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Japan, Russia, North Korea, South Korea\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 47: Yellow Sea
+%----------------------------------
+\SeaCard
+{Gelbes Meer} % 1: German Title
+{Yellow Sea} % 2: English subtitle
+{Das Yellow Sea ist ein Randmeer des North Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Flach, gelbe Sedimente.} % 3: Intro
+{380\,000\,km²} % 4: Fläche
+{44\,m} % 5: Mitt. Tiefe
+{152\,m} % 6: Max Tiefe
+{0--28\,°C} % 7: Temperatur
+{30--32\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} China, North Korea, South Korea\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Yellow (Huang He)} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 48: East China Sea
+%----------------------------------
+\SeaCard
+{Ostchinesisches Meer} % 1: German Title
+{East China Sea} % 2: English subtitle
+{Das East China Sea ist ein Randmeer des North Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Kontinentalschelf.} % 3: Intro
+{1\,249\,000\,km²} % 4: Fläche
+{349\,m} % 5: Mitt. Tiefe
+{2\,719\,m} % 6: Max Tiefe
+{10--28\,°C} % 7: Temperatur
+{31--34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} China, Taiwan, Japan, South Korea\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Yangtze} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 49: South China Sea
+%----------------------------------
+\SeaCard
+{Südchinesisches Meer} % 1: German Title
+{South China Sea} % 2: English subtitle
+{Das South China Sea ist ein Randmeer des North Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Umstrittene Gebiete, Taifune.} % 3: Intro
+{3\,500\,000\,km²} % 4: Fläche
+{1\,652\,m} % 5: Mitt. Tiefe
+{5\,559\,m} % 6: Max Tiefe
+{20--30\,°C} % 7: Temperatur
+{32--34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} China,  Taiwan,  Philippines,  Malaysia,  Brunei, u.a.\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Pearl, Mekong, Red} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 50: Philippine Sea
+%----------------------------------
+\SeaCard
+{Philippinensee} % 1: German Title
+{Philippine Sea} % 2: English subtitle
+{Das Philippine Sea ist ein Randmeer des North Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Tiefest trenches.} % 3: Intro
+{5\,177\,562\,km²} % 4: Fläche
+{4\,080\,m} % 5: Mitt. Tiefe
+{10\,540\,m} % 6: Max Tiefe
+{20--30\,°C} % 7: Temperatur
+{34--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Philippines, Japan, Taiwan\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Cagayan} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 51: Gulf of Alaska
+%----------------------------------
+\SeaCard
+{Golf von Alaska} % 1: German Title
+{Gulf of Alaska} % 2: English subtitle
+{Das Gulf of Alaska ist ein Randmeer des North Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Stürmisch, reiche Fischgründe.} % 3: Intro
+{1\,533\,000\,km²} % 4: Fläche
+{2\,431\,m} % 5: Mitt. Tiefe
+{5\,659\,m} % 6: Max Tiefe
+{2--16\,°C} % 7: Temperatur
+{32--33\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} USA (Alaska), Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Copper, Alsek} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 52: Gulf of California
+%----------------------------------
+\SeaCard
+{Golf von Kalifornien} % 1: German Title
+{Gulf of California} % 2: English subtitle
+{Das Gulf of California ist ein Randmeer des North Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Langer schmaler Golf.} % 3: Intro
+{177\,000\,km²} % 4: Fläche
+{818\,m} % 5: Mitt. Tiefe
+{3\,292\,m} % 6: Max Tiefe
+{16--30\,°C} % 7: Temperatur
+{35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Mexico\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Colorado} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 53: Celebes Sea
+%----------------------------------
+\SeaCard
+{Celebessee} % 1: German Title
+{Celebes Sea} % 2: English subtitle
+{Das Celebes Sea ist ein Randmeer des South Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Tief, warm.} % 3: Intro
+{280\,000\,km²} % 4: Fläche
+{4\,700\,m} % 5: Mitt. Tiefe
+{6\,200\,m} % 6: Max Tiefe
+{27--30\,°C} % 7: Temperatur
+{34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Philippines, Indonesia, Malaysia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 54: Java Sea
+%----------------------------------
+\SeaCard
+{Javasee} % 1: German Title
+{Java Sea} % 2: English subtitle
+{Das Java Sea ist ein Randmeer des South Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Very flach.} % 3: Intro
+{320\,000\,km²} % 4: Fläche
+{46\,m} % 5: Mitt. Tiefe
+{46\,m} % 6: Max Tiefe
+{27--30\,°C} % 7: Temperatur
+{32--34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Indonesia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Solo} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 55: Banda Sea
+%----------------------------------
+\SeaCard
+{Bandasee} % 1: German Title
+{Banda Sea} % 2: English subtitle
+{Das Banda Sea ist ein Randmeer des South Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Tief basins, vulkanisch.} % 3: Intro
+{470\,000\,km²} % 4: Fläche
+{3\,060\,m} % 5: Mitt. Tiefe
+{7\,440\,m} % 6: Max Tiefe
+{27--30\,°C} % 7: Temperatur
+{34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Indonesia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 56: Arafura Sea
+%----------------------------------
+\SeaCard
+{Arafurasee} % 1: German Title
+{Arafura Sea} % 2: English subtitle
+{Das Arafura Sea ist ein Randmeer des South Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Flach, tropisch.} % 3: Intro
+{700\,000\,km²} % 4: Fläche
+{80\,m} % 5: Mitt. Tiefe
+{3\,680\,m} % 6: Max Tiefe
+{25--29\,°C} % 7: Temperatur
+{34--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Indonesia, Papua New Guinea, Australia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Fly, Digul} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 57: Coral Sea
+%----------------------------------
+\SeaCard
+{Korallenmeer} % 1: German Title
+{Coral Sea} % 2: English subtitle
+{Das Coral Sea ist ein Randmeer des South Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Großes Barriereriff.} % 3: Intro
+{4\,791\,000\,km²} % 4: Fläche
+{2\,394\,m} % 5: Mitt. Tiefe
+{9\,140\,m} % 6: Max Tiefe
+{23--28\,°C} % 7: Temperatur
+{35--36\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Australia, Papua New Guinea, Solomon Islands, Vanuatu, New Caledonia (France)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 58: Tasman Sea
+%----------------------------------
+\SeaCard
+{Tasmansee} % 1: German Title
+{Tasman Sea} % 2: English subtitle
+{Das Tasman Sea ist ein Randmeer des South Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Raue See.} % 3: Intro
+{2\,300\,000\,km²} % 4: Fläche
+{3\,000\,m} % 5: Mitt. Tiefe
+{5\,943\,m} % 6: Max Tiefe
+{8--23\,°C} % 7: Temperatur
+{35--35.5\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Australia, New Zealand\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 59: Solomon Sea
+%----------------------------------
+\SeaCard
+{Salomonensee} % 1: German Title
+{Solomon Sea} % 2: English subtitle
+{Das Solomon Sea ist ein Randmeer des South Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Tief, vulkanisch.} % 3: Intro
+{720\,000\,km²} % 4: Fläche
+{2\,500\,m} % 5: Mitt. Tiefe
+{9\,140\,m} % 6: Max Tiefe
+{26--30\,°C} % 7: Temperatur
+{34--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Papua New Guinea, Solomon Islands\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 60: Bismarck Sea
+%----------------------------------
+\SeaCard
+{Bismarcksee} % 1: German Title
+{Bismarck Sea} % 2: English subtitle
+{Das Bismarck Sea ist ein Randmeer des South Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Vulkanisch.} % 3: Intro
+{40\,000\,km²} % 4: Fläche
+{1\,200\,m} % 5: Mitt. Tiefe
+{2\,665\,m} % 6: Max Tiefe
+{27--30\,°C} % 7: Temperatur
+{34--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Papua New Guinea\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Sepik, Ramu} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 61: Sulu Sea
+%----------------------------------
+\SeaCard
+{Sulusee} % 1: German Title
+{Sulu Sea} % 2: English subtitle
+{Das Sulu Sea ist ein Randmeer des South Pacific mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Tief basins.} % 3: Intro
+{348\,000\,km²} % 4: Fläche
+{1\,450\,m} % 5: Mitt. Tiefe
+{5\,576\,m} % 6: Max Tiefe
+{27--30\,°C} % 7: Temperatur
+{34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Philippines, Malaysia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 62: Red Sea
+%----------------------------------
+\SeaCard
+{Rotes Meer} % 1: German Title
+{Red Sea} % 2: English subtitle
+{Das Red Sea ist ein Randmeer des Indian mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Höchster Salzgehalt, Korallenriffe.} % 3: Intro
+{438\,000\,km²} % 4: Fläche
+{490\,m} % 5: Mitt. Tiefe
+{3\,040\,m} % 6: Max Tiefe
+{20--30\,°C} % 7: Temperatur
+{40--41\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Egypt, Sudan, Eritrea, Djibouti, Yemen, Saudi Arabia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 63: Bab-el-Mandeb
+%----------------------------------
+\SeaCard
+{Bab al-Mandab} % 1: German Title
+{Bab-el-Mandeb} % 2: English subtitle
+{Die Bab-el-Mandeb ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: 26 km an der engsten Stelle, critical oil chokepoint.} % 3: Intro
+{5\,000\,km²} % 4: Fläche
+{150\,m} % 5: Mitt. Tiefe
+{310\,m} % 6: Max Tiefe
+{22--28\,°C} % 7: Temperatur
+{36\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Yemen, Djibouti, Eritrea\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 64: Persian Gulf
+%----------------------------------
+\SeaCard
+{Persischer Golf} % 1: German Title
+{Persian Gulf} % 2: English subtitle
+{Das Persian Gulf ist ein Randmeer des Indian mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Große Ölreserven.} % 3: Intro
+{251\,000\,km²} % 4: Fläche
+{50\,m} % 5: Mitt. Tiefe
+{90\,m} % 6: Max Tiefe
+{15--35\,°C} % 7: Temperatur
+{37--41\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Iran, Iraq, Kuwait, Saudi Arabia, Bahrain, Qatar, UAE, Oman\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Tigris-Euphrates (Shatt al-Arab)} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 65: Strait of Hormuz
+%----------------------------------
+\SeaCard
+{Straße von Hormuz} % 1: German Title
+{Strait of Hormuz} % 2: English subtitle
+{Die Strait of Hormuz ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: 35-60 km breit, critical oil chokepoint.} % 3: Intro
+{3\,900\,km²} % 4: Fläche
+{75\,m} % 5: Mitt. Tiefe
+{100\,m} % 6: Max Tiefe
+{18--33\,°C} % 7: Temperatur
+{37--40\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Iran, Oman, UAE\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 66: Arabian Sea
+%----------------------------------
+\SeaCard
+{Arabisches Meer} % 1: German Title
+{Arabian Sea} % 2: English subtitle
+{Das Arabian Sea ist ein Randmeer des Indian mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Monsoon influence.} % 3: Intro
+{3\,862\,000\,km²} % 4: Fläche
+{2\,734\,m} % 5: Mitt. Tiefe
+{4\,652\,m} % 6: Max Tiefe
+{22--28\,°C} % 7: Temperatur
+{36--37\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} India, Pakistan, Iran, Oman, Yemen, Maldives, Somalia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Indus} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 67: Bay of Bengal
+%----------------------------------
+\SeaCard
+{Golf von Bengalen} % 1: German Title
+{Bay of Bengal} % 2: English subtitle
+{Das Bay of Bengal ist ein Randmeer des Indian mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Zyklone, große Deltas.} % 3: Intro
+{2\,172\,000\,km²} % 4: Fläche
+{2\,600\,m} % 5: Mitt. Tiefe
+{4\,694\,m} % 6: Max Tiefe
+{25--30\,°C} % 7: Temperatur
+{30--34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} India, Bangladesh, Myanmar, Thailand, Sri Lanka\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Ganges-Brahmaputra, Godavari, Mahanadi, Irrawaddy} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 68: Andaman Sea
+%----------------------------------
+\SeaCard
+{Andamanensee} % 1: German Title
+{Andaman Sea} % 2: English subtitle
+{Das Andaman Sea ist ein Randmeer des Indian mit charakteristischen regionalen Merkmalen. Besondere Merkmale: 2004 Tsunami.} % 3: Intro
+{797\,700\,km²} % 4: Fläche
+{1\,096\,m} % 5: Mitt. Tiefe
+{4\,180\,m} % 6: Max Tiefe
+{26--30\,°C} % 7: Temperatur
+{30--33\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Myanmar, Thailand, Malaysia, Indonesia, India\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Irrawaddy, Salween} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 69: Strait of Malacca
+%----------------------------------
+\SeaCard
+{Straße von Malakka} % 1: German Title
+{Strait of Malacca} % 2: English subtitle
+{Die Strait of Malacca ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: 2.8 km an der engsten Stelle point, meistbefahrene Schifffahrtsroute.} % 3: Intro
+{80\,000\,km²} % 4: Fläche
+{15\,m} % 5: Mitt. Tiefe
+{25\,m} % 6: Max Tiefe
+{26--30\,°C} % 7: Temperatur
+{30--34\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Malaysia, Indonesia, Singapore\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 70: Timor Sea
+%----------------------------------
+\SeaCard
+{Timorsee} % 1: German Title
+{Timor Sea} % 2: English subtitle
+{Das Timor Sea ist ein Randmeer des Indian mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Oil/gas.} % 3: Intro
+{610\,000\,km²} % 4: Fläche
+{435\,m} % 5: Mitt. Tiefe
+{3\,310\,m} % 6: Max Tiefe
+{25--30\,°C} % 7: Temperatur
+{34--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Indonesia, Timor-Leste, Australia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 71: Mozambique Channel
+%----------------------------------
+\SeaCard
+{Straße von Mosambik} % 1: German Title
+{Mozambique Channel} % 2: English subtitle
+{Das Mozambique Channel ist ein Randmeer des Indian mit charakteristischen regionalen Merkmalen. Besondere Merkmale: Schifffahrtsroute.} % 3: Intro
+{700\,000\,km²} % 4: Fläche
+{1\,600\,m} % 5: Mitt. Tiefe
+{3\,292\,m} % 6: Max Tiefe
+{24--28\,°C} % 7: Temperatur
+{35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Mozambique, Madagascar\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Zambezi} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 72: Suez Canal
+%----------------------------------
+\SeaCard
+{Sueskanal} % 1: German Title
+{Suez Canal} % 2: English subtitle
+{Der Suez Canal ist ein künstlicher Wasserweg von großer strategischer Bedeutung. Besondere Merkmale: 193 km lang, verbindet Mittelmeer und Rotes Meer.} % 3: Intro
+{195\,km²} % 4: Fläche
+{13\,m} % 5: Mitt. Tiefe
+{24\,m} % 6: Max Tiefe
+{18--30\,°C} % 7: Temperatur
+{40--42\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Egypt\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 73: Panama Canal
+%----------------------------------
+\SeaCard
+{Panamakanal} % 1: German Title
+{Panama Canal} % 2: English subtitle
+{Der Panama Canal ist ein künstlicher Wasserweg von großer strategischer Bedeutung. Besondere Merkmale: 82 km lang, verbindet Atlantik und Pazifik.} % 3: Intro
+{425\,km²} % 4: Fläche
+{13\,m} % 5: Mitt. Tiefe
+{25\,m} % 6: Max Tiefe
+{24--32\,°C} % 7: Temperatur
+{0--35\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Panama\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Chagres (for locks)} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 74: Caspian Sea
+%----------------------------------
+\SeaCard
+{Kaspisches Meer} % 1: German Title
+{Caspian Sea} % 2: English subtitle
+{Der Caspian Sea ist ein Salz- bzw. Brackwassersee mit einzigartigen Eigenschaften. Besondere Merkmale: World's largest lake, einschließlich Garabogazköl.} % 3: Intro
+{389\,000\,km²} % 4: Fläche
+{211\,m} % 5: Mitt. Tiefe
+{1\,025\,m} % 6: Max Tiefe
+{0--27\,°C} % 7: Temperatur
+{12\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Iran, Kazakhstan, Turkmenistan, Azerbaijan, Russia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Volga, Ural, Kura} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 75: Lake Superior
+%----------------------------------
+\SeaCard
+{Oberer See} % 1: German Title
+{Lake Superior} % 2: English subtitle
+{Der Lake Superior ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Größter Süßwassersee nach Fläche.} % 3: Intro
+{82\,100\,km²} % 4: Fläche
+{147\,m} % 5: Mitt. Tiefe
+{406\,m} % 6: Max Tiefe
+{0--13\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada, USA (Michigan, Wisconsin, Minnesota)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Nipigon, St. Louis, Pigeon} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 76: Lake Victoria
+%----------------------------------
+\SeaCard
+{Victoriasee} % 1: German Title
+{Lake Victoria} % 2: English subtitle
+{Der Lake Victoria ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Größter See Afrikas.} % 3: Intro
+{59\,940\,km²} % 4: Fläche
+{40\,m} % 5: Mitt. Tiefe
+{81\,m} % 6: Max Tiefe
+{20--27\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Tanzania, Uganda, Kenya\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Kagera} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 77: Lake Huron
+%----------------------------------
+\SeaCard
+{Huronsee} % 1: German Title
+{Lake Huron} % 2: English subtitle
+{Der Lake Huron ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Enthält Manitoulin Island.} % 3: Intro
+{59\,590\,km²} % 4: Fläche
+{59\,m} % 5: Mitt. Tiefe
+{229\,m} % 6: Max Tiefe
+{0--22\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada, USA (Michigan)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 78: Lake Michigan
+%----------------------------------
+\SeaCard
+{Michigansee} % 1: German Title
+{Lake Michigan} % 2: English subtitle
+{Der Lake Michigan ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Einziger Großer See vollständig in den USA.} % 3: Intro
+{57\,800\,km²} % 4: Fläche
+{85\,m} % 5: Mitt. Tiefe
+{282\,m} % 6: Max Tiefe
+{0--24\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} USA (Michigan, Wisconsin, Illinois, Indiana)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Fox-Wolf, Grand, Kalamazoo} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 79: Lake Tanganyika
+%----------------------------------
+\SeaCard
+{Tanganjikasee} % 1: German Title
+{Lake Tanganyika} % 2: English subtitle
+{Der Lake Tanganyika ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Längster Süßwassersee, zweittiefster.} % 3: Intro
+{32\,900\,km²} % 4: Fläche
+{570\,m} % 5: Mitt. Tiefe
+{1\,470\,m} % 6: Max Tiefe
+{24--29\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Tanzania, DRC, Burundi, Zambia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Ruzizi, Malagarasi} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 80: Lake Baikal
+%----------------------------------
+\SeaCard
+{Baikalsee} % 1: German Title
+{Lake Baikal} % 2: English subtitle
+{Der Lake Baikal ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Tiefest and oldest lake.} % 3: Intro
+{31\,722\,km²} % 4: Fläche
+{744\,m} % 5: Mitt. Tiefe
+{1\,642\,m} % 6: Max Tiefe
+{3--10\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Selenga, Barguzin, Upper Angara} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 81: Great Bear Lake
+%----------------------------------
+\SeaCard
+{Großer Bärensee} % 1: German Title
+{Great Bear Lake} % 2: English subtitle
+{Der Great Bear Lake ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Größter See vollständig in Kanada.} % 3: Intro
+{31\,153\,km²} % 4: Fläche
+{72\,m} % 5: Mitt. Tiefe
+{446\,m} % 6: Max Tiefe
+{0--18\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Dease, Whitefish} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 82: Lake Malawi (Nyasa)
+%----------------------------------
+\SeaCard
+{Malawisee} % 1: German Title
+{Lake Malawi (Nyasa)} % 2: English subtitle
+{Der Lake Malawi (Nyasa) ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Meisten Fischarten aller Seen.} % 3: Intro
+{29\,600\,km²} % 4: Fläche
+{292\,m} % 5: Mitt. Tiefe
+{706\,m} % 6: Max Tiefe
+{22--28\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Malawi, Mozambique, Tanzania\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Ruhuhu} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 83: Great Slave Lake
+%----------------------------------
+\SeaCard
+{Großer Sklavensee} % 1: German Title
+{Great Slave Lake} % 2: English subtitle
+{Der Great Slave Lake ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Tiefest lake in North America.} % 3: Intro
+{27\,200\,km²} % 4: Fläche
+{41\,m} % 5: Mitt. Tiefe
+{614\,m} % 6: Max Tiefe
+{0--18\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Slave, Hay, Taltson} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 84: Lake Erie
+%----------------------------------
+\SeaCard
+{Eriesee} % 1: German Title
+{Lake Erie} % 2: English subtitle
+{Der Lake Erie ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Kleinstes Volumen der Großen Seen.} % 3: Intro
+{25\,667\,km²} % 4: Fläche
+{19\,m} % 5: Mitt. Tiefe
+{64\,m} % 6: Max Tiefe
+{0--24\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada, USA (Michigan, Ohio, Pennsylvania, New York)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Detroit, Maumee, Grand} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 85: Lake Winnipeg
+%----------------------------------
+\SeaCard
+{Winnipegsee} % 1: German Title
+{Lake Winnipeg} % 2: English subtitle
+{Der Lake Winnipeg ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Sehr großes Einzugsgebiet.} % 3: Intro
+{24\,514\,km²} % 4: Fläche
+{12\,m} % 5: Mitt. Tiefe
+{36\,m} % 6: Max Tiefe
+{0--22\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Red, Saskatchewan, Winnipeg} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 86: Lake Ontario
+%----------------------------------
+\SeaCard
+{Ontariosee} % 1: German Title
+{Lake Ontario} % 2: English subtitle
+{Der Lake Ontario ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Am tiefsten liegender der Großen Seen.} % 3: Intro
+{18\,970\,km²} % 4: Fläche
+{86\,m} % 5: Mitt. Tiefe
+{244\,m} % 6: Max Tiefe
+{0--20\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada, USA (New York)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Niagara, Genesee} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 87: Lake Ladoga
+%----------------------------------
+\SeaCard
+{Ladogasee} % 1: German Title
+{Lake Ladoga} % 2: English subtitle
+{Der Lake Ladoga ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Größter See Europas.} % 3: Intro
+{17\,700\,km²} % 4: Fläche
+{51\,m} % 5: Mitt. Tiefe
+{260\,m} % 6: Max Tiefe
+{0--20\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Svir, Volkhov, Neva} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 88: Lake Balkhash
+%----------------------------------
+\SeaCard
+{Balchaschsee} % 1: German Title
+{Lake Balkhash} % 2: English subtitle
+{Der Lake Balkhash ist ein Salz- bzw. Brackwassersee mit einzigartigen Eigenschaften. Besondere Merkmale: Westhälfte süß, Osthälfte salzig.} % 3: Intro
+{16\,400\,km²} % 4: Fläche
+{5\,m} % 5: Mitt. Tiefe
+{26\,m} % 6: Max Tiefe
+{0--28\,°C} % 7: Temperatur
 {3\,‰} % 8: Salzgehalt
-{0 to 22} % 9: Anrainer
-{Canada} % 10: Zuflüsse
+{\textbf{Anrainer:} Kazakhstan\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Ili} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 106: 106
+% CARD 89: Lake Vostok
 %----------------------------------
 \SeaCard
-{106} % 1: Title
-{Das 106 ist ein bedeutendes Gewässer. Besondere Merkmale: Upper Taymyr.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{26\,m} % 5: Mittlere Tiefe
-{4\,560\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{2.8\,‰} % 8: Salzgehalt
-{-20 to 15} % 9: Anrainer
-{Russia} % 10: Zuflüsse
+{Wostoksee} % 1: German Title
+{Lake Vostok} % 2: English subtitle
+{Der Lake Vostok ist ein subglazialer See, der unter einer dicken Eisschicht verborgen liegt. Besondere Merkmale: Unter 4 km Eis begraben.} % 3: Intro
+{12\,500\,km²} % 4: Fläche
+{430\,m} % 5: Mitt. Tiefe
+{900\,m} % 6: Max Tiefe
+{-3---2\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Antarctica\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 107: 107
+% CARD 90: Lake Onega
 %----------------------------------
 \SeaCard
-{107} % 1: Title
-{Das 107 ist ein bedeutendes Gewässer. Besondere Merkmale: Buha, Shaliu.} % 2: Intro
-{Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{32\,m} % 5: Mittlere Tiefe
-{4\,489\,m} % 6: Max Tiefe
-{14\,°C} % 7: Temperatur
-{21\,‰} % 8: Salzgehalt
-{-5 to 20} % 9: Anrainer
-{China} % 10: Zuflüsse
-
-\vspace{5mm}
-
-
-%----------------------------------
-% CARD 108: 108
-%----------------------------------
-\SeaCard
-{108} % 1: Title
-{Das 108 ist ein bedeutendes Gewässer. Besondere Merkmale: Vuoksi.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{82\,m} % 5: Mittlere Tiefe
-{4\,380\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{17\,‰} % 8: Salzgehalt
-{0 to 20} % 9: Anrainer
-{Finland} % 10: Zuflüsse
+{Onegasee} % 1: German Title
+{Lake Onega} % 2: English subtitle
+{Der Lake Onega ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Zweitgrößter See Europas.} % 3: Intro
+{9\,700\,km²} % 4: Fläche
+{30\,m} % 5: Mitt. Tiefe
+{127\,m} % 6: Max Tiefe
+{0--20\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Suna, Vodla} % 9: Anrainer + Zuflüsse
 
 \newpage
 
 
 %----------------------------------
-% CARD 109: 109
+% CARD 91: Lake Titicaca
 %----------------------------------
 \SeaCard
-{109} % 1: Title
-{Das 109 ist ein bedeutendes Gewässer. Besondere Merkmale: Rainy River.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{64\,m} % 5: Mittlere Tiefe
-{4\,350\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{9\,‰} % 8: Salzgehalt
-{0 to 22} % 9: Anrainer
-{Canada, USA (Minnesota)} % 10: Zuflüsse
+{Titicacasee} % 1: German Title
+{Lake Titicaca} % 2: English subtitle
+{Der Lake Titicaca ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Höchster schiffbarer See (3,812 m).} % 3: Intro
+{8\,372\,km²} % 4: Fläche
+{107\,m} % 5: Mitt. Tiefe
+{281\,m} % 6: Max Tiefe
+{10--16\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Peru, Bolivia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Ramis, Ilave} % 9: Anrainer + Zuflüsse
 
 \vspace{5mm}
 
 
 %----------------------------------
-% CARD 110: 110
+% CARD 92: Lake Nicaragua
 %----------------------------------
 \SeaCard
-{110} % 1: Title
-{Das 110 ist ein bedeutendes Gewässer. Besondere Merkmale: Songacha, Melgunovka.} % 2: Intro
-{Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen
-{10\,m} % 5: Mittlere Tiefe
-{4\,190\,m} % 6: Max Tiefe
-{0\,°C} % 7: Temperatur
-{4.5\,‰} % 8: Salzgehalt
-{0 to 25} % 9: Anrainer
-{Russia, China} % 10: Zuflüsse
+{Nicaraguasee} % 1: German Title
+{Lake Nicaragua} % 2: English subtitle
+{Der Lake Nicaragua ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Größter See Mittelamerikas.} % 3: Intro
+{8\,264\,km²} % 4: Fläche
+{13\,m} % 5: Mitt. Tiefe
+{26\,m} % 6: Max Tiefe
+{25--29\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Nicaragua\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Tipitapa, San Juan} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 93: Lake Athabasca
+%----------------------------------
+\SeaCard
+{Athabascasee} % 1: German Title
+{Lake Athabasca} % 2: English subtitle
+{Der Lake Athabasca ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Überrest des glazialen Lake McConnell.} % 3: Intro
+{7\,850\,km²} % 4: Fläche
+{20\,m} % 5: Mitt. Tiefe
+{124\,m} % 6: Max Tiefe
+{0--20\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Athabasca, Fond du Lac} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 94: Reindeer Lake
+%----------------------------------
+\SeaCard
+{Reindeer Lake} % 1: German Title
+{Reindeer Lake} % 2: English subtitle
+{Der Reindeer Lake ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Meteoreinschlagstelle in tiefsten Bereichen.} % 3: Intro
+{6\,650\,km²} % 4: Fläche
+{53\,m} % 5: Mitt. Tiefe
+{219\,m} % 6: Max Tiefe
+{0--18\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Reindeer} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 95: Lake Turkana
+%----------------------------------
+\SeaCard
+{Turkana-See} % 1: German Title
+{Lake Turkana} % 2: English subtitle
+{Der Lake Turkana ist ein Salz- bzw. Brackwassersee mit einzigartigen Eigenschaften. Besondere Merkmale: Größter Wüsten- und alkalischer See.} % 3: Intro
+{6\,405\,km²} % 4: Fläche
+{30\,m} % 5: Mitt. Tiefe
+{109\,m} % 6: Max Tiefe
+{28--31\,°C} % 7: Temperatur
+{2.5\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Kenya, Ethiopia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Omo, Turkwel} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 96: Issyk-Kul
+%----------------------------------
+\SeaCard
+{Yssykköl} % 1: German Title
+{Issyk-Kul} % 2: English subtitle
+{Der Issyk-Kul ist ein Salz- bzw. Brackwassersee mit einzigartigen Eigenschaften. Besondere Merkmale: Zweitgrößter Gebirgssee, friert nie.} % 3: Intro
+{6\,236\,km²} % 4: Fläche
+{278\,m} % 5: Mitt. Tiefe
+{668\,m} % 6: Max Tiefe
+{4--18\,°C} % 7: Temperatur
+{6\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Kyrgyzstan\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Jyrgalang, Tyup} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 97: Lake Vänern
+%----------------------------------
+\SeaCard
+{Vänern} % 1: German Title
+{Lake Vänern} % 2: English subtitle
+{Der Lake Vänern ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Größter See Europasan Union.} % 3: Intro
+{5\,650\,km²} % 4: Fläche
+{27\,m} % 5: Mitt. Tiefe
+{106\,m} % 6: Max Tiefe
+{2--18\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Sweden\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Klarälven, Gullspång} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 98: Dead Sea
+%----------------------------------
+\SeaCard
+{Totes Meer} % 1: German Title
+{Dead Sea} % 2: English subtitle
+{Der Dead Sea ist ein Salz- bzw. Brackwassersee mit einzigartigen Eigenschaften. Besondere Merkmale: Tiefster Punkt der Erde (-430m), 9,6-mal salziger als Ozean.} % 3: Intro
+{605\,km²} % 4: Fläche
+{120\,m} % 5: Mitt. Tiefe
+{304\,m} % 6: Max Tiefe
+{20--32\,°C} % 7: Temperatur
+{342\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Israel, Jordan, Palestine (West Bank)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Jordan River} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 99: Lake Rukwa
+%----------------------------------
+\SeaCard
+{Rukwasee} % 1: German Title
+{Lake Rukwa} % 2: English subtitle
+{Der Lake Rukwa ist ein Salz- bzw. Brackwassersee mit einzigartigen Eigenschaften. Besondere Merkmale: Tanzania's 3rd largest lake, saisonale Schwankungen.} % 3: Intro
+{5\,615\,km²} % 4: Fläche
+{11\,m} % 5: Mitt. Tiefe
+{22\,m} % 6: Max Tiefe
+{20--28\,°C} % 7: Temperatur
+{Variable\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Tanzania\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Songwe} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 100: Lake Albert
+%----------------------------------
+\SeaCard
+{Albertsee} % 1: German Title
+{Lake Albert} % 2: English subtitle
+{Der Lake Albert ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Teil des Ostafrikanischen Grabensystems.} % 3: Intro
+{5\,590\,km²} % 4: Fläche
+{25\,m} % 5: Mitt. Tiefe
+{51\,m} % 6: Max Tiefe
+{26--30\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Uganda, DRC\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Victoria Nile, Semliki} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 101: Nettilling Lake
+%----------------------------------
+\SeaCard
+{Nettilling Lake} % 1: German Title
+{Nettilling Lake} % 2: English subtitle
+{Der Nettilling Lake ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Größter See auf einer Insel (Baffin Island).} % 3: Intro
+{5\,542\,km²} % 4: Fläche
+{53\,m} % 5: Mitt. Tiefe
+{132\,m} % 6: Max Tiefe
+{0--10\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} ---} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 102: Lake Winnipegosis
+%----------------------------------
+\SeaCard
+{Winnipegosis-See} % 1: German Title
+{Lake Winnipegosis} % 2: English subtitle
+{Der Lake Winnipegosis ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Zweitgrößter See in Manitoba.} % 3: Intro
+{5\,370\,km²} % 4: Fläche
+{5\,m} % 5: Mitt. Tiefe
+{12\,m} % 6: Max Tiefe
+{0--22\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Mossy, Red Deer} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 103: Lake Mweru
+%----------------------------------
+\SeaCard
+{Mwerusee} % 1: German Title
+{Lake Mweru} % 2: English subtitle
+{Der Lake Mweru ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Zweitgrößter See im Kongo-Einzugsgebiet.} % 3: Intro
+{5\,120\,km²} % 4: Fläche
+{7\,m} % 5: Mitt. Tiefe
+{27\,m} % 6: Max Tiefe
+{24--28\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Zambia, DRC\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Luapula} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 104: Lake Nipigon
+%----------------------------------
+\SeaCard
+{Nipigon-See} % 1: German Title
+{Lake Nipigon} % 2: English subtitle
+{Der Lake Nipigon ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Größter See vollständig in Ontario, Teil des Großen-Seen-Beckens.} % 3: Intro
+{4\,848\,km²} % 4: Fläche
+{52\,m} % 5: Mitt. Tiefe
+{165\,m} % 6: Max Tiefe
+{0--20\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Ombabika, Gull} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 105: Lake Manitoba
+%----------------------------------
+\SeaCard
+{Manitobasee} % 1: German Title
+{Lake Manitoba} % 2: English subtitle
+{Der Lake Manitoba ist ein Salz- bzw. Brackwassersee mit einzigartigen Eigenschaften. Besondere Merkmale: Überrest des glazialen Lake Agassiz, very flach.} % 3: Intro
+{4\,706\,km²} % 4: Fläche
+{3\,m} % 5: Mitt. Tiefe
+{7\,m} % 6: Max Tiefe
+{0--22\,°C} % 7: Temperatur
+{3.5\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Whitemud, Waterhen} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 106: Lake Taymyr
+%----------------------------------
+\SeaCard
+{Taimyrsee} % 1: German Title
+{Lake Taymyr} % 2: English subtitle
+{Der Lake Taymyr ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Größter See vollständig innerhalb des Polarkreises.} % 3: Intro
+{4\,560\,km²} % 4: Fläche
+{2\,m} % 5: Mitt. Tiefe
+{26\,m} % 6: Max Tiefe
+{-20--15\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Upper Taymyr} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 107: Qinghai Lake
+%----------------------------------
+\SeaCard
+{Qinghai-See} % 1: German Title
+{Qinghai Lake} % 2: English subtitle
+{Der Qinghai Lake ist ein Salz- bzw. Brackwassersee mit einzigartigen Eigenschaften. Besondere Merkmale: Größter See Chinas, abflussloses Becken.} % 3: Intro
+{4\,489\,km²} % 4: Fläche
+{21\,m} % 5: Mitt. Tiefe
+{32\,m} % 6: Max Tiefe
+{-5--20\,°C} % 7: Temperatur
+{14\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} China\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Buha, Shaliu} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 108: Lake Saimaa
+%----------------------------------
+\SeaCard
+{Saimaa} % 1: German Title
+{Lake Saimaa} % 2: English subtitle
+{Der Lake Saimaa ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Größter See Finnlands, größter in den nordischen Ländern.} % 3: Intro
+{4\,380\,km²} % 4: Fläche
+{17\,m} % 5: Mitt. Tiefe
+{82\,m} % 6: Max Tiefe
+{0--20\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Finland\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Vuoksi} % 9: Anrainer + Zuflüsse
+
+\newpage
+
+
+%----------------------------------
+% CARD 109: Lake of the Woods
+%----------------------------------
+\SeaCard
+{Lake of the Woods} % 1: German Title
+{Lake of the Woods} % 2: English subtitle
+{Der Lake of the Woods ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Über 14.500 Inseln, 105,000 km Küstenlinie.} % 3: Intro
+{4\,350\,km²} % 4: Fläche
+{9\,m} % 5: Mitt. Tiefe
+{64\,m} % 6: Max Tiefe
+{0--22\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Canada, USA (Minnesota)\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Rainy River} % 9: Anrainer + Zuflüsse
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 110: Lake Khanka
+%----------------------------------
+\SeaCard
+{Chankasee} % 1: German Title
+{Lake Khanka} % 2: English subtitle
+{Der Lake Khanka ist ein Süßwassersee mit bedeutendem ökologischen Wert. Besondere Merkmale: Entwässert durch den Amur ins Japanische Meer.} % 3: Intro
+{4\,190\,km²} % 4: Fläche
+{4\,m} % 5: Mitt. Tiefe
+{10\,m} % 6: Max Tiefe
+{0--25\,°C} % 7: Temperatur
+{0\,‰} % 8: Salzgehalt
+{\textbf{Anrainer:} Russia, China\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+\textbf{Zuflüsse:} Songacha, Melgunovka} % 9: Anrainer + Zuflüsse
 
 \end{document}
