@@ -13,8 +13,8 @@
 \setlength{\cardW}{59mm}
 \setlength{\cardH}{91mm}
 
-% Command to produce a card frame
-\newcommand{\SeaCard}[9]{%
+% Command to produce a card frame with 10 parameters
+\newcommand{\SeaCard}[{10}]{%
 \fbox{\begin{minipage}[t][\dimexpr\cardH-2\fboxsep-2\fboxrule\relax][t]{\dimexpr\cardW-2\fboxsep-2\fboxrule\relax}
 \raggedright
 \setlength{\baselineskip}{8pt}
@@ -43,7 +43,7 @@
 \noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
 {\scriptsize
 \begin{tabular}{@{}l@{\hspace{1mm}}|@{\hspace{1mm}}l@{}}
-\textbf{Mittlere Tiefe:} #6 & \textbf{Max. Tiefe:} #5 \\
+\textbf{Mittlere Tiefe:} #5 & \textbf{Max. Tiefe:} #6 \\
 \end{tabular}
 }\\[-0.5ex]
 \noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
@@ -55,6 +55,9 @@
 \noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
 % Anrainer
 {\scriptsize\textbf{Anrainer:} #9}\\[0.3ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+% Zuflüsse
+{\scriptsize\textbf{Zuflüsse:} #{10}}\\[0.3ex]
 \end{minipage}}%
 }
 
@@ -68,12 +71,13 @@
 {1} % 1: Title
 {Der 1 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Yukon, Columbia, Sacramento, Amur.} % 2: Intro
 {Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{82\,500\,000\,m} % 5: Max Tiefe
-{10\,911\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{10\,911\,m} % 5: Mittlere Tiefe
+{82\,500\,000\,m} % 6: Max Tiefe
 {32-35\,°C} % 7: Temperatur
 {4280\,‰} % 8: Salzgehalt
 {0 to 30} % 9: Anrainer
+{USA, Canada, Russia, Japan, China, Philippines, Indonesia, Australia, Chile, Peru, Mexico, and many island nations} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -85,12 +89,13 @@
 {2} % 1: Title
 {Der 2 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Fly, Sepik, Waiapu.} % 2: Intro
 {Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{82\,500\,000\,m} % 5: Max Tiefe
-{7\,434\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{7\,434\,m} % 5: Mittlere Tiefe
+{82\,500\,000\,m} % 6: Max Tiefe
 {34-36\,°C} % 7: Temperatur
 {4000\,‰} % 8: Salzgehalt
 {10 to 30} % 9: Anrainer
+{Indonesia, Australia, New Zealand, Chile, Peru, Ecuador, and island nations} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -102,12 +107,13 @@
 {3} % 1: Title
 {Der 3 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: St. Lawrence, Mississippi.} % 2: Intro
 {Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{41\,490\,000\,m} % 5: Max Tiefe
-{8\,486\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{8\,486\,m} % 5: Mittlere Tiefe
+{41\,490\,000\,m} % 6: Max Tiefe
 {34-37\,°C} % 7: Temperatur
 {3300\,‰} % 8: Salzgehalt
 {-2 to 28} % 9: Anrainer
+{USA, Canada, Mexico, Europe, North Africa, Caribbean nations} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -119,12 +125,13 @@
 {4} % 1: Title
 {Der 4 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Paraná, Orange, Congo.} % 2: Intro
 {Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{43\,510\,000\,m} % 5: Max Tiefe
-{8\,264\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{8\,264\,m} % 5: Mittlere Tiefe
+{43\,510\,000\,m} % 6: Max Tiefe
 {34-37\,°C} % 7: Temperatur
 {3900\,‰} % 8: Salzgehalt
 {0 to 28} % 9: Anrainer
+{Brazil, Argentina, Uruguay, South Africa, Namibia, Angola} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -136,12 +143,13 @@
 {5} % 1: Title
 {Der 5 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Ganges-Brahmaputra, Indus, Zambezi.} % 2: Intro
 {Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{70\,560\,000\,m} % 5: Max Tiefe
-{7\,258\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{7\,258\,m} % 5: Mittlere Tiefe
+{70\,560\,000\,m} % 6: Max Tiefe
 {34-36\,°C} % 7: Temperatur
 {3741\,‰} % 8: Salzgehalt
 {20 to 30} % 9: Anrainer
+{India, Pakistan, Bangladesh, Myanmar, Thailand, Indonesia, Australia, South Africa, Mozambique, Tanzania, Kenya, Somalia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -153,12 +161,13 @@
 {6} % 1: Title
 {Der 6 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: None (glacial meltwater).} % 2: Intro
 {Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{21\,960\,000\,m} % 5: Max Tiefe
-{7\,235\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{7\,235\,m} % 5: Mittlere Tiefe
+{21\,960\,000\,m} % 6: Max Tiefe
 {33.5-34\,°C} % 7: Temperatur
 {3270\,‰} % 8: Salzgehalt
 {-2 to 10} % 9: Anrainer
+{Antarctica} % 10: Zuflüsse
 
 \newpage
 
@@ -170,12 +179,13 @@
 {7} % 1: Title
 {Der 7 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Ob, Yenisei, Lena, Mackenzie.} % 2: Intro
 {Ocean\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{14\,060\,000\,m} % 5: Max Tiefe
-{5\,450\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{5\,450\,m} % 5: Mittlere Tiefe
+{14\,060\,000\,m} % 6: Max Tiefe
 {30-34\,°C} % 7: Temperatur
 {1205\,‰} % 8: Salzgehalt
 {-2 to 5} % 9: Anrainer
+{Russia, Norway, Iceland, Greenland (Denmark), Canada, USA (Alaska)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -187,12 +197,13 @@
 {8} % 1: Title
 {Das 8 ist ein bedeutendes Gewässer. Besondere Merkmale: Pechora.} % 2: Intro
 {Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{1\,400\,000\,m} % 5: Max Tiefe
-{600\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{600\,m} % 5: Mittlere Tiefe
+{1\,400\,000\,m} % 6: Max Tiefe
 {34-35\,°C} % 7: Temperatur
 {230\,‰} % 8: Salzgehalt
 {-1 to 12} % 9: Anrainer
+{Russia, Norway} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -204,12 +215,13 @@
 {9} % 1: Title
 {Das 9 ist ein bedeutendes Gewässer. Besondere Merkmale: Ob, Yenisei.} % 2: Intro
 {Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{880\,000\,m} % 5: Max Tiefe
-{620\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{620\,m} % 5: Mittlere Tiefe
+{880\,000\,m} % 6: Max Tiefe
 {10-34\,°C} % 7: Temperatur
 {110\,‰} % 8: Salzgehalt
 {-2 to 6} % 9: Anrainer
+{Russia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -221,12 +233,13 @@
 {10} % 1: Title
 {Das 10 ist ein bedeutendes Gewässer. Besondere Merkmale: Lena, Yana.} % 2: Intro
 {Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{662\,000\,m} % 5: Max Tiefe
-{3\,385\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{3\,385\,m} % 5: Mittlere Tiefe
+{662\,000\,m} % 6: Max Tiefe
 {20-34\,°C} % 7: Temperatur
 {578\,‰} % 8: Salzgehalt
 {-1.8 to 8} % 9: Anrainer
+{Russia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -238,12 +251,13 @@
 {11} % 1: Title
 {Das 11 ist ein bedeutendes Gewässer. Besondere Merkmale: Kolyma, Indigirka.} % 2: Intro
 {Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{987\,000\,m} % 5: Max Tiefe
-{155\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{155\,m} % 5: Mittlere Tiefe
+{987\,000\,m} % 6: Max Tiefe
 {28-32\,°C} % 7: Temperatur
 {58\,‰} % 8: Salzgehalt
 {-2 to 5} % 9: Anrainer
+{Russia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -255,12 +269,13 @@
 {12} % 1: Title
 {Das 12 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{595\,000\,m} % 5: Max Tiefe
-{160\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{160\,m} % 5: Mittlere Tiefe
+{595\,000\,m} % 6: Max Tiefe
 {28-33\,°C} % 7: Temperatur
 {77\,‰} % 8: Salzgehalt
 {-2 to 12} % 9: Anrainer
+{Russia, USA (Alaska)} % 10: Zuflüsse
 
 \newpage
 
@@ -272,12 +287,13 @@
 {13} % 1: Title
 {Das 13 ist ein bedeutendes Gewässer. Besondere Merkmale: Mackenzie.} % 2: Intro
 {Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{476\,000\,m} % 5: Max Tiefe
-{4\,683\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{4\,683\,m} % 5: Mittlere Tiefe
+{476\,000\,m} % 6: Max Tiefe
 {28-32\,°C} % 7: Temperatur
 {1004\,‰} % 8: Salzgehalt
 {-2 to 8} % 9: Anrainer
+{Canada, USA (Alaska)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -289,12 +305,13 @@
 {14} % 1: Title
 {Das 14 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{1\,205\,000\,m} % 5: Max Tiefe
-{4\,846\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{4\,846\,m} % 5: Mittlere Tiefe
+{1\,205\,000\,m} % 6: Max Tiefe
 {30-35\,°C} % 7: Temperatur
 {1444\,‰} % 8: Salzgehalt
 {-2 to 6} % 9: Anrainer
+{Greenland (Denmark), Iceland, Norway} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -306,12 +323,13 @@
 {15} % 1: Title
 {Das 15 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
 {Marginal sea (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{16\,000\,m} % 5: Max Tiefe
-{300\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{300\,m} % 5: Mittlere Tiefe
+{16\,000\,m} % 6: Max Tiefe
 {30-32\,°C} % 7: Temperatur
 {150\,‰} % 8: Salzgehalt
 {-2 to 2} % 9: Anrainer
+{Greenland (Denmark)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -323,12 +341,13 @@
 {16} % 1: Title
 {Die 16 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
 {Strait (Arctic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{202\,500\,m} % 5: Max Tiefe
-{5\,550\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{5\,550\,m} % 5: Mittlere Tiefe
+{202\,500\,m} % 6: Max Tiefe
 {34-35\,°C} % 7: Temperatur
 {1500\,‰} % 8: Salzgehalt
 {-2 to 5} % 9: Anrainer
+{Greenland (Denmark), Norway (Svalbard)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -340,12 +359,13 @@
 {17} % 1: Title
 {Das 17 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{1\,383\,000\,m} % 5: Max Tiefe
-{3\,970\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{3\,970\,m} % 5: Mittlere Tiefe
+{1\,383\,000\,m} % 6: Max Tiefe
 {35\,°C} % 7: Temperatur
 {1742\,‰} % 8: Salzgehalt
 {2 to 13} % 9: Anrainer
+{Norway, Iceland, Faroe Islands (Denmark)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -357,12 +377,13 @@
 {18} % 1: Title
 {Das 18 ist ein bedeutendes Gewässer. Besondere Merkmale: Rhine, Elbe, Thames.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{570\,000\,m} % 5: Max Tiefe
-{700\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{700\,m} % 5: Mittlere Tiefe
+{570\,000\,m} % 6: Max Tiefe
 {32-35\,°C} % 7: Temperatur
 {95\,‰} % 8: Salzgehalt
 {4 to 18} % 9: Anrainer
+{UK, Norway, Denmark, Germany, Netherlands, Belgium, France} % 10: Zuflüsse
 
 \newpage
 
@@ -374,12 +395,13 @@
 {19} % 1: Title
 {Das 19 ist ein bedeutendes Gewässer. Besondere Merkmale: Neva, Vistula, Oder.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{377\,000\,m} % 5: Max Tiefe
-{459\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{459\,m} % 5: Mittlere Tiefe
+{377\,000\,m} % 6: Max Tiefe
 {6-20\,°C} % 7: Temperatur
 {55\,‰} % 8: Salzgehalt
 {0 to 20} % 9: Anrainer
+{Sweden, Finland, Russia, Estonia, Latvia, Lithuania, Poland, Germany, Denmark} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -391,12 +413,13 @@
 {20} % 1: Title
 {Das 20 ist ein bedeutendes Gewässer. Besondere Merkmale: Nile, Po, Rhône, Ebro.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{2\,500\,000\,m} % 5: Max Tiefe
-{5\,267\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{5\,267\,m} % 5: Mittlere Tiefe
+{2\,500\,000\,m} % 6: Max Tiefe
 {37-39\,°C} % 7: Temperatur
 {1500\,‰} % 8: Salzgehalt
 {10 to 30} % 9: Anrainer
+{Spain, France, Monaco, Italy, Slovenia, Croatia, Bosnia-Herzegovina, Montenegro, Albania, Greece, Turkey, Syria, Lebanon, Israel, Egypt, Libya, Tunisia, Algeria, Morocco} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -408,12 +431,13 @@
 {21} % 1: Title
 {Das 21 ist ein bedeutendes Gewässer. Besondere Merkmale: Danube, Dnieper, Don.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{436\,000\,m} % 5: Max Tiefe
-{2\,212\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{2\,212\,m} % 5: Mittlere Tiefe
+{436\,000\,m} % 6: Max Tiefe
 {17-18\,°C} % 7: Temperatur
 {1253\,‰} % 8: Salzgehalt
 {6 to 25} % 9: Anrainer
+{Turkey, Bulgaria, Romania, Ukraine, Russia, Georgia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -425,12 +449,13 @@
 {22} % 1: Title
 {Das 22 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{11\,350\,m} % 5: Max Tiefe
-{1\,370\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{1\,370\,m} % 5: Mittlere Tiefe
+{11\,350\,m} % 6: Max Tiefe
 {22-38\,°C} % 7: Temperatur
 {494\,‰} % 8: Salzgehalt
 {8 to 25} % 9: Anrainer
+{Turkey} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -442,12 +467,13 @@
 {23} % 1: Title
 {Das 23 ist ein bedeutendes Gewässer. Besondere Merkmale: Po.} % 2: Intro
 {Marginal sea (Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{138\,600\,m} % 5: Max Tiefe
-{1\,233\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{1\,233\,m} % 5: Mittlere Tiefe
+{138\,600\,m} % 6: Max Tiefe
 {38-39\,°C} % 7: Temperatur
 {252\,‰} % 8: Salzgehalt
 {10 to 28} % 9: Anrainer
+{Italy, Slovenia, Croatia, Bosnia-Herzegovina, Montenegro, Albania} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -459,12 +485,13 @@
 {24} % 1: Title
 {Das 24 ist ein bedeutendes Gewässer. Besondere Merkmale: Maritsa.} % 2: Intro
 {Marginal sea (Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{214\,000\,m} % 5: Max Tiefe
-{3\,543\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{3\,543\,m} % 5: Mittlere Tiefe
+{214\,000\,m} % 6: Max Tiefe
 {38-39\,°C} % 7: Temperatur
 {510\,‰} % 8: Salzgehalt
 {14 to 26} % 9: Anrainer
+{Greece, Turkey} % 10: Zuflüsse
 
 \newpage
 
@@ -476,12 +503,13 @@
 {25} % 1: Title
 {Das 25 ist ein bedeutendes Gewässer. Besondere Merkmale: Magdalena, Coco.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{2\,754\,000\,m} % 5: Max Tiefe
-{7\,686\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{7\,686\,m} % 5: Mittlere Tiefe
+{2\,754\,000\,m} % 6: Max Tiefe
 {35-36\,°C} % 7: Temperatur
 {2647\,‰} % 8: Salzgehalt
 {24 to 29} % 9: Anrainer
+{Mexico, Belize, Guatemala, Honduras, Nicaragua, Costa Rica, Panama, Colombia, Venezuela, and Caribbean island nations} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -493,12 +521,13 @@
 {26} % 1: Title
 {Das 26 ist ein bedeutendes Gewässer. Besondere Merkmale: Mississippi, Rio Grande.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{1\,550\,000\,m} % 5: Max Tiefe
-{4\,384\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{4\,384\,m} % 5: Mittlere Tiefe
+{1\,550\,000\,m} % 6: Max Tiefe
 {35-36\,°C} % 7: Temperatur
 {1615\,‰} % 8: Salzgehalt
 {18 to 31} % 9: Anrainer
+{USA (Texas, Louisiana, Mississippi, Alabama, Florida), Mexico, Cuba} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -510,12 +539,13 @@
 {27} % 1: Title
 {Das 27 ist ein bedeutendes Gewässer. Besondere Merkmale: Churchill.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{841\,000\,m} % 5: Max Tiefe
-{4\,316\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{4\,316\,m} % 5: Mittlere Tiefe
+{841\,000\,m} % 6: Max Tiefe
 {31-35\,°C} % 7: Temperatur
 {1898\,‰} % 8: Salzgehalt
 {-1 to 12} % 9: Anrainer
+{Canada, Greenland (Denmark)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -527,12 +557,13 @@
 {28} % 1: Title
 {Das 28 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{780\,000\,m} % 5: Max Tiefe
-{3\,000\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{3\,000\,m} % 5: Mittlere Tiefe
+{780\,000\,m} % 6: Max Tiefe
 {34-35\,°C} % 7: Temperatur
 {1600\,‰} % 8: Salzgehalt
 {3 to 10} % 9: Anrainer
+{Iceland, Greenland (Denmark)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -544,12 +575,13 @@
 {29} % 1: Title
 {Das 29 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{689\,000\,m} % 5: Max Tiefe
-{2\,414\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{2\,414\,m} % 5: Mittlere Tiefe
+{689\,000\,m} % 6: Max Tiefe
 {30-33\,°C} % 7: Temperatur
 {861\,‰} % 8: Salzgehalt
 {-1 to 8} % 9: Anrainer
+{Canada, Greenland (Denmark)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -561,12 +593,13 @@
 {30} % 1: Title
 {Das 30 ist ein bedeutendes Gewässer. Besondere Merkmale: Churchill, Nelson, Albany.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{1\,230\,000\,m} % 5: Max Tiefe
-{270\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{270\,m} % 5: Mittlere Tiefe
+{1\,230\,000\,m} % 6: Max Tiefe
 {25-32\,°C} % 7: Temperatur
 {128\,‰} % 8: Salzgehalt
 {-2 to 12} % 9: Anrainer
+{Canada} % 10: Zuflüsse
 
 \newpage
 
@@ -578,12 +611,13 @@
 {31} % 1: Title
 {Das 31 ist ein bedeutendes Gewässer. Besondere Merkmale: St. Lawrence.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{236\,000\,m} % 5: Max Tiefe
-{572\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{572\,m} % 5: Mittlere Tiefe
+{236\,000\,m} % 6: Max Tiefe
 {28-32\,°C} % 7: Temperatur
 {152\,‰} % 8: Salzgehalt
 {0 to 20} % 9: Anrainer
+{Canada} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -595,12 +629,13 @@
 {32} % 1: Title
 {Das 32 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{100\,000\,m} % 5: Max Tiefe
-{175\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{175\,m} % 5: Mittlere Tiefe
+{100\,000\,m} % 6: Max Tiefe
 {32-35\,°C} % 7: Temperatur
 {60\,‰} % 8: Salzgehalt
 {6 to 16} % 9: Anrainer
+{Ireland, UK} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -612,12 +647,13 @@
 {33} % 1: Title
 {Das 33 ist ein bedeutendes Gewässer. Besondere Merkmale: Seine, Thames (estuaries).} % 2: Intro
 {Strait (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{75\,000\,m} % 5: Max Tiefe
-{174\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{174\,m} % 5: Mittlere Tiefe
+{75\,000\,m} % 6: Max Tiefe
 {34-35\,°C} % 7: Temperatur
 {54\,‰} % 8: Salzgehalt
 {6 to 18} % 9: Anrainer
+{UK, France} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -629,12 +665,13 @@
 {34} % 1: Title
 {Das 34 ist ein bedeutendes Gewässer. Besondere Merkmale: Loire, Garonne.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{223\,000\,m} % 5: Max Tiefe
-{4\,735\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{4\,735\,m} % 5: Mittlere Tiefe
+{223\,000\,m} % 6: Max Tiefe
 {35-36\,°C} % 7: Temperatur
 {1744\,‰} % 8: Salzgehalt
 {11 to 20} % 9: Anrainer
+{France, Spain} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -646,12 +683,13 @@
 {35} % 1: Title
 {Das 35 ist ein bedeutendes Gewässer. Besondere Merkmale: Göta.} % 2: Intro
 {Strait (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{32\,000\,m} % 5: Max Tiefe
-{700\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{700\,m} % 5: Mittlere Tiefe
+{32\,000\,m} % 6: Max Tiefe
 {30-35\,°C} % 7: Temperatur
 {210\,‰} % 8: Salzgehalt
 {2 to 17} % 9: Anrainer
+{Norway, Denmark, Sweden} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -663,12 +701,13 @@
 {36} % 1: Title
 {Das 36 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (North Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{30\,000\,m} % 5: Max Tiefe
-{109\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{109\,m} % 5: Mittlere Tiefe
+{30\,000\,m} % 6: Max Tiefe
 {15-30\,°C} % 7: Temperatur
 {23\,‰} % 8: Salzgehalt
 {0 to 20} % 9: Anrainer
+{Denmark, Sweden} % 10: Zuflüsse
 
 \newpage
 
@@ -680,12 +719,13 @@
 {37} % 1: Title
 {Die 37 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
 {Strait (North Atlantic/Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{1\,050\,m} % 5: Max Tiefe
-{900\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{900\,m} % 5: Mittlere Tiefe
+{1\,050\,m} % 6: Max Tiefe
 {36\,°C} % 7: Temperatur
 {300\,‰} % 8: Salzgehalt
 {13 to 18} % 9: Anrainer
+{Spain, Morocco, UK (Gibraltar)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -697,12 +737,13 @@
 {38} % 1: Title
 {Das 38 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
 {Strait (Black Sea/Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{550\,m} % 5: Max Tiefe
-{110\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{110\,m} % 5: Mittlere Tiefe
+{550\,m} % 6: Max Tiefe
 {17-35\,°C} % 7: Temperatur
 {50\,‰} % 8: Salzgehalt
 {6 to 25} % 9: Anrainer
+{Turkey} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -714,12 +755,13 @@
 {39} % 1: Title
 {Das 39 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
 {Strait (Mediterranean)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{1\,800\,m} % 5: Max Tiefe
-{103\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{103\,m} % 5: Mittlere Tiefe
+{1\,800\,m} % 6: Max Tiefe
 {25-35\,°C} % 7: Temperatur
 {55\,‰} % 8: Salzgehalt
 {8 to 24} % 9: Anrainer
+{Turkey} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -731,12 +773,13 @@
 {40} % 1: Title
 {Das 40 ist ein bedeutendes Gewässer. Besondere Merkmale: Niger, Congo.} % 2: Intro
 {Marginal sea (South Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{2\,350\,000\,m} % 5: Max Tiefe
-{5\,469\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{5\,469\,m} % 5: Mittlere Tiefe
+{2\,350\,000\,m} % 6: Max Tiefe
 {34-36\,°C} % 7: Temperatur
 {2996\,‰} % 8: Salzgehalt
 {24 to 28} % 9: Anrainer
+{Ghana, Togo, Benin, Nigeria, Cameroon, Equatorial Guinea, Gabon, Congo, Angola} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -748,12 +791,13 @@
 {41} % 1: Title
 {Das 41 ist ein bedeutendes Gewässer. Besondere Merkmale: None (glacial).} % 2: Intro
 {Marginal sea (Southern/South Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{2\,800\,000\,m} % 5: Max Tiefe
-{6\,820\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{6\,820\,m} % 5: Mittlere Tiefe
+{2\,800\,000\,m} % 6: Max Tiefe
 {34-35\,°C} % 7: Temperatur
 {3000\,‰} % 8: Salzgehalt
 {-2 to 2} % 9: Anrainer
+{Antarctica} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -765,12 +809,13 @@
 {42} % 1: Title
 {Das 42 ist ein bedeutendes Gewässer. Besondere Merkmale: None (glacial).} % 2: Intro
 {Marginal sea (Southern/South Atlantic)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{1\,300\,000\,m} % 5: Max Tiefe
-{6\,022\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{6\,022\,m} % 5: Mittlere Tiefe
+{1\,300\,000\,m} % 6: Max Tiefe
 {34\,°C} % 7: Temperatur
 {3096\,‰} % 8: Salzgehalt
 {-1 to 6} % 9: Anrainer
+{Antarctica, South Georgia} % 10: Zuflüsse
 
 \newpage
 
@@ -782,12 +827,13 @@
 {43} % 1: Title
 {Das 43 ist ein bedeutendes Gewässer. Besondere Merkmale: Yukon, Anadyr.} % 2: Intro
 {Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{2\,000\,000\,m} % 5: Max Tiefe
-{4\,097\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{4\,097\,m} % 5: Mittlere Tiefe
+{2\,000\,000\,m} % 6: Max Tiefe
 {32-33\,°C} % 7: Temperatur
 {1640\,‰} % 8: Salzgehalt
 {-2 to 12} % 9: Anrainer
+{Russia, USA (Alaska)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -799,12 +845,13 @@
 {44} % 1: Title
 {Die 44 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
 {Strait (Arctic/North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{2\,300\,m} % 5: Max Tiefe
-{50\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{50\,m} % 5: Mittlere Tiefe
+{2\,300\,m} % 6: Max Tiefe
 {32-33\,°C} % 7: Temperatur
 {45\,‰} % 8: Salzgehalt
 {-2 to 10} % 9: Anrainer
+{Russia, USA (Alaska)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -816,12 +863,13 @@
 {45} % 1: Title
 {Das 45 ist ein bedeutendes Gewässer. Besondere Merkmale: Amur.} % 2: Intro
 {Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{1\,583\,000\,m} % 5: Max Tiefe
-{3\,372\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{3\,372\,m} % 5: Mittlere Tiefe
+{1\,583\,000\,m} % 6: Max Tiefe
 {32-33\,°C} % 7: Temperatur
 {838\,‰} % 8: Salzgehalt
 {-2 to 18} % 9: Anrainer
+{Russia, Japan} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -833,12 +881,13 @@
 {46} % 1: Title
 {Das 46 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{978\,000\,m} % 5: Max Tiefe
-{3\,742\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{3\,742\,m} % 5: Mittlere Tiefe
+{978\,000\,m} % 6: Max Tiefe
 {33-35\,°C} % 7: Temperatur
 {1667\,‰} % 8: Salzgehalt
 {0 to 25} % 9: Anrainer
+{Japan, Russia, North Korea, South Korea} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -850,12 +899,13 @@
 {47} % 1: Title
 {Das 47 ist ein bedeutendes Gewässer. Besondere Merkmale: Yellow (Huang He).} % 2: Intro
 {Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{380\,000\,m} % 5: Max Tiefe
-{152\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{152\,m} % 5: Mittlere Tiefe
+{380\,000\,m} % 6: Max Tiefe
 {30-32\,°C} % 7: Temperatur
 {44\,‰} % 8: Salzgehalt
 {0 to 28} % 9: Anrainer
+{China, North Korea, South Korea} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -867,12 +917,13 @@
 {48} % 1: Title
 {Das 48 ist ein bedeutendes Gewässer. Besondere Merkmale: Yangtze.} % 2: Intro
 {Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{1\,249\,000\,m} % 5: Max Tiefe
-{2\,719\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{2\,719\,m} % 5: Mittlere Tiefe
+{1\,249\,000\,m} % 6: Max Tiefe
 {31-34\,°C} % 7: Temperatur
 {349\,‰} % 8: Salzgehalt
 {10 to 28} % 9: Anrainer
+{China, Taiwan, Japan, South Korea} % 10: Zuflüsse
 
 \newpage
 
@@ -884,12 +935,13 @@
 {49} % 1: Title
 {Das 49 ist ein bedeutendes Gewässer. Besondere Merkmale: Pearl, Mekong, Red.} % 2: Intro
 {Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{3\,500\,000\,m} % 5: Max Tiefe
-{5\,559\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{5\,559\,m} % 5: Mittlere Tiefe
+{3\,500\,000\,m} % 6: Max Tiefe
 {32-34\,°C} % 7: Temperatur
 {1652\,‰} % 8: Salzgehalt
 {20 to 30} % 9: Anrainer
+{China, Taiwan, Philippines, Malaysia, Brunei, Indonesia, Singapore, Thailand, Cambodia, Vietnam} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -901,12 +953,13 @@
 {50} % 1: Title
 {Das 50 ist ein bedeutendes Gewässer. Besondere Merkmale: Cagayan.} % 2: Intro
 {Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{5\,177\,562\,m} % 5: Max Tiefe
-{10\,540\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{10\,540\,m} % 5: Mittlere Tiefe
+{5\,177\,562\,m} % 6: Max Tiefe
 {34-35\,°C} % 7: Temperatur
 {4080\,‰} % 8: Salzgehalt
 {20 to 30} % 9: Anrainer
+{Philippines, Japan, Taiwan} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -918,12 +971,13 @@
 {51} % 1: Title
 {Das 51 ist ein bedeutendes Gewässer. Besondere Merkmale: Copper, Alsek.} % 2: Intro
 {Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{1\,533\,000\,m} % 5: Max Tiefe
-{5\,659\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{5\,659\,m} % 5: Mittlere Tiefe
+{1\,533\,000\,m} % 6: Max Tiefe
 {32-33\,°C} % 7: Temperatur
 {2431\,‰} % 8: Salzgehalt
 {2 to 16} % 9: Anrainer
+{USA (Alaska), Canada} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -935,12 +989,13 @@
 {52} % 1: Title
 {Das 52 ist ein bedeutendes Gewässer. Besondere Merkmale: Colorado.} % 2: Intro
 {Marginal sea (North Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{177\,000\,m} % 5: Max Tiefe
-{3\,292\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{3\,292\,m} % 5: Mittlere Tiefe
+{177\,000\,m} % 6: Max Tiefe
 {35\,°C} % 7: Temperatur
 {818\,‰} % 8: Salzgehalt
 {16 to 30} % 9: Anrainer
+{Mexico} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -952,12 +1007,13 @@
 {53} % 1: Title
 {Das 53 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{280\,000\,m} % 5: Max Tiefe
-{6\,200\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{6\,200\,m} % 5: Mittlere Tiefe
+{280\,000\,m} % 6: Max Tiefe
 {34\,°C} % 7: Temperatur
 {4700\,‰} % 8: Salzgehalt
 {27 to 30} % 9: Anrainer
+{Philippines, Indonesia, Malaysia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -969,12 +1025,13 @@
 {54} % 1: Title
 {Das 54 ist ein bedeutendes Gewässer. Besondere Merkmale: Solo.} % 2: Intro
 {Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{320\,000\,m} % 5: Max Tiefe
-{46\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{46\,m} % 5: Mittlere Tiefe
+{320\,000\,m} % 6: Max Tiefe
 {32-34\,°C} % 7: Temperatur
 {46\,‰} % 8: Salzgehalt
 {27 to 30} % 9: Anrainer
+{Indonesia} % 10: Zuflüsse
 
 \newpage
 
@@ -986,12 +1043,13 @@
 {55} % 1: Title
 {Das 55 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{470\,000\,m} % 5: Max Tiefe
-{7\,440\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{7\,440\,m} % 5: Mittlere Tiefe
+{470\,000\,m} % 6: Max Tiefe
 {34\,°C} % 7: Temperatur
 {3060\,‰} % 8: Salzgehalt
 {27 to 30} % 9: Anrainer
+{Indonesia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1003,12 +1061,13 @@
 {56} % 1: Title
 {Das 56 ist ein bedeutendes Gewässer. Besondere Merkmale: Fly, Digul.} % 2: Intro
 {Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{700\,000\,m} % 5: Max Tiefe
-{3\,680\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{3\,680\,m} % 5: Mittlere Tiefe
+{700\,000\,m} % 6: Max Tiefe
 {34-35\,°C} % 7: Temperatur
 {80\,‰} % 8: Salzgehalt
 {25 to 29} % 9: Anrainer
+{Indonesia, Papua New Guinea, Australia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1020,12 +1079,13 @@
 {57} % 1: Title
 {Das 57 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{4\,791\,000\,m} % 5: Max Tiefe
-{9\,140\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{9\,140\,m} % 5: Mittlere Tiefe
+{4\,791\,000\,m} % 6: Max Tiefe
 {35-36\,°C} % 7: Temperatur
 {2394\,‰} % 8: Salzgehalt
 {23 to 28} % 9: Anrainer
+{Australia, Papua New Guinea, Solomon Islands, Vanuatu, New Caledonia (France)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1037,12 +1097,13 @@
 {58} % 1: Title
 {Das 58 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{2\,300\,000\,m} % 5: Max Tiefe
-{5\,943\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{5\,943\,m} % 5: Mittlere Tiefe
+{2\,300\,000\,m} % 6: Max Tiefe
 {35-35.5\,°C} % 7: Temperatur
 {3000\,‰} % 8: Salzgehalt
 {8 to 23} % 9: Anrainer
+{Australia, New Zealand} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1054,12 +1115,13 @@
 {59} % 1: Title
 {Das 59 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{720\,000\,m} % 5: Max Tiefe
-{9\,140\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{9\,140\,m} % 5: Mittlere Tiefe
+{720\,000\,m} % 6: Max Tiefe
 {34-35\,°C} % 7: Temperatur
 {2500\,‰} % 8: Salzgehalt
 {26 to 30} % 9: Anrainer
+{Papua New Guinea, Solomon Islands} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1071,12 +1133,13 @@
 {60} % 1: Title
 {Das 60 ist ein bedeutendes Gewässer. Besondere Merkmale: Sepik, Ramu.} % 2: Intro
 {Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{40\,000\,m} % 5: Max Tiefe
-{2\,665\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{2\,665\,m} % 5: Mittlere Tiefe
+{40\,000\,m} % 6: Max Tiefe
 {34-35\,°C} % 7: Temperatur
 {1200\,‰} % 8: Salzgehalt
 {27 to 30} % 9: Anrainer
+{Papua New Guinea} % 10: Zuflüsse
 
 \newpage
 
@@ -1088,12 +1151,13 @@
 {61} % 1: Title
 {Das 61 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (South Pacific)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{348\,000\,m} % 5: Max Tiefe
-{5\,576\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{5\,576\,m} % 5: Mittlere Tiefe
+{348\,000\,m} % 6: Max Tiefe
 {34\,°C} % 7: Temperatur
 {1450\,‰} % 8: Salzgehalt
 {27 to 30} % 9: Anrainer
+{Philippines, Malaysia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1105,12 +1169,13 @@
 {62} % 1: Title
 {Das 62 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{438\,000\,m} % 5: Max Tiefe
-{3\,040\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{3\,040\,m} % 5: Mittlere Tiefe
+{438\,000\,m} % 6: Max Tiefe
 {40-41\,°C} % 7: Temperatur
 {490\,‰} % 8: Salzgehalt
 {20 to 30} % 9: Anrainer
+{Egypt, Sudan, Eritrea, Djibouti, Yemen, Saudi Arabia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1122,12 +1187,13 @@
 {63} % 1: Title
 {Das 63 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
 {Strait (Red Sea/Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{5\,000\,m} % 5: Max Tiefe
-{310\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{310\,m} % 5: Mittlere Tiefe
+{5\,000\,m} % 6: Max Tiefe
 {36\,°C} % 7: Temperatur
 {150\,‰} % 8: Salzgehalt
 {22 to 28} % 9: Anrainer
+{Yemen, Djibouti, Eritrea} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1139,12 +1205,13 @@
 {64} % 1: Title
 {Das 64 ist ein bedeutendes Gewässer. Besondere Merkmale: Tigris-Euphrates (Shatt al-Arab).} % 2: Intro
 {Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{251\,000\,m} % 5: Max Tiefe
-{90\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{90\,m} % 5: Mittlere Tiefe
+{251\,000\,m} % 6: Max Tiefe
 {37-41\,°C} % 7: Temperatur
 {50\,‰} % 8: Salzgehalt
 {15 to 35} % 9: Anrainer
+{Iran, Iraq, Kuwait, Saudi Arabia, Bahrain, Qatar, UAE, Oman} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1156,12 +1223,13 @@
 {65} % 1: Title
 {Die 65 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
 {Strait (Persian Gulf/Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{3\,900\,m} % 5: Max Tiefe
-{100\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{100\,m} % 5: Mittlere Tiefe
+{3\,900\,m} % 6: Max Tiefe
 {37-40\,°C} % 7: Temperatur
 {75\,‰} % 8: Salzgehalt
 {18 to 33} % 9: Anrainer
+{Iran, Oman, UAE} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1173,12 +1241,13 @@
 {66} % 1: Title
 {Das 66 ist ein bedeutendes Gewässer. Besondere Merkmale: Indus.} % 2: Intro
 {Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{3\,862\,000\,m} % 5: Max Tiefe
-{4\,652\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{4\,652\,m} % 5: Mittlere Tiefe
+{3\,862\,000\,m} % 6: Max Tiefe
 {36-37\,°C} % 7: Temperatur
 {2734\,‰} % 8: Salzgehalt
 {22 to 28} % 9: Anrainer
+{India, Pakistan, Iran, Oman, Yemen, Maldives, Somalia} % 10: Zuflüsse
 
 \newpage
 
@@ -1190,12 +1259,13 @@
 {67} % 1: Title
 {Das 67 ist ein bedeutendes Gewässer. Besondere Merkmale: Ganges-Brahmaputra, Godavari, Mahanadi, Irrawaddy.} % 2: Intro
 {Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{2\,172\,000\,m} % 5: Max Tiefe
-{4\,694\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{4\,694\,m} % 5: Mittlere Tiefe
+{2\,172\,000\,m} % 6: Max Tiefe
 {30-34\,°C} % 7: Temperatur
 {2600\,‰} % 8: Salzgehalt
 {25 to 30} % 9: Anrainer
+{India, Bangladesh, Myanmar, Thailand, Sri Lanka} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1207,12 +1277,13 @@
 {68} % 1: Title
 {Das 68 ist ein bedeutendes Gewässer. Besondere Merkmale: Irrawaddy, Salween.} % 2: Intro
 {Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{797\,700\,m} % 5: Max Tiefe
-{4\,180\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{4\,180\,m} % 5: Mittlere Tiefe
+{797\,700\,m} % 6: Max Tiefe
 {30-33\,°C} % 7: Temperatur
 {1096\,‰} % 8: Salzgehalt
 {26 to 30} % 9: Anrainer
+{Myanmar, Thailand, Malaysia, Indonesia, India} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1224,12 +1295,13 @@
 {69} % 1: Title
 {Die 69 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
 {Strait (Andaman Sea/South China Sea)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{80\,000\,m} % 5: Max Tiefe
-{25\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{25\,m} % 5: Mittlere Tiefe
+{80\,000\,m} % 6: Max Tiefe
 {30-34\,°C} % 7: Temperatur
 {15\,‰} % 8: Salzgehalt
 {26 to 30} % 9: Anrainer
+{Malaysia, Indonesia, Singapore} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1241,12 +1313,13 @@
 {70} % 1: Title
 {Das 70 ist ein bedeutendes Gewässer.} % 2: Intro
 {Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{610\,000\,m} % 5: Max Tiefe
-{3\,310\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{3\,310\,m} % 5: Mittlere Tiefe
+{610\,000\,m} % 6: Max Tiefe
 {34-35\,°C} % 7: Temperatur
 {435\,‰} % 8: Salzgehalt
 {25 to 30} % 9: Anrainer
+{Indonesia, Timor-Leste, Australia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1258,12 +1331,13 @@
 {71} % 1: Title
 {Das 71 ist ein bedeutendes Gewässer. Besondere Merkmale: Zambezi.} % 2: Intro
 {Marginal sea (Indian)\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{700\,000\,m} % 5: Max Tiefe
-{3\,292\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{3\,292\,m} % 5: Mittlere Tiefe
+{700\,000\,m} % 6: Max Tiefe
 {35\,°C} % 7: Temperatur
 {1600\,‰} % 8: Salzgehalt
 {24 to 28} % 9: Anrainer
+{Mozambique, Madagascar} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1275,12 +1349,13 @@
 {72} % 1: Title
 {Der 72 ist ein künstlicher Wasserweg von großer strategischer Bedeutung. Besondere Merkmale: None (canal).} % 2: Intro
 {Canal\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{195\,m} % 5: Max Tiefe
-{24\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{24\,m} % 5: Mittlere Tiefe
+{195\,m} % 6: Max Tiefe
 {40-42\,°C} % 7: Temperatur
 {13\,‰} % 8: Salzgehalt
 {18 to 30} % 9: Anrainer
+{Egypt} % 10: Zuflüsse
 
 \newpage
 
@@ -1292,12 +1367,13 @@
 {73} % 1: Title
 {Der 73 ist ein künstlicher Wasserweg von großer strategischer Bedeutung. Besondere Merkmale: Chagres (for locks).} % 2: Intro
 {Canal\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{425\,m} % 5: Max Tiefe
-{25\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{25\,m} % 5: Mittlere Tiefe
+{425\,m} % 6: Max Tiefe
 {0-35\,°C} % 7: Temperatur
 {13\,‰} % 8: Salzgehalt
 {24 to 32} % 9: Anrainer
+{Panama} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1309,12 +1385,13 @@
 {74} % 1: Title
 {Das 74 ist ein bedeutendes Gewässer. Besondere Merkmale: Volga, Ural, Kura.} % 2: Intro
 {Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{389\,000\,m} % 5: Max Tiefe
-{1\,025\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{1\,025\,m} % 5: Mittlere Tiefe
+{389\,000\,m} % 6: Max Tiefe
 {12\,°C} % 7: Temperatur
 {211\,‰} % 8: Salzgehalt
 {0 to 27} % 9: Anrainer
+{Iran, Kazakhstan, Turkmenistan, Azerbaijan, Russia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1326,12 +1403,13 @@
 {75} % 1: Title
 {Das 75 ist ein bedeutendes Gewässer. Besondere Merkmale: Nipigon, St. Louis, Pigeon.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{82\,100\,m} % 5: Max Tiefe
-{406\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{406\,m} % 5: Mittlere Tiefe
+{82\,100\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {147\,‰} % 8: Salzgehalt
 {0 to 13} % 9: Anrainer
+{Canada, USA (Michigan, Wisconsin, Minnesota)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1343,12 +1421,13 @@
 {76} % 1: Title
 {Das 76 ist ein bedeutendes Gewässer. Besondere Merkmale: Kagera.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{59\,940\,m} % 5: Max Tiefe
-{81\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{81\,m} % 5: Mittlere Tiefe
+{59\,940\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {40\,‰} % 8: Salzgehalt
 {20 to 27} % 9: Anrainer
+{Tanzania, Uganda, Kenya} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1360,12 +1439,13 @@
 {77} % 1: Title
 {Das 77 ist ein bedeutendes Gewässer.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{59\,590\,m} % 5: Max Tiefe
-{229\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{229\,m} % 5: Mittlere Tiefe
+{59\,590\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {59\,‰} % 8: Salzgehalt
 {0 to 22} % 9: Anrainer
+{Canada, USA (Michigan)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1377,12 +1457,13 @@
 {78} % 1: Title
 {Das 78 ist ein bedeutendes Gewässer. Besondere Merkmale: Fox-Wolf, Grand, Kalamazoo.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{57\,800\,m} % 5: Max Tiefe
-{282\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{282\,m} % 5: Mittlere Tiefe
+{57\,800\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {85\,‰} % 8: Salzgehalt
 {0 to 24} % 9: Anrainer
+{USA (Michigan, Wisconsin, Illinois, Indiana)} % 10: Zuflüsse
 
 \newpage
 
@@ -1394,12 +1475,13 @@
 {79} % 1: Title
 {Das 79 ist ein bedeutendes Gewässer. Besondere Merkmale: Ruzizi, Malagarasi.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{32\,900\,m} % 5: Max Tiefe
-{1\,470\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{1\,470\,m} % 5: Mittlere Tiefe
+{32\,900\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {570\,‰} % 8: Salzgehalt
 {24 to 29} % 9: Anrainer
+{Tanzania, DRC, Burundi, Zambia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1411,12 +1493,13 @@
 {80} % 1: Title
 {Das 80 ist ein bedeutendes Gewässer. Besondere Merkmale: Selenga, Barguzin, Upper Angara.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{31\,722\,m} % 5: Max Tiefe
-{1\,642\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{1\,642\,m} % 5: Mittlere Tiefe
+{31\,722\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {744\,‰} % 8: Salzgehalt
 {3 to 10} % 9: Anrainer
+{Russia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1428,12 +1511,13 @@
 {81} % 1: Title
 {Das 81 ist ein bedeutendes Gewässer. Besondere Merkmale: Dease, Whitefish.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{31\,153\,m} % 5: Max Tiefe
-{446\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{446\,m} % 5: Mittlere Tiefe
+{31\,153\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {72\,‰} % 8: Salzgehalt
 {0 to 18} % 9: Anrainer
+{Canada} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1445,12 +1529,13 @@
 {82} % 1: Title
 {Das 82 ist ein bedeutendes Gewässer. Besondere Merkmale: Ruhuhu.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{29\,600\,m} % 5: Max Tiefe
-{706\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{706\,m} % 5: Mittlere Tiefe
+{29\,600\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {292\,‰} % 8: Salzgehalt
 {22 to 28} % 9: Anrainer
+{Malawi, Mozambique, Tanzania} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1462,12 +1547,13 @@
 {83} % 1: Title
 {Das 83 ist ein bedeutendes Gewässer. Besondere Merkmale: Slave, Hay, Taltson.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{27\,200\,m} % 5: Max Tiefe
-{614\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{614\,m} % 5: Mittlere Tiefe
+{27\,200\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {41\,‰} % 8: Salzgehalt
 {0 to 18} % 9: Anrainer
+{Canada} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1479,12 +1565,13 @@
 {84} % 1: Title
 {Das 84 ist ein bedeutendes Gewässer. Besondere Merkmale: Detroit, Maumee, Grand.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{25\,667\,m} % 5: Max Tiefe
-{64\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{64\,m} % 5: Mittlere Tiefe
+{25\,667\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {19\,‰} % 8: Salzgehalt
 {0 to 24} % 9: Anrainer
+{Canada, USA (Michigan, Ohio, Pennsylvania, New York)} % 10: Zuflüsse
 
 \newpage
 
@@ -1496,12 +1583,13 @@
 {85} % 1: Title
 {Das 85 ist ein bedeutendes Gewässer. Besondere Merkmale: Red, Saskatchewan, Winnipeg.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{24\,514\,m} % 5: Max Tiefe
-{36\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{36\,m} % 5: Mittlere Tiefe
+{24\,514\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {12\,‰} % 8: Salzgehalt
 {0 to 22} % 9: Anrainer
+{Canada} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1513,12 +1601,13 @@
 {86} % 1: Title
 {Das 86 ist ein bedeutendes Gewässer. Besondere Merkmale: Niagara, Genesee.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{18\,970\,m} % 5: Max Tiefe
-{244\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{244\,m} % 5: Mittlere Tiefe
+{18\,970\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {86\,‰} % 8: Salzgehalt
 {0 to 20} % 9: Anrainer
+{Canada, USA (New York)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1530,12 +1619,13 @@
 {87} % 1: Title
 {Das 87 ist ein bedeutendes Gewässer. Besondere Merkmale: Svir, Volkhov, Neva.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{17\,700\,m} % 5: Max Tiefe
-{260\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{260\,m} % 5: Mittlere Tiefe
+{17\,700\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {51\,‰} % 8: Salzgehalt
 {0 to 20} % 9: Anrainer
+{Russia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1547,12 +1637,13 @@
 {88} % 1: Title
 {Das 88 ist ein bedeutendes Gewässer. Besondere Merkmale: Ili.} % 2: Intro
 {Brackish Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{16\,400\,m} % 5: Max Tiefe
-{26\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{26\,m} % 5: Mittlere Tiefe
+{16\,400\,m} % 6: Max Tiefe
 {3\,°C} % 7: Temperatur
 {5.8\,‰} % 8: Salzgehalt
 {0 to 28} % 9: Anrainer
+{Kazakhstan} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1564,12 +1655,13 @@
 {89} % 1: Title
 {Das 89 ist ein bedeutendes Gewässer. Besondere Merkmale: None (isolated).} % 2: Intro
 {Subglacial Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{12\,500\,m} % 5: Max Tiefe
-{900\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{900\,m} % 5: Mittlere Tiefe
+{12\,500\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {430\,‰} % 8: Salzgehalt
 {-3 to -2} % 9: Anrainer
+{Antarctica} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1581,12 +1673,13 @@
 {90} % 1: Title
 {Das 90 ist ein bedeutendes Gewässer. Besondere Merkmale: Suna, Vodla.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{9\,700\,m} % 5: Max Tiefe
-{127\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{127\,m} % 5: Mittlere Tiefe
+{9\,700\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {30\,‰} % 8: Salzgehalt
 {0 to 20} % 9: Anrainer
+{Russia} % 10: Zuflüsse
 
 \newpage
 
@@ -1598,12 +1691,13 @@
 {91} % 1: Title
 {Das 91 ist ein bedeutendes Gewässer. Besondere Merkmale: Ramis, Ilave.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{8\,372\,m} % 5: Max Tiefe
-{281\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{281\,m} % 5: Mittlere Tiefe
+{8\,372\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {107\,‰} % 8: Salzgehalt
 {10 to 16} % 9: Anrainer
+{Peru, Bolivia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1615,12 +1709,13 @@
 {92} % 1: Title
 {Das 92 ist ein bedeutendes Gewässer. Besondere Merkmale: Tipitapa, San Juan.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{8\,264\,m} % 5: Max Tiefe
-{26\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{26\,m} % 5: Mittlere Tiefe
+{8\,264\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {13\,‰} % 8: Salzgehalt
 {25 to 29} % 9: Anrainer
+{Nicaragua} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1632,12 +1727,13 @@
 {93} % 1: Title
 {Das 93 ist ein bedeutendes Gewässer. Besondere Merkmale: Athabasca, Fond du Lac.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{7\,850\,m} % 5: Max Tiefe
-{124\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{124\,m} % 5: Mittlere Tiefe
+{7\,850\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {20\,‰} % 8: Salzgehalt
 {0 to 20} % 9: Anrainer
+{Canada} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1649,12 +1745,13 @@
 {94} % 1: Title
 {Das 94 ist ein bedeutendes Gewässer. Besondere Merkmale: Reindeer.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{6\,650\,m} % 5: Max Tiefe
-{219\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{219\,m} % 5: Mittlere Tiefe
+{6\,650\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {53\,‰} % 8: Salzgehalt
 {0 to 18} % 9: Anrainer
+{Canada} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1666,12 +1763,13 @@
 {95} % 1: Title
 {Das 95 ist ein bedeutendes Gewässer. Besondere Merkmale: Omo, Turkwel.} % 2: Intro
 {Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{6\,405\,m} % 5: Max Tiefe
-{109\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{109\,m} % 5: Mittlere Tiefe
+{6\,405\,m} % 6: Max Tiefe
 {2.5\,°C} % 7: Temperatur
 {30.2\,‰} % 8: Salzgehalt
 {28 to 31} % 9: Anrainer
+{Kenya, Ethiopia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1683,12 +1781,13 @@
 {96} % 1: Title
 {Das 96 ist ein bedeutendes Gewässer. Besondere Merkmale: Jyrgalang, Tyup.} % 2: Intro
 {Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{6\,236\,m} % 5: Max Tiefe
-{668\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{668\,m} % 5: Mittlere Tiefe
+{6\,236\,m} % 6: Max Tiefe
 {6\,°C} % 7: Temperatur
 {278\,‰} % 8: Salzgehalt
 {4 to 18} % 9: Anrainer
+{Kyrgyzstan} % 10: Zuflüsse
 
 \newpage
 
@@ -1700,12 +1799,13 @@
 {97} % 1: Title
 {Das 97 ist ein bedeutendes Gewässer. Besondere Merkmale: Klarälven, Gullspång.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{5\,650\,m} % 5: Max Tiefe
-{106\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{106\,m} % 5: Mittlere Tiefe
+{5\,650\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {27\,‰} % 8: Salzgehalt
 {2 to 18} % 9: Anrainer
+{Sweden} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1717,12 +1817,13 @@
 {98} % 1: Title
 {Das 98 ist ein bedeutendes Gewässer. Besondere Merkmale: Jordan River.} % 2: Intro
 {Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{605\,m} % 5: Max Tiefe
-{304\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{304\,m} % 5: Mittlere Tiefe
+{605\,m} % 6: Max Tiefe
 {342\,°C} % 7: Temperatur
 {120\,‰} % 8: Salzgehalt
 {20 to 32} % 9: Anrainer
+{Israel, Jordan, Palestine (West Bank)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1734,12 +1835,13 @@
 {99} % 1: Title
 {Das 99 ist ein bedeutendes Gewässer. Besondere Merkmale: Songwe.} % 2: Intro
 {Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{5\,615\,m} % 5: Max Tiefe
-{22\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{22\,m} % 5: Mittlere Tiefe
+{5\,615\,m} % 6: Max Tiefe
 {Variable\,°C} % 7: Temperatur
 {11\,‰} % 8: Salzgehalt
 {20 to 28} % 9: Anrainer
+{Tanzania} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1751,12 +1853,13 @@
 {100} % 1: Title
 {Das 100 ist ein bedeutendes Gewässer. Besondere Merkmale: Victoria Nile, Semliki.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{5\,590\,m} % 5: Max Tiefe
-{51\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{51\,m} % 5: Mittlere Tiefe
+{5\,590\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {25\,‰} % 8: Salzgehalt
 {26 to 30} % 9: Anrainer
+{Uganda, DRC} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1768,12 +1871,13 @@
 {101} % 1: Title
 {Das 101 ist ein bedeutendes Gewässer.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{5\,542\,m} % 5: Max Tiefe
-{132\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{132\,m} % 5: Mittlere Tiefe
+{5\,542\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {53\,‰} % 8: Salzgehalt
 {0 to 10} % 9: Anrainer
+{Canada} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1785,12 +1889,13 @@
 {102} % 1: Title
 {Das 102 ist ein bedeutendes Gewässer. Besondere Merkmale: Mossy, Red Deer.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{5\,370\,m} % 5: Max Tiefe
-{12\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{12\,m} % 5: Mittlere Tiefe
+{5\,370\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {5\,‰} % 8: Salzgehalt
 {0 to 22} % 9: Anrainer
+{Canada} % 10: Zuflüsse
 
 \newpage
 
@@ -1802,12 +1907,13 @@
 {103} % 1: Title
 {Das 103 ist ein bedeutendes Gewässer. Besondere Merkmale: Luapula.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{5\,120\,m} % 5: Max Tiefe
-{27\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{27\,m} % 5: Mittlere Tiefe
+{5\,120\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {7.5\,‰} % 8: Salzgehalt
 {24 to 28} % 9: Anrainer
+{Zambia, DRC} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1819,12 +1925,13 @@
 {104} % 1: Title
 {Das 104 ist ein bedeutendes Gewässer. Besondere Merkmale: Ombabika, Gull.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{4\,848\,m} % 5: Max Tiefe
-{165\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{165\,m} % 5: Mittlere Tiefe
+{4\,848\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {52\,‰} % 8: Salzgehalt
 {0 to 20} % 9: Anrainer
+{Canada} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1836,12 +1943,13 @@
 {105} % 1: Title
 {Das 105 ist ein bedeutendes Gewässer. Besondere Merkmale: Whitemud, Waterhen.} % 2: Intro
 {Brackish Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{4\,706\,m} % 5: Max Tiefe
-{7\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{7\,m} % 5: Mittlere Tiefe
+{4\,706\,m} % 6: Max Tiefe
 {3.5\,°C} % 7: Temperatur
 {3\,‰} % 8: Salzgehalt
 {0 to 22} % 9: Anrainer
+{Canada} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1853,12 +1961,13 @@
 {106} % 1: Title
 {Das 106 ist ein bedeutendes Gewässer. Besondere Merkmale: Upper Taymyr.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{4\,560\,m} % 5: Max Tiefe
-{26\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{26\,m} % 5: Mittlere Tiefe
+{4\,560\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {2.8\,‰} % 8: Salzgehalt
 {-20 to 15} % 9: Anrainer
+{Russia} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1870,12 +1979,13 @@
 {107} % 1: Title
 {Das 107 ist ein bedeutendes Gewässer. Besondere Merkmale: Buha, Shaliu.} % 2: Intro
 {Saline Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{4\,489\,m} % 5: Max Tiefe
-{32\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{32\,m} % 5: Mittlere Tiefe
+{4\,489\,m} % 6: Max Tiefe
 {14\,°C} % 7: Temperatur
 {21\,‰} % 8: Salzgehalt
 {-5 to 20} % 9: Anrainer
+{China} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1887,12 +1997,13 @@
 {108} % 1: Title
 {Das 108 ist ein bedeutendes Gewässer. Besondere Merkmale: Vuoksi.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{4\,380\,m} % 5: Max Tiefe
-{82\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{82\,m} % 5: Mittlere Tiefe
+{4\,380\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {17\,‰} % 8: Salzgehalt
 {0 to 20} % 9: Anrainer
+{Finland} % 10: Zuflüsse
 
 \newpage
 
@@ -1904,12 +2015,13 @@
 {109} % 1: Title
 {Das 109 ist ein bedeutendes Gewässer. Besondere Merkmale: Rainy River.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{4\,350\,m} % 5: Max Tiefe
-{64\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{64\,m} % 5: Mittlere Tiefe
+{4\,350\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {9\,‰} % 8: Salzgehalt
 {0 to 22} % 9: Anrainer
+{Canada, USA (Minnesota)} % 10: Zuflüsse
 
 \vspace{5mm}
 
@@ -1921,11 +2033,12 @@
 {110} % 1: Title
 {Das 110 ist ein bedeutendes Gewässer. Besondere Merkmale: Songacha, Melgunovka.} % 2: Intro
 {Freshwater Lake\,km²} % 3: Fläche
-{---} % 4: Volumen (not in data)
-{4\,190\,m} % 5: Max Tiefe
-{10\,m} % 6: Mittlere Tiefe
+{---} % 4: Volumen
+{10\,m} % 5: Mittlere Tiefe
+{4\,190\,m} % 6: Max Tiefe
 {0\,°C} % 7: Temperatur
 {4.5\,‰} % 8: Salzgehalt
 {0 to 25} % 9: Anrainer
+{Russia, China} % 10: Zuflüsse
 
 \end{document}
