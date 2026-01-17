@@ -1,0 +1,100 @@
+\documentclass[a4paper]{article}
+
+\usepackage[margin=12mm]{geometry}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+
+\setlength{\parindent}{0pt}
+
+% Card dimensions (59 x 91 mm)
+\newlength{\cardW}
+\newlength{\cardH}
+\setlength{\cardW}{59mm}
+\setlength{\cardH}{91mm}
+
+% Command to produce a card frame
+\newcommand{\SeaCard}[7]{%
+\begin{minipage}[t][\cardH][t]{\cardW}
+\raggedright
+{\small \textbf{MEERESGEBIETE}}\hfill{\small #2}\\[1ex]
+{\Large \textbf{#1}}\\[1.5ex]
+
+% Illustration area (top ~1/3)
+\begin{minipage}[t]{\cardW}
+\includegraphics[width=\cardW]{#3}\\[-1mm]
+\hfill\includegraphics[width=22mm]{#4}
+\end{minipage}
+
+\vspace{1.5ex}
+
+% Introductory ecological text
+{\footnotesize #5}\vspace{1.5ex}
+
+% Table section
+{\footnotesize
+\begin{tabular}{@{}p{0.47\cardW} p{0.47\cardW}@{}}
+Fläche: #6A & Volumen: #6B \\
+Max. Tiefe: #6C & Mittlere Tiefe: #6D \\
+Temperatur: #6E & Salzgehalt: #6F \\
+\end{tabular}
+}\vspace{1ex}
+
+% Side codes instead of flags
+{\footnotesize\textbf{Anrainer:} #7A}\vspace{1ex}
+
+{\footnotesize\textbf{Zuflüsse:} #7B}\vspace{1.5ex}
+
+% closing text
+{\footnotesize #7C}
+
+\end{minipage}
+}
+
+\begin{document}
+
+%----------------------------------
+% NORDSEE CARD
+%----------------------------------
+\SeaCard
+{Nordsee} % Title
+{Randmeer des Atlantiks} % Type top-right
+{sketch_NorthSea.png} % Illustration
+{map_NorthSea.png} % Map inset
+{Die Nordsee ist ein flaches Schelfmeer mit ausgeprägten Gezeiten – bei Ebbe fallen weite Wattflächen trocken. Starke Strömungen, Stürme und die Vermischung von Salz- und Süßwasser prägen dieses dynamische Ökosystem, das Millionen Zugvögeln als Rastplatz dient.} % Intro
+{570 000 km²} %6A Fläche
+{54 000 km³} %6B Volumen
+{700 m} %6C Max Tiefe
+{95 m} %6D Mittlere Tiefe
+{4--18 °C} %6E Temperatur
+{32--35 ‰} %6F Salzgehalt
+{UK, NO, DK, DE, NL, BE, FR} %7A Anrainer
+{Rhein, Elbe, Thames} %7B Zuflüsse
+{Die Nordsee ist wichtig für Öl- und Gasförderung, als wichtige Schifffahrtsroute und aufgrund zahlreicher Offshore-Windparks.} %7C Schluss
+
+\vspace{15mm}
+
+%----------------------------------
+% OSTSEE CARD
+%----------------------------------
+\SeaCard
+{Ostsee} % Title
+{Innenmeer Europas} % Type top-right
+{sketch_BalticSea.png} % Illustration
+{map_BalticSea.png} % Map inset
+{Die Ostsee ist ein brackiges Binnenmeer mit eingeschränktem Wasseraustausch zum Atlantik. Geringe Salinität, schwache Gezeiten und ein schichtungsanfälliges Wassersystem prägen die regionalspezifische Fauna und Flora. Das Meer dient Zugvögeln als Rastplatz und verbindet zahlreiche Staaten.} % Intro
+{377 000 km²} %6A
+{21 700 km³} %6B
+{459 m} %6C
+{55 m} %6D
+{2--17 °C} %6E
+{1--20 ‰} %6F
+{DE, DK, SE, FI, RU, EE, LV, LT, PL} %7A
+{Newa, Weichsel, Oder, Göta älv} %7B
+{Die Ostsee ist ein bedeutender Wirtschafts- und Verkehrsraum, geprägt durch Fischerei, Fährverkehr, Schifffahrt und Hafenwirtschaft. Gleichzeitig ist sie ein ökologisch sensibles Binnenmeer mit Belastungen durch Eutrophierung, Schadstoffe und Übernutzung.} %7C
+
+\end{document}
