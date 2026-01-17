@@ -1,0 +1,1931 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=12mm]{geometry}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\setlength{\parindent}{0pt}
+
+% Card dimensions (59 x 91 mm)
+\newlength{\cardW}
+\newlength{\cardH}
+\setlength{\cardW}{59mm}
+\setlength{\cardH}{91mm}
+
+% Command to produce a card frame
+\newcommand{\SeaCard}[9]{%
+\fbox{\begin{minipage}[t][\dimexpr\cardH-2\fboxsep-2\fboxrule\relax][t]{\dimexpr\cardW-2\fboxsep-2\fboxrule\relax}
+\raggedright
+\setlength{\baselineskip}{8pt}
+% Header with decorative lines
+\noindent\hfill{\tiny\rule{8mm}{0.4pt} \textbf{MEERESGEBIETE} \rule{8mm}{0.4pt}}\hfill\mbox{}\\[0.5ex]
+\noindent\rule{\linewidth}{1pt}\\[0.5ex]
+% Title
+{\Large\textbf{#1}}\\[0.3ex]
+\noindent\rule{30mm}{0.4pt}\\[1ex]
+% Illustration placeholder
+\noindent\fbox{\begin{minipage}[c][18mm]{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+\centering
+\vfill
+{\scriptsize [Illustration]}
+\vfill
+\end{minipage}}\\[1ex]
+% Intro text
+{\scriptsize #2}\\[1ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+% Statistics table
+{\scriptsize
+\begin{tabular}{@{}l@{\hspace{1mm}}|@{\hspace{1mm}}l@{}}
+\textbf{Fläche:} #3 & \textbf{Volumen:} #4 \\
+\end{tabular}
+}\\[-0.5ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+{\scriptsize
+\begin{tabular}{@{}l@{\hspace{1mm}}|@{\hspace{1mm}}l@{}}
+\textbf{Mittlere Tiefe:} #6 & \textbf{Max. Tiefe:} #5 \\
+\end{tabular}
+}\\[-0.5ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+{\scriptsize
+\begin{tabular}{@{}l@{\hspace{1mm}}|@{\hspace{1mm}}l@{}}
+\textbf{Temp.:} #7 & \textbf{Salzgehalt:} #8 \\
+\end{tabular}
+}\\[-0.5ex]
+\noindent\rule{\linewidth}{0.4pt}\\[0.3ex]
+% Anrainer
+{\scriptsize\textbf{Anrainer:} #9}\\[0.3ex]
+\end{minipage}}%
+}
+
+\begin{document}
+\pagestyle{empty}
+
+%----------------------------------
+% CARD 1: 1
+%----------------------------------
+\SeaCard
+{1} % 1: Title
+{Der 1 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Yukon, Columbia, Sacramento, Amur.} % 2: Intro
+{Ocean\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{82\,500\,000\,m} % 5: Max Tiefe
+{10\,911\,m} % 6: Mittlere Tiefe
+{32-35\,°C} % 7: Temperatur
+{4280\,‰} % 8: Salzgehalt
+{0 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 2: 2
+%----------------------------------
+\SeaCard
+{2} % 1: Title
+{Der 2 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Fly, Sepik, Waiapu.} % 2: Intro
+{Ocean\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{82\,500\,000\,m} % 5: Max Tiefe
+{7\,434\,m} % 6: Mittlere Tiefe
+{34-36\,°C} % 7: Temperatur
+{4000\,‰} % 8: Salzgehalt
+{10 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 3: 3
+%----------------------------------
+\SeaCard
+{3} % 1: Title
+{Der 3 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: St. Lawrence, Mississippi.} % 2: Intro
+{Ocean\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{41\,490\,000\,m} % 5: Max Tiefe
+{8\,486\,m} % 6: Mittlere Tiefe
+{34-37\,°C} % 7: Temperatur
+{3300\,‰} % 8: Salzgehalt
+{-2 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 4: 4
+%----------------------------------
+\SeaCard
+{4} % 1: Title
+{Der 4 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Paraná, Orange, Congo.} % 2: Intro
+{Ocean\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{43\,510\,000\,m} % 5: Max Tiefe
+{8\,264\,m} % 6: Mittlere Tiefe
+{34-37\,°C} % 7: Temperatur
+{3900\,‰} % 8: Salzgehalt
+{0 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 5: 5
+%----------------------------------
+\SeaCard
+{5} % 1: Title
+{Der 5 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Ganges-Brahmaputra, Indus, Zambezi.} % 2: Intro
+{Ocean\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{70\,560\,000\,m} % 5: Max Tiefe
+{7\,258\,m} % 6: Mittlere Tiefe
+{34-36\,°C} % 7: Temperatur
+{3741\,‰} % 8: Salzgehalt
+{20 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 6: 6
+%----------------------------------
+\SeaCard
+{6} % 1: Title
+{Der 6 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: None (glacial meltwater).} % 2: Intro
+{Ocean\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{21\,960\,000\,m} % 5: Max Tiefe
+{7\,235\,m} % 6: Mittlere Tiefe
+{33.5-34\,°C} % 7: Temperatur
+{3270\,‰} % 8: Salzgehalt
+{-2 to 10} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 7: 7
+%----------------------------------
+\SeaCard
+{7} % 1: Title
+{Der 7 ist einer der fünf Weltmeere und bedeckt einen bedeutenden Teil der Erdoberfläche. Besondere Merkmale: Ob, Yenisei, Lena, Mackenzie.} % 2: Intro
+{Ocean\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{14\,060\,000\,m} % 5: Max Tiefe
+{5\,450\,m} % 6: Mittlere Tiefe
+{30-34\,°C} % 7: Temperatur
+{1205\,‰} % 8: Salzgehalt
+{-2 to 5} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 8: 8
+%----------------------------------
+\SeaCard
+{8} % 1: Title
+{Das 8 ist ein bedeutendes Gewässer. Besondere Merkmale: Pechora.} % 2: Intro
+{Marginal sea (Arctic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{1\,400\,000\,m} % 5: Max Tiefe
+{600\,m} % 6: Mittlere Tiefe
+{34-35\,°C} % 7: Temperatur
+{230\,‰} % 8: Salzgehalt
+{-1 to 12} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 9: 9
+%----------------------------------
+\SeaCard
+{9} % 1: Title
+{Das 9 ist ein bedeutendes Gewässer. Besondere Merkmale: Ob, Yenisei.} % 2: Intro
+{Marginal sea (Arctic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{880\,000\,m} % 5: Max Tiefe
+{620\,m} % 6: Mittlere Tiefe
+{10-34\,°C} % 7: Temperatur
+{110\,‰} % 8: Salzgehalt
+{-2 to 6} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 10: 10
+%----------------------------------
+\SeaCard
+{10} % 1: Title
+{Das 10 ist ein bedeutendes Gewässer. Besondere Merkmale: Lena, Yana.} % 2: Intro
+{Marginal sea (Arctic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{662\,000\,m} % 5: Max Tiefe
+{3\,385\,m} % 6: Mittlere Tiefe
+{20-34\,°C} % 7: Temperatur
+{578\,‰} % 8: Salzgehalt
+{-1.8 to 8} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 11: 11
+%----------------------------------
+\SeaCard
+{11} % 1: Title
+{Das 11 ist ein bedeutendes Gewässer. Besondere Merkmale: Kolyma, Indigirka.} % 2: Intro
+{Marginal sea (Arctic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{987\,000\,m} % 5: Max Tiefe
+{155\,m} % 6: Mittlere Tiefe
+{28-32\,°C} % 7: Temperatur
+{58\,‰} % 8: Salzgehalt
+{-2 to 5} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 12: 12
+%----------------------------------
+\SeaCard
+{12} % 1: Title
+{Das 12 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (Arctic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{595\,000\,m} % 5: Max Tiefe
+{160\,m} % 6: Mittlere Tiefe
+{28-33\,°C} % 7: Temperatur
+{77\,‰} % 8: Salzgehalt
+{-2 to 12} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 13: 13
+%----------------------------------
+\SeaCard
+{13} % 1: Title
+{Das 13 ist ein bedeutendes Gewässer. Besondere Merkmale: Mackenzie.} % 2: Intro
+{Marginal sea (Arctic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{476\,000\,m} % 5: Max Tiefe
+{4\,683\,m} % 6: Mittlere Tiefe
+{28-32\,°C} % 7: Temperatur
+{1004\,‰} % 8: Salzgehalt
+{-2 to 8} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 14: 14
+%----------------------------------
+\SeaCard
+{14} % 1: Title
+{Das 14 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (Arctic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{1\,205\,000\,m} % 5: Max Tiefe
+{4\,846\,m} % 6: Mittlere Tiefe
+{30-35\,°C} % 7: Temperatur
+{1444\,‰} % 8: Salzgehalt
+{-2 to 6} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 15: 15
+%----------------------------------
+\SeaCard
+{15} % 1: Title
+{Das 15 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
+{Marginal sea (Arctic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{16\,000\,m} % 5: Max Tiefe
+{300\,m} % 6: Mittlere Tiefe
+{30-32\,°C} % 7: Temperatur
+{150\,‰} % 8: Salzgehalt
+{-2 to 2} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 16: 16
+%----------------------------------
+\SeaCard
+{16} % 1: Title
+{Die 16 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
+{Strait (Arctic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{202\,500\,m} % 5: Max Tiefe
+{5\,550\,m} % 6: Mittlere Tiefe
+{34-35\,°C} % 7: Temperatur
+{1500\,‰} % 8: Salzgehalt
+{-2 to 5} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 17: 17
+%----------------------------------
+\SeaCard
+{17} % 1: Title
+{Das 17 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{1\,383\,000\,m} % 5: Max Tiefe
+{3\,970\,m} % 6: Mittlere Tiefe
+{35\,°C} % 7: Temperatur
+{1742\,‰} % 8: Salzgehalt
+{2 to 13} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 18: 18
+%----------------------------------
+\SeaCard
+{18} % 1: Title
+{Das 18 ist ein bedeutendes Gewässer. Besondere Merkmale: Rhine, Elbe, Thames.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{570\,000\,m} % 5: Max Tiefe
+{700\,m} % 6: Mittlere Tiefe
+{32-35\,°C} % 7: Temperatur
+{95\,‰} % 8: Salzgehalt
+{4 to 18} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 19: 19
+%----------------------------------
+\SeaCard
+{19} % 1: Title
+{Das 19 ist ein bedeutendes Gewässer. Besondere Merkmale: Neva, Vistula, Oder.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{377\,000\,m} % 5: Max Tiefe
+{459\,m} % 6: Mittlere Tiefe
+{6-20\,°C} % 7: Temperatur
+{55\,‰} % 8: Salzgehalt
+{0 to 20} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 20: 20
+%----------------------------------
+\SeaCard
+{20} % 1: Title
+{Das 20 ist ein bedeutendes Gewässer. Besondere Merkmale: Nile, Po, Rhône, Ebro.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{2\,500\,000\,m} % 5: Max Tiefe
+{5\,267\,m} % 6: Mittlere Tiefe
+{37-39\,°C} % 7: Temperatur
+{1500\,‰} % 8: Salzgehalt
+{10 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 21: 21
+%----------------------------------
+\SeaCard
+{21} % 1: Title
+{Das 21 ist ein bedeutendes Gewässer. Besondere Merkmale: Danube, Dnieper, Don.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{436\,000\,m} % 5: Max Tiefe
+{2\,212\,m} % 6: Mittlere Tiefe
+{17-18\,°C} % 7: Temperatur
+{1253\,‰} % 8: Salzgehalt
+{6 to 25} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 22: 22
+%----------------------------------
+\SeaCard
+{22} % 1: Title
+{Das 22 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (Mediterranean)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{11\,350\,m} % 5: Max Tiefe
+{1\,370\,m} % 6: Mittlere Tiefe
+{22-38\,°C} % 7: Temperatur
+{494\,‰} % 8: Salzgehalt
+{8 to 25} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 23: 23
+%----------------------------------
+\SeaCard
+{23} % 1: Title
+{Das 23 ist ein bedeutendes Gewässer. Besondere Merkmale: Po.} % 2: Intro
+{Marginal sea (Mediterranean)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{138\,600\,m} % 5: Max Tiefe
+{1\,233\,m} % 6: Mittlere Tiefe
+{38-39\,°C} % 7: Temperatur
+{252\,‰} % 8: Salzgehalt
+{10 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 24: 24
+%----------------------------------
+\SeaCard
+{24} % 1: Title
+{Das 24 ist ein bedeutendes Gewässer. Besondere Merkmale: Maritsa.} % 2: Intro
+{Marginal sea (Mediterranean)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{214\,000\,m} % 5: Max Tiefe
+{3\,543\,m} % 6: Mittlere Tiefe
+{38-39\,°C} % 7: Temperatur
+{510\,‰} % 8: Salzgehalt
+{14 to 26} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 25: 25
+%----------------------------------
+\SeaCard
+{25} % 1: Title
+{Das 25 ist ein bedeutendes Gewässer. Besondere Merkmale: Magdalena, Coco.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{2\,754\,000\,m} % 5: Max Tiefe
+{7\,686\,m} % 6: Mittlere Tiefe
+{35-36\,°C} % 7: Temperatur
+{2647\,‰} % 8: Salzgehalt
+{24 to 29} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 26: 26
+%----------------------------------
+\SeaCard
+{26} % 1: Title
+{Das 26 ist ein bedeutendes Gewässer. Besondere Merkmale: Mississippi, Rio Grande.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{1\,550\,000\,m} % 5: Max Tiefe
+{4\,384\,m} % 6: Mittlere Tiefe
+{35-36\,°C} % 7: Temperatur
+{1615\,‰} % 8: Salzgehalt
+{18 to 31} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 27: 27
+%----------------------------------
+\SeaCard
+{27} % 1: Title
+{Das 27 ist ein bedeutendes Gewässer. Besondere Merkmale: Churchill.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{841\,000\,m} % 5: Max Tiefe
+{4\,316\,m} % 6: Mittlere Tiefe
+{31-35\,°C} % 7: Temperatur
+{1898\,‰} % 8: Salzgehalt
+{-1 to 12} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 28: 28
+%----------------------------------
+\SeaCard
+{28} % 1: Title
+{Das 28 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{780\,000\,m} % 5: Max Tiefe
+{3\,000\,m} % 6: Mittlere Tiefe
+{34-35\,°C} % 7: Temperatur
+{1600\,‰} % 8: Salzgehalt
+{3 to 10} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 29: 29
+%----------------------------------
+\SeaCard
+{29} % 1: Title
+{Das 29 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{689\,000\,m} % 5: Max Tiefe
+{2\,414\,m} % 6: Mittlere Tiefe
+{30-33\,°C} % 7: Temperatur
+{861\,‰} % 8: Salzgehalt
+{-1 to 8} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 30: 30
+%----------------------------------
+\SeaCard
+{30} % 1: Title
+{Das 30 ist ein bedeutendes Gewässer. Besondere Merkmale: Churchill, Nelson, Albany.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{1\,230\,000\,m} % 5: Max Tiefe
+{270\,m} % 6: Mittlere Tiefe
+{25-32\,°C} % 7: Temperatur
+{128\,‰} % 8: Salzgehalt
+{-2 to 12} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 31: 31
+%----------------------------------
+\SeaCard
+{31} % 1: Title
+{Das 31 ist ein bedeutendes Gewässer. Besondere Merkmale: St. Lawrence.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{236\,000\,m} % 5: Max Tiefe
+{572\,m} % 6: Mittlere Tiefe
+{28-32\,°C} % 7: Temperatur
+{152\,‰} % 8: Salzgehalt
+{0 to 20} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 32: 32
+%----------------------------------
+\SeaCard
+{32} % 1: Title
+{Das 32 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{100\,000\,m} % 5: Max Tiefe
+{175\,m} % 6: Mittlere Tiefe
+{32-35\,°C} % 7: Temperatur
+{60\,‰} % 8: Salzgehalt
+{6 to 16} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 33: 33
+%----------------------------------
+\SeaCard
+{33} % 1: Title
+{Das 33 ist ein bedeutendes Gewässer. Besondere Merkmale: Seine, Thames (estuaries).} % 2: Intro
+{Strait (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{75\,000\,m} % 5: Max Tiefe
+{174\,m} % 6: Mittlere Tiefe
+{34-35\,°C} % 7: Temperatur
+{54\,‰} % 8: Salzgehalt
+{6 to 18} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 34: 34
+%----------------------------------
+\SeaCard
+{34} % 1: Title
+{Das 34 ist ein bedeutendes Gewässer. Besondere Merkmale: Loire, Garonne.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{223\,000\,m} % 5: Max Tiefe
+{4\,735\,m} % 6: Mittlere Tiefe
+{35-36\,°C} % 7: Temperatur
+{1744\,‰} % 8: Salzgehalt
+{11 to 20} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 35: 35
+%----------------------------------
+\SeaCard
+{35} % 1: Title
+{Das 35 ist ein bedeutendes Gewässer. Besondere Merkmale: Göta.} % 2: Intro
+{Strait (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{32\,000\,m} % 5: Max Tiefe
+{700\,m} % 6: Mittlere Tiefe
+{30-35\,°C} % 7: Temperatur
+{210\,‰} % 8: Salzgehalt
+{2 to 17} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 36: 36
+%----------------------------------
+\SeaCard
+{36} % 1: Title
+{Das 36 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (North Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{30\,000\,m} % 5: Max Tiefe
+{109\,m} % 6: Mittlere Tiefe
+{15-30\,°C} % 7: Temperatur
+{23\,‰} % 8: Salzgehalt
+{0 to 20} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 37: 37
+%----------------------------------
+\SeaCard
+{37} % 1: Title
+{Die 37 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
+{Strait (North Atlantic/Mediterranean)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{1\,050\,m} % 5: Max Tiefe
+{900\,m} % 6: Mittlere Tiefe
+{36\,°C} % 7: Temperatur
+{300\,‰} % 8: Salzgehalt
+{13 to 18} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 38: 38
+%----------------------------------
+\SeaCard
+{38} % 1: Title
+{Das 38 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
+{Strait (Black Sea/Mediterranean)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{550\,m} % 5: Max Tiefe
+{110\,m} % 6: Mittlere Tiefe
+{17-35\,°C} % 7: Temperatur
+{50\,‰} % 8: Salzgehalt
+{6 to 25} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 39: 39
+%----------------------------------
+\SeaCard
+{39} % 1: Title
+{Das 39 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
+{Strait (Mediterranean)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{1\,800\,m} % 5: Max Tiefe
+{103\,m} % 6: Mittlere Tiefe
+{25-35\,°C} % 7: Temperatur
+{55\,‰} % 8: Salzgehalt
+{8 to 24} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 40: 40
+%----------------------------------
+\SeaCard
+{40} % 1: Title
+{Das 40 ist ein bedeutendes Gewässer. Besondere Merkmale: Niger, Congo.} % 2: Intro
+{Marginal sea (South Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{2\,350\,000\,m} % 5: Max Tiefe
+{5\,469\,m} % 6: Mittlere Tiefe
+{34-36\,°C} % 7: Temperatur
+{2996\,‰} % 8: Salzgehalt
+{24 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 41: 41
+%----------------------------------
+\SeaCard
+{41} % 1: Title
+{Das 41 ist ein bedeutendes Gewässer. Besondere Merkmale: None (glacial).} % 2: Intro
+{Marginal sea (Southern/South Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{2\,800\,000\,m} % 5: Max Tiefe
+{6\,820\,m} % 6: Mittlere Tiefe
+{34-35\,°C} % 7: Temperatur
+{3000\,‰} % 8: Salzgehalt
+{-2 to 2} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 42: 42
+%----------------------------------
+\SeaCard
+{42} % 1: Title
+{Das 42 ist ein bedeutendes Gewässer. Besondere Merkmale: None (glacial).} % 2: Intro
+{Marginal sea (Southern/South Atlantic)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{1\,300\,000\,m} % 5: Max Tiefe
+{6\,022\,m} % 6: Mittlere Tiefe
+{34\,°C} % 7: Temperatur
+{3096\,‰} % 8: Salzgehalt
+{-1 to 6} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 43: 43
+%----------------------------------
+\SeaCard
+{43} % 1: Title
+{Das 43 ist ein bedeutendes Gewässer. Besondere Merkmale: Yukon, Anadyr.} % 2: Intro
+{Marginal sea (North Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{2\,000\,000\,m} % 5: Max Tiefe
+{4\,097\,m} % 6: Mittlere Tiefe
+{32-33\,°C} % 7: Temperatur
+{1640\,‰} % 8: Salzgehalt
+{-2 to 12} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 44: 44
+%----------------------------------
+\SeaCard
+{44} % 1: Title
+{Die 44 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
+{Strait (Arctic/North Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{2\,300\,m} % 5: Max Tiefe
+{50\,m} % 6: Mittlere Tiefe
+{32-33\,°C} % 7: Temperatur
+{45\,‰} % 8: Salzgehalt
+{-2 to 10} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 45: 45
+%----------------------------------
+\SeaCard
+{45} % 1: Title
+{Das 45 ist ein bedeutendes Gewässer. Besondere Merkmale: Amur.} % 2: Intro
+{Marginal sea (North Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{1\,583\,000\,m} % 5: Max Tiefe
+{3\,372\,m} % 6: Mittlere Tiefe
+{32-33\,°C} % 7: Temperatur
+{838\,‰} % 8: Salzgehalt
+{-2 to 18} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 46: 46
+%----------------------------------
+\SeaCard
+{46} % 1: Title
+{Das 46 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (North Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{978\,000\,m} % 5: Max Tiefe
+{3\,742\,m} % 6: Mittlere Tiefe
+{33-35\,°C} % 7: Temperatur
+{1667\,‰} % 8: Salzgehalt
+{0 to 25} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 47: 47
+%----------------------------------
+\SeaCard
+{47} % 1: Title
+{Das 47 ist ein bedeutendes Gewässer. Besondere Merkmale: Yellow (Huang He).} % 2: Intro
+{Marginal sea (North Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{380\,000\,m} % 5: Max Tiefe
+{152\,m} % 6: Mittlere Tiefe
+{30-32\,°C} % 7: Temperatur
+{44\,‰} % 8: Salzgehalt
+{0 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 48: 48
+%----------------------------------
+\SeaCard
+{48} % 1: Title
+{Das 48 ist ein bedeutendes Gewässer. Besondere Merkmale: Yangtze.} % 2: Intro
+{Marginal sea (North Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{1\,249\,000\,m} % 5: Max Tiefe
+{2\,719\,m} % 6: Mittlere Tiefe
+{31-34\,°C} % 7: Temperatur
+{349\,‰} % 8: Salzgehalt
+{10 to 28} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 49: 49
+%----------------------------------
+\SeaCard
+{49} % 1: Title
+{Das 49 ist ein bedeutendes Gewässer. Besondere Merkmale: Pearl, Mekong, Red.} % 2: Intro
+{Marginal sea (North Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{3\,500\,000\,m} % 5: Max Tiefe
+{5\,559\,m} % 6: Mittlere Tiefe
+{32-34\,°C} % 7: Temperatur
+{1652\,‰} % 8: Salzgehalt
+{20 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 50: 50
+%----------------------------------
+\SeaCard
+{50} % 1: Title
+{Das 50 ist ein bedeutendes Gewässer. Besondere Merkmale: Cagayan.} % 2: Intro
+{Marginal sea (North Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{5\,177\,562\,m} % 5: Max Tiefe
+{10\,540\,m} % 6: Mittlere Tiefe
+{34-35\,°C} % 7: Temperatur
+{4080\,‰} % 8: Salzgehalt
+{20 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 51: 51
+%----------------------------------
+\SeaCard
+{51} % 1: Title
+{Das 51 ist ein bedeutendes Gewässer. Besondere Merkmale: Copper, Alsek.} % 2: Intro
+{Marginal sea (North Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{1\,533\,000\,m} % 5: Max Tiefe
+{5\,659\,m} % 6: Mittlere Tiefe
+{32-33\,°C} % 7: Temperatur
+{2431\,‰} % 8: Salzgehalt
+{2 to 16} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 52: 52
+%----------------------------------
+\SeaCard
+{52} % 1: Title
+{Das 52 ist ein bedeutendes Gewässer. Besondere Merkmale: Colorado.} % 2: Intro
+{Marginal sea (North Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{177\,000\,m} % 5: Max Tiefe
+{3\,292\,m} % 6: Mittlere Tiefe
+{35\,°C} % 7: Temperatur
+{818\,‰} % 8: Salzgehalt
+{16 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 53: 53
+%----------------------------------
+\SeaCard
+{53} % 1: Title
+{Das 53 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (South Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{280\,000\,m} % 5: Max Tiefe
+{6\,200\,m} % 6: Mittlere Tiefe
+{34\,°C} % 7: Temperatur
+{4700\,‰} % 8: Salzgehalt
+{27 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 54: 54
+%----------------------------------
+\SeaCard
+{54} % 1: Title
+{Das 54 ist ein bedeutendes Gewässer. Besondere Merkmale: Solo.} % 2: Intro
+{Marginal sea (South Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{320\,000\,m} % 5: Max Tiefe
+{46\,m} % 6: Mittlere Tiefe
+{32-34\,°C} % 7: Temperatur
+{46\,‰} % 8: Salzgehalt
+{27 to 30} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 55: 55
+%----------------------------------
+\SeaCard
+{55} % 1: Title
+{Das 55 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (South Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{470\,000\,m} % 5: Max Tiefe
+{7\,440\,m} % 6: Mittlere Tiefe
+{34\,°C} % 7: Temperatur
+{3060\,‰} % 8: Salzgehalt
+{27 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 56: 56
+%----------------------------------
+\SeaCard
+{56} % 1: Title
+{Das 56 ist ein bedeutendes Gewässer. Besondere Merkmale: Fly, Digul.} % 2: Intro
+{Marginal sea (South Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{700\,000\,m} % 5: Max Tiefe
+{3\,680\,m} % 6: Mittlere Tiefe
+{34-35\,°C} % 7: Temperatur
+{80\,‰} % 8: Salzgehalt
+{25 to 29} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 57: 57
+%----------------------------------
+\SeaCard
+{57} % 1: Title
+{Das 57 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (South Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{4\,791\,000\,m} % 5: Max Tiefe
+{9\,140\,m} % 6: Mittlere Tiefe
+{35-36\,°C} % 7: Temperatur
+{2394\,‰} % 8: Salzgehalt
+{23 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 58: 58
+%----------------------------------
+\SeaCard
+{58} % 1: Title
+{Das 58 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (South Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{2\,300\,000\,m} % 5: Max Tiefe
+{5\,943\,m} % 6: Mittlere Tiefe
+{35-35.5\,°C} % 7: Temperatur
+{3000\,‰} % 8: Salzgehalt
+{8 to 23} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 59: 59
+%----------------------------------
+\SeaCard
+{59} % 1: Title
+{Das 59 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (South Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{720\,000\,m} % 5: Max Tiefe
+{9\,140\,m} % 6: Mittlere Tiefe
+{34-35\,°C} % 7: Temperatur
+{2500\,‰} % 8: Salzgehalt
+{26 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 60: 60
+%----------------------------------
+\SeaCard
+{60} % 1: Title
+{Das 60 ist ein bedeutendes Gewässer. Besondere Merkmale: Sepik, Ramu.} % 2: Intro
+{Marginal sea (South Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{40\,000\,m} % 5: Max Tiefe
+{2\,665\,m} % 6: Mittlere Tiefe
+{34-35\,°C} % 7: Temperatur
+{1200\,‰} % 8: Salzgehalt
+{27 to 30} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 61: 61
+%----------------------------------
+\SeaCard
+{61} % 1: Title
+{Das 61 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (South Pacific)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{348\,000\,m} % 5: Max Tiefe
+{5\,576\,m} % 6: Mittlere Tiefe
+{34\,°C} % 7: Temperatur
+{1450\,‰} % 8: Salzgehalt
+{27 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 62: 62
+%----------------------------------
+\SeaCard
+{62} % 1: Title
+{Das 62 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (Indian)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{438\,000\,m} % 5: Max Tiefe
+{3\,040\,m} % 6: Mittlere Tiefe
+{40-41\,°C} % 7: Temperatur
+{490\,‰} % 8: Salzgehalt
+{20 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 63: 63
+%----------------------------------
+\SeaCard
+{63} % 1: Title
+{Das 63 ist ein bedeutendes Gewässer. Besondere Merkmale: None.} % 2: Intro
+{Strait (Red Sea/Indian)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{5\,000\,m} % 5: Max Tiefe
+{310\,m} % 6: Mittlere Tiefe
+{36\,°C} % 7: Temperatur
+{150\,‰} % 8: Salzgehalt
+{22 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 64: 64
+%----------------------------------
+\SeaCard
+{64} % 1: Title
+{Das 64 ist ein bedeutendes Gewässer. Besondere Merkmale: Tigris-Euphrates (Shatt al-Arab).} % 2: Intro
+{Marginal sea (Indian)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{251\,000\,m} % 5: Max Tiefe
+{90\,m} % 6: Mittlere Tiefe
+{37-41\,°C} % 7: Temperatur
+{50\,‰} % 8: Salzgehalt
+{15 to 35} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 65: 65
+%----------------------------------
+\SeaCard
+{65} % 1: Title
+{Die 65 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
+{Strait (Persian Gulf/Indian)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{3\,900\,m} % 5: Max Tiefe
+{100\,m} % 6: Mittlere Tiefe
+{37-40\,°C} % 7: Temperatur
+{75\,‰} % 8: Salzgehalt
+{18 to 33} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 66: 66
+%----------------------------------
+\SeaCard
+{66} % 1: Title
+{Das 66 ist ein bedeutendes Gewässer. Besondere Merkmale: Indus.} % 2: Intro
+{Marginal sea (Indian)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{3\,862\,000\,m} % 5: Max Tiefe
+{4\,652\,m} % 6: Mittlere Tiefe
+{36-37\,°C} % 7: Temperatur
+{2734\,‰} % 8: Salzgehalt
+{22 to 28} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 67: 67
+%----------------------------------
+\SeaCard
+{67} % 1: Title
+{Das 67 ist ein bedeutendes Gewässer. Besondere Merkmale: Ganges-Brahmaputra, Godavari, Mahanadi, Irrawaddy.} % 2: Intro
+{Marginal sea (Indian)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{2\,172\,000\,m} % 5: Max Tiefe
+{4\,694\,m} % 6: Mittlere Tiefe
+{30-34\,°C} % 7: Temperatur
+{2600\,‰} % 8: Salzgehalt
+{25 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 68: 68
+%----------------------------------
+\SeaCard
+{68} % 1: Title
+{Das 68 ist ein bedeutendes Gewässer. Besondere Merkmale: Irrawaddy, Salween.} % 2: Intro
+{Marginal sea (Indian)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{797\,700\,m} % 5: Max Tiefe
+{4\,180\,m} % 6: Mittlere Tiefe
+{30-33\,°C} % 7: Temperatur
+{1096\,‰} % 8: Salzgehalt
+{26 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 69: 69
+%----------------------------------
+\SeaCard
+{69} % 1: Title
+{Die 69 ist eine Meerenge, die wichtige Meeresgebiete miteinander verbindet. Besondere Merkmale: None.} % 2: Intro
+{Strait (Andaman Sea/South China Sea)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{80\,000\,m} % 5: Max Tiefe
+{25\,m} % 6: Mittlere Tiefe
+{30-34\,°C} % 7: Temperatur
+{15\,‰} % 8: Salzgehalt
+{26 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 70: 70
+%----------------------------------
+\SeaCard
+{70} % 1: Title
+{Das 70 ist ein bedeutendes Gewässer.} % 2: Intro
+{Marginal sea (Indian)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{610\,000\,m} % 5: Max Tiefe
+{3\,310\,m} % 6: Mittlere Tiefe
+{34-35\,°C} % 7: Temperatur
+{435\,‰} % 8: Salzgehalt
+{25 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 71: 71
+%----------------------------------
+\SeaCard
+{71} % 1: Title
+{Das 71 ist ein bedeutendes Gewässer. Besondere Merkmale: Zambezi.} % 2: Intro
+{Marginal sea (Indian)\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{700\,000\,m} % 5: Max Tiefe
+{3\,292\,m} % 6: Mittlere Tiefe
+{35\,°C} % 7: Temperatur
+{1600\,‰} % 8: Salzgehalt
+{24 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 72: 72
+%----------------------------------
+\SeaCard
+{72} % 1: Title
+{Der 72 ist ein künstlicher Wasserweg von großer strategischer Bedeutung. Besondere Merkmale: None (canal).} % 2: Intro
+{Canal\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{195\,m} % 5: Max Tiefe
+{24\,m} % 6: Mittlere Tiefe
+{40-42\,°C} % 7: Temperatur
+{13\,‰} % 8: Salzgehalt
+{18 to 30} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 73: 73
+%----------------------------------
+\SeaCard
+{73} % 1: Title
+{Der 73 ist ein künstlicher Wasserweg von großer strategischer Bedeutung. Besondere Merkmale: Chagres (for locks).} % 2: Intro
+{Canal\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{425\,m} % 5: Max Tiefe
+{25\,m} % 6: Mittlere Tiefe
+{0-35\,°C} % 7: Temperatur
+{13\,‰} % 8: Salzgehalt
+{24 to 32} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 74: 74
+%----------------------------------
+\SeaCard
+{74} % 1: Title
+{Das 74 ist ein bedeutendes Gewässer. Besondere Merkmale: Volga, Ural, Kura.} % 2: Intro
+{Saline Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{389\,000\,m} % 5: Max Tiefe
+{1\,025\,m} % 6: Mittlere Tiefe
+{12\,°C} % 7: Temperatur
+{211\,‰} % 8: Salzgehalt
+{0 to 27} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 75: 75
+%----------------------------------
+\SeaCard
+{75} % 1: Title
+{Das 75 ist ein bedeutendes Gewässer. Besondere Merkmale: Nipigon, St. Louis, Pigeon.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{82\,100\,m} % 5: Max Tiefe
+{406\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{147\,‰} % 8: Salzgehalt
+{0 to 13} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 76: 76
+%----------------------------------
+\SeaCard
+{76} % 1: Title
+{Das 76 ist ein bedeutendes Gewässer. Besondere Merkmale: Kagera.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{59\,940\,m} % 5: Max Tiefe
+{81\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{40\,‰} % 8: Salzgehalt
+{20 to 27} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 77: 77
+%----------------------------------
+\SeaCard
+{77} % 1: Title
+{Das 77 ist ein bedeutendes Gewässer.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{59\,590\,m} % 5: Max Tiefe
+{229\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{59\,‰} % 8: Salzgehalt
+{0 to 22} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 78: 78
+%----------------------------------
+\SeaCard
+{78} % 1: Title
+{Das 78 ist ein bedeutendes Gewässer. Besondere Merkmale: Fox-Wolf, Grand, Kalamazoo.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{57\,800\,m} % 5: Max Tiefe
+{282\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{85\,‰} % 8: Salzgehalt
+{0 to 24} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 79: 79
+%----------------------------------
+\SeaCard
+{79} % 1: Title
+{Das 79 ist ein bedeutendes Gewässer. Besondere Merkmale: Ruzizi, Malagarasi.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{32\,900\,m} % 5: Max Tiefe
+{1\,470\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{570\,‰} % 8: Salzgehalt
+{24 to 29} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 80: 80
+%----------------------------------
+\SeaCard
+{80} % 1: Title
+{Das 80 ist ein bedeutendes Gewässer. Besondere Merkmale: Selenga, Barguzin, Upper Angara.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{31\,722\,m} % 5: Max Tiefe
+{1\,642\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{744\,‰} % 8: Salzgehalt
+{3 to 10} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 81: 81
+%----------------------------------
+\SeaCard
+{81} % 1: Title
+{Das 81 ist ein bedeutendes Gewässer. Besondere Merkmale: Dease, Whitefish.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{31\,153\,m} % 5: Max Tiefe
+{446\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{72\,‰} % 8: Salzgehalt
+{0 to 18} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 82: 82
+%----------------------------------
+\SeaCard
+{82} % 1: Title
+{Das 82 ist ein bedeutendes Gewässer. Besondere Merkmale: Ruhuhu.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{29\,600\,m} % 5: Max Tiefe
+{706\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{292\,‰} % 8: Salzgehalt
+{22 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 83: 83
+%----------------------------------
+\SeaCard
+{83} % 1: Title
+{Das 83 ist ein bedeutendes Gewässer. Besondere Merkmale: Slave, Hay, Taltson.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{27\,200\,m} % 5: Max Tiefe
+{614\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{41\,‰} % 8: Salzgehalt
+{0 to 18} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 84: 84
+%----------------------------------
+\SeaCard
+{84} % 1: Title
+{Das 84 ist ein bedeutendes Gewässer. Besondere Merkmale: Detroit, Maumee, Grand.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{25\,667\,m} % 5: Max Tiefe
+{64\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{19\,‰} % 8: Salzgehalt
+{0 to 24} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 85: 85
+%----------------------------------
+\SeaCard
+{85} % 1: Title
+{Das 85 ist ein bedeutendes Gewässer. Besondere Merkmale: Red, Saskatchewan, Winnipeg.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{24\,514\,m} % 5: Max Tiefe
+{36\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{12\,‰} % 8: Salzgehalt
+{0 to 22} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 86: 86
+%----------------------------------
+\SeaCard
+{86} % 1: Title
+{Das 86 ist ein bedeutendes Gewässer. Besondere Merkmale: Niagara, Genesee.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{18\,970\,m} % 5: Max Tiefe
+{244\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{86\,‰} % 8: Salzgehalt
+{0 to 20} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 87: 87
+%----------------------------------
+\SeaCard
+{87} % 1: Title
+{Das 87 ist ein bedeutendes Gewässer. Besondere Merkmale: Svir, Volkhov, Neva.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{17\,700\,m} % 5: Max Tiefe
+{260\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{51\,‰} % 8: Salzgehalt
+{0 to 20} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 88: 88
+%----------------------------------
+\SeaCard
+{88} % 1: Title
+{Das 88 ist ein bedeutendes Gewässer. Besondere Merkmale: Ili.} % 2: Intro
+{Brackish Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{16\,400\,m} % 5: Max Tiefe
+{26\,m} % 6: Mittlere Tiefe
+{3\,°C} % 7: Temperatur
+{5.8\,‰} % 8: Salzgehalt
+{0 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 89: 89
+%----------------------------------
+\SeaCard
+{89} % 1: Title
+{Das 89 ist ein bedeutendes Gewässer. Besondere Merkmale: None (isolated).} % 2: Intro
+{Subglacial Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{12\,500\,m} % 5: Max Tiefe
+{900\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{430\,‰} % 8: Salzgehalt
+{-3 to -2} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 90: 90
+%----------------------------------
+\SeaCard
+{90} % 1: Title
+{Das 90 ist ein bedeutendes Gewässer. Besondere Merkmale: Suna, Vodla.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{9\,700\,m} % 5: Max Tiefe
+{127\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{30\,‰} % 8: Salzgehalt
+{0 to 20} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 91: 91
+%----------------------------------
+\SeaCard
+{91} % 1: Title
+{Das 91 ist ein bedeutendes Gewässer. Besondere Merkmale: Ramis, Ilave.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{8\,372\,m} % 5: Max Tiefe
+{281\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{107\,‰} % 8: Salzgehalt
+{10 to 16} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 92: 92
+%----------------------------------
+\SeaCard
+{92} % 1: Title
+{Das 92 ist ein bedeutendes Gewässer. Besondere Merkmale: Tipitapa, San Juan.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{8\,264\,m} % 5: Max Tiefe
+{26\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{13\,‰} % 8: Salzgehalt
+{25 to 29} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 93: 93
+%----------------------------------
+\SeaCard
+{93} % 1: Title
+{Das 93 ist ein bedeutendes Gewässer. Besondere Merkmale: Athabasca, Fond du Lac.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{7\,850\,m} % 5: Max Tiefe
+{124\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{20\,‰} % 8: Salzgehalt
+{0 to 20} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 94: 94
+%----------------------------------
+\SeaCard
+{94} % 1: Title
+{Das 94 ist ein bedeutendes Gewässer. Besondere Merkmale: Reindeer.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{6\,650\,m} % 5: Max Tiefe
+{219\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{53\,‰} % 8: Salzgehalt
+{0 to 18} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 95: 95
+%----------------------------------
+\SeaCard
+{95} % 1: Title
+{Das 95 ist ein bedeutendes Gewässer. Besondere Merkmale: Omo, Turkwel.} % 2: Intro
+{Saline Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{6\,405\,m} % 5: Max Tiefe
+{109\,m} % 6: Mittlere Tiefe
+{2.5\,°C} % 7: Temperatur
+{30.2\,‰} % 8: Salzgehalt
+{28 to 31} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 96: 96
+%----------------------------------
+\SeaCard
+{96} % 1: Title
+{Das 96 ist ein bedeutendes Gewässer. Besondere Merkmale: Jyrgalang, Tyup.} % 2: Intro
+{Saline Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{6\,236\,m} % 5: Max Tiefe
+{668\,m} % 6: Mittlere Tiefe
+{6\,°C} % 7: Temperatur
+{278\,‰} % 8: Salzgehalt
+{4 to 18} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 97: 97
+%----------------------------------
+\SeaCard
+{97} % 1: Title
+{Das 97 ist ein bedeutendes Gewässer. Besondere Merkmale: Klarälven, Gullspång.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{5\,650\,m} % 5: Max Tiefe
+{106\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{27\,‰} % 8: Salzgehalt
+{2 to 18} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 98: 98
+%----------------------------------
+\SeaCard
+{98} % 1: Title
+{Das 98 ist ein bedeutendes Gewässer. Besondere Merkmale: Jordan River.} % 2: Intro
+{Saline Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{605\,m} % 5: Max Tiefe
+{304\,m} % 6: Mittlere Tiefe
+{342\,°C} % 7: Temperatur
+{120\,‰} % 8: Salzgehalt
+{20 to 32} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 99: 99
+%----------------------------------
+\SeaCard
+{99} % 1: Title
+{Das 99 ist ein bedeutendes Gewässer. Besondere Merkmale: Songwe.} % 2: Intro
+{Saline Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{5\,615\,m} % 5: Max Tiefe
+{22\,m} % 6: Mittlere Tiefe
+{Variable\,°C} % 7: Temperatur
+{11\,‰} % 8: Salzgehalt
+{20 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 100: 100
+%----------------------------------
+\SeaCard
+{100} % 1: Title
+{Das 100 ist ein bedeutendes Gewässer. Besondere Merkmale: Victoria Nile, Semliki.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{5\,590\,m} % 5: Max Tiefe
+{51\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{25\,‰} % 8: Salzgehalt
+{26 to 30} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 101: 101
+%----------------------------------
+\SeaCard
+{101} % 1: Title
+{Das 101 ist ein bedeutendes Gewässer.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{5\,542\,m} % 5: Max Tiefe
+{132\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{53\,‰} % 8: Salzgehalt
+{0 to 10} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 102: 102
+%----------------------------------
+\SeaCard
+{102} % 1: Title
+{Das 102 ist ein bedeutendes Gewässer. Besondere Merkmale: Mossy, Red Deer.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{5\,370\,m} % 5: Max Tiefe
+{12\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{5\,‰} % 8: Salzgehalt
+{0 to 22} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 103: 103
+%----------------------------------
+\SeaCard
+{103} % 1: Title
+{Das 103 ist ein bedeutendes Gewässer. Besondere Merkmale: Luapula.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{5\,120\,m} % 5: Max Tiefe
+{27\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{7.5\,‰} % 8: Salzgehalt
+{24 to 28} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 104: 104
+%----------------------------------
+\SeaCard
+{104} % 1: Title
+{Das 104 ist ein bedeutendes Gewässer. Besondere Merkmale: Ombabika, Gull.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{4\,848\,m} % 5: Max Tiefe
+{165\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{52\,‰} % 8: Salzgehalt
+{0 to 20} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 105: 105
+%----------------------------------
+\SeaCard
+{105} % 1: Title
+{Das 105 ist ein bedeutendes Gewässer. Besondere Merkmale: Whitemud, Waterhen.} % 2: Intro
+{Brackish Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{4\,706\,m} % 5: Max Tiefe
+{7\,m} % 6: Mittlere Tiefe
+{3.5\,°C} % 7: Temperatur
+{3\,‰} % 8: Salzgehalt
+{0 to 22} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 106: 106
+%----------------------------------
+\SeaCard
+{106} % 1: Title
+{Das 106 ist ein bedeutendes Gewässer. Besondere Merkmale: Upper Taymyr.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{4\,560\,m} % 5: Max Tiefe
+{26\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{2.8\,‰} % 8: Salzgehalt
+{-20 to 15} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 107: 107
+%----------------------------------
+\SeaCard
+{107} % 1: Title
+{Das 107 ist ein bedeutendes Gewässer. Besondere Merkmale: Buha, Shaliu.} % 2: Intro
+{Saline Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{4\,489\,m} % 5: Max Tiefe
+{32\,m} % 6: Mittlere Tiefe
+{14\,°C} % 7: Temperatur
+{21\,‰} % 8: Salzgehalt
+{-5 to 20} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 108: 108
+%----------------------------------
+\SeaCard
+{108} % 1: Title
+{Das 108 ist ein bedeutendes Gewässer. Besondere Merkmale: Vuoksi.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{4\,380\,m} % 5: Max Tiefe
+{82\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{17\,‰} % 8: Salzgehalt
+{0 to 20} % 9: Anrainer
+
+\newpage
+
+
+%----------------------------------
+% CARD 109: 109
+%----------------------------------
+\SeaCard
+{109} % 1: Title
+{Das 109 ist ein bedeutendes Gewässer. Besondere Merkmale: Rainy River.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{4\,350\,m} % 5: Max Tiefe
+{64\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{9\,‰} % 8: Salzgehalt
+{0 to 22} % 9: Anrainer
+
+\vspace{5mm}
+
+
+%----------------------------------
+% CARD 110: 110
+%----------------------------------
+\SeaCard
+{110} % 1: Title
+{Das 110 ist ein bedeutendes Gewässer. Besondere Merkmale: Songacha, Melgunovka.} % 2: Intro
+{Freshwater Lake\,km²} % 3: Fläche
+{---} % 4: Volumen (not in data)
+{4\,190\,m} % 5: Max Tiefe
+{10\,m} % 6: Mittlere Tiefe
+{0\,°C} % 7: Temperatur
+{4.5\,‰} % 8: Salzgehalt
+{0 to 25} % 9: Anrainer
+
+\end{document}
